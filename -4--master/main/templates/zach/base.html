@@ -1,0 +1,99 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../static/libs/bootstrap/bootstrap-grid-3.3.1.min.css"/>
+    <link rel="stylesheet" href="../../static/libs/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../static/libs/fancybox/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="../../static/libs/owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="../../static/libs/countdown/jquery.countdown.css"/>
+    <link rel="stylesheet" href="../../static/css/zach/fonts.css"/>
+    <link rel="stylesheet" href="../../static/css/zach/main.css"/>
+    <link rel="stylesheet" href="../../static/css/zach/media.css"/>
+    <link rel="stylesheet" href="../../static/libs/mobilemenu/jquery.mmenu.css"/>
+    <link rel="stylesheet" href="../../static/libs/superfish/megafish.css"/>
+    <link rel="stylesheet" href="../../static/libs/superfish/superfish.css"/>
+    <link rel="stylesheet" href="../../static/libs/hamburger/hamburgers.css"/>
+</head>
+<body>
+
+<header class="top_header">
+    <div class="header_topline">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="soc_button">
+                        <a href="http://sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                      aria-hidden="true"></i>
+                            ЮФУ</a>
+                        <a href="http://ictis.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                            aria-hidden="true"></i>
+                            ИКТИБ</a>
+                        <a href="http://inep.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                           aria-hidden="true"></i>
+                            ИНЭП</a>
+                        <a href="http://rtf.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                          aria-hidden="true"></i>
+                            ИРТСУ</a>
+                        <a href="http://iues.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                           aria-hidden="true"></i>
+                            ИУЭС</a>
+                    </div>
+                    <div class="vk_button">
+                        <a href="https://vk.com/sfedu_official" target="_blank"><i class="fa fa-vk"
+                                                                                   aria-hidden="true"></i>
+                            ЮФУ</a>
+                    </div>
+                    <div class="contacts_head">
+                        <a href="http://asu.tti.sfedu.ru/Raspisanie/Default.aspx?isPotok=121&Semestr=1"
+                           target="_blank"><i class="fa fa-calendar" aria-hidden="true"></i> Расписание занятий</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header_head">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {#                            <div class="header_button">#}
+                {#                                <button id="mmenu-icon" class="hamburger hamburger--emphatic" type="button">#}
+                {#                                    <span class="hamburger-box">#}
+                {#                                        <span class="hamburger-inner"></span>#}
+                {#                                    </span>#}
+                {#                                </button>#}
+                {#                            </div>#}
+                <div class="logotype">
+                    <a href="{% url 'home' %}"><img src="../../static/images/logo.png" alt="Logo" border="0"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

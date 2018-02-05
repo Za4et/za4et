@@ -1,0 +1,198 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    word-wrap: break-word;
+}
+
+html {
+    font-size: 62.5%;
+    /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+    overflow-y: scroll;
+    /* Keeps page centered in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%;
+    /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust: 100%;
+    /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+*,
+*:before,
+*:after {
+    /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+    -webkit-box-sizing: border-box;
+    /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+    -moz-box-sizing: border-box;
+    /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+a:focus {
+    outline: 0;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/*a img {*/
+/*border: 0;*/
+/*}*/
+
+/* =END Reset
+-------------------------------------------------------------- */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #e6e6e6;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    outline: none !important;
+    color: #004A94;
+}
+
+a:hover {
+    color: #3F76A9;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+/*---> top-header <---*/
+
+.header_topline {
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header_topline a {
+    color: #0D4554;
+}
+
+.header_topline a:hover {
+    color: #20ABD1;
+    transition: all .4s ease;
+}
+
+.header_topline a:hover i {
+    color: #0D4554;
+}
+
+.soc_button {
+    float: left;
+}
+
+.soc_button a {
+    margin-right: 20px;
+}
+
+.vk_button {
+    float: left;
+}
+
+.vk_button i {
+    font-size: 20px;
+}
+
+.contacts_head {
+    float: right;
+    margin: 0;
+}
+
+/*---> top-header end <---*/
+
+/*---> header-head <---*/
+.header_head {
+    background: #0D4554;
+    height: 120px;
+    width: 100%;
+    position: relative;
+}
+
+.logotype {
+    float: left;
+}
+
+.logotype img {
+    margin: 20px 0;
+    height: 80px;
+}
+
+/*---> header-head end <---*/
+
+/*---> menu <---*/
+
+/*---> menu end <---*/
+
+/*---> content <---*/
+
+
+/*---> content end <---*/
+/*---> sidebar <---*/
+.main_content .sidebar {
+    padding: 30px;
+    margin: 0 0 0 15px;
+    background: #ffffff;
+    box-shadow: 0 0 1em #BBBBBB;
+    height: 150px;
+}
+
+/*---> sidebar end<---*/
