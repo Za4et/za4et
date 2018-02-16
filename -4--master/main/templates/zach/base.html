@@ -76,17 +76,38 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                {#                            <div class="header_button">#}
-                {#                                <button id="mmenu-icon" class="hamburger hamburger--emphatic" type="button">#}
-                {#                                    <span class="hamburger-box">#}
-                {#                                        <span class="hamburger-inner"></span>#}
-                {#                                    </span>#}
-                {#                                </button>#}
-                {#                            </div>#}
-                <div class="logotype">
-                    <a href="{% url 'home' %}"><img src="../../static/images/logo.png" alt="Logo" border="0"></a>
+                <div class="main_menu_left">
+                    <ul class="menu_left">
+                        <li><a href="">Главная</a></li>
+                        <p class="line_left"></p>
+                        <li><a href="">Журналы</a></li>
+                        <p class="line_left"></p>
+                        <li><a href="">Библиотека</a></li>
+                    </ul>
                 </div>
-
+                <div class="main_menu_right">
+                    <ul class="menu_right">
+                        <li><a href="">Информация</a></li>
+                        <p class="line_right"></p>
+                        <li><a href="">Обратная связь</a></li>
+                        <p class="line_right"></p>
+                        <li><a href=""><i class="fa fa-search fa_spin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="logotype">
+                    <a href="{% url 'home' %}" class="a_img"><img src="../../static/images/logo.png"
+                                                                  class="logo_up" alt="Logo" border="0"></a>
+                    <a href="{% url 'home' %}"><img src="../../static/images/logo_ho.png" class="logo_down" alt="Logo"
+                                                    border="0"></a>
+                </div>
+                {#                <div class="main_search">#}
+                {#                    <div class="search_in">#}
+                {#                        <form id="search" method="post" action="#"></form>#}
+                {#                            <input id="s_input" class="s_search" placeholder="Поиск..." type="text">#}
+                {#                            <button type="submit" class="but_search"><i class="fa fa-search" aria-hidden="true"></i></button>#}
+                {#                        </form>#}
+                {#                    </div>#}
+                {#                </div>#}
             </div>
         </div>
     </div>
