@@ -63,6 +63,7 @@
                                                                                    aria-hidden="true"></i>
                             ЮФУ</a>
                     </div>
+                    <div id="login_button" class="login_link"><i class="fa fa-user"></i> Авторизация</div>
                     <div class="contacts_head">
                         <a href="http://asu.tti.sfedu.ru/Raspisanie/Default.aspx?isPotok=121&Semestr=1"
                            target="_blank"><i class="fa fa-calendar" aria-hidden="true"></i> Расписание занятий</a>
@@ -72,6 +73,41 @@
         </div>
     </div>
 </header>
+
+<div class="container">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="login_list_1">
+            </div>
+            <div class="login_list_2">
+            </div>
+            <div class="login_form">
+                <section id="content">
+                    <form action="" class="login_vspl">
+                        <h1>Авторизация</h1>
+                        <p><span><i class="fa fa-user-circle"></i></span><input
+                                type="text" class="input_login" placeholder="Введите логин" autocomplete="on"></p>
+                        <p><span><i class="fa fa-lock"></i></span><input
+                                type="password" class="input_password" placeholder="Введите пароль" autocomplete="off">
+                        </p>
+                        <p><input type="submit" class="sign_in" value="ВОЙТИ"></p>
+                        <div class="login_help">
+                            <p><a href="#" class="login_help">Забыли пароль?</a></p>
+                        </div>
+                        <div class="first_login">
+                            <p><a href="#" class="first_login">Впервые на сайте?</a></p>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="close_login"><i class="fa fa-times"></i></div>
+
+<div class="opacity"></div>
+
 <div class="header_head">
     <div class="container">
         <div class="row">
@@ -115,6 +151,10 @@
 
 {% block content %}
 {% endblock %}
+
+<script src="../../static/libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="../../static/libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="../../static/js/common.js"></script>
 
 </body>
 </html>
