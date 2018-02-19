@@ -1,10 +1,88 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-    .top_header{
-        display: none;
-    }
+@media only screen and (max-width: 1480px) {
+    /*.top_header{*/
+        /*display: none;*/
+    /*}*/
+
+    /*---> login_form <---*/
+
+.login_list_1{
+    width: 280px;
+    height: 400px;
+    margin-left: -140px;
+    margin-top: -200px;
+    display: none;
+}
+
+.login_list_2{
+    width: 280px;
+    height: 400px;
+    margin-left: -140px;
+    margin-top: -200px;
+    display: none;
+}
+
+.login_form{
+    width: 280px;
+    height: 400px;
+    margin-left: -140px;
+    margin-top: -200px;
+    display: none;
+}
+
+.login_vspl h1{
+    font-size: 20px;
+    margin-top: 34px;
+}
+
+.login_vspl h1:before,
+.login_vspl h1:after {
+	content: "";
+	height: 2px;
+	position: absolute;
+	top: 48px;
+	width: 20%;
+}
+
+.login_vspl span {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding-top: 7px;
+    font-size: 26px;
+}
+
+.login_vspl input {
+	height: 50px;
+    margin-top: 20px;
+}
+
+.login_vspl .input_login, .input_password {
+	font-size: 16px;
+    padding: 0 16px;
+	width: 170px;
+}
+
+.login_vspl .sign_in {
+    margin-left: 30px;
+	width: 220px;
+}
+
+.login_help{
+    margin-top: 230px;
+    font-size: 18px;
+}
+
+.first_login {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/*---> login_form end <---*/
+
 }
 
 /* Medium Devices, Desktops */

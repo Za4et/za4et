@@ -210,7 +210,6 @@ a:hover {
     border-radius: 3px;
     box-shadow: 0 0 0.2em #333233;
     transform: rotate(-7deg);
-    display: none;
 }
 
 .login_list_2{
@@ -226,7 +225,6 @@ a:hover {
     border-radius: 3px;
     box-shadow: 0 0 0.2em #333233;
     transform: rotate(10deg);
-    display: none;
 }
 
 .login_form{
@@ -241,7 +239,6 @@ a:hover {
     background-color: #ffffff;
     border-radius: 3px;
     box-shadow: 0 0 0.2em #333233;
-    display: none;
 }
 
 .login_vspl{
@@ -372,7 +369,7 @@ a:hover {
 .close_login{
     position: fixed;
     z-index: 1005;
-    top: 70px;
+    top: 74px;
     right: 70px;
     color: #333233;
     display: none;
@@ -414,6 +411,7 @@ a:hover {
     -moz-transition-duration: 0.60s;
     -o-transition-duration: 0.60s;
     -ms-transition-duration: 0.60s;
+    width: 213px;
 }
 
 .logo_up:hover {
@@ -423,6 +421,7 @@ a:hover {
 
 .logo_down {
     margin-top: 20px;
+    width: 213px;
 }
 
 .logotype .img {
