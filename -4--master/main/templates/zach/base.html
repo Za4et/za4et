@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="../../static/libs/superfish/megafish.css"/>
     <link rel="stylesheet" href="../../static/libs/superfish/superfish.css"/>
     <link rel="stylesheet" href="../../static/libs/hamburger/hamburgers.css"/>
+
 </head>
 <body>
 
@@ -74,31 +75,72 @@
     </div>
 </header>
 
-<div class="container">
-    <div class="col-md-12">
-        <div class="row">
-            <div class="login_list_1">
-            </div>
-            <div class="login_list_2">
-            </div>
-            <div class="login_form">
-                <section id="content">
+<div class="login">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="backg_sheet">
+                </div>
+                <div class="register_sheet">
+                    <form action="" class="log_register">
+                        <h1>Регистрация</h1>
+                        <p><span><i class="fa fa-user"></i></span><input
+                                type="text" class="login_input" placeholder="Введите Имя" autocomplete="on"></p>
+                        <p><span><i class="fa fa-user-plus"></i></span><input
+                                type="text" class="login_input" placeholder="Введите Фамилию" autocomplete="off">
+                        </p>
+                        <p><span><i class="fa fa-at"></i></span><input
+                                type="email" class="login_input" placeholder="Введите e-mail" autocomplete="off">
+                        </p>
+                        <div class="reg_captch">
+{#                            <div class="g-recaptcha" data-sitekey="6LckQUcUAAAAAAEuS_VGNUdjcyCgHCemVcWlpc8-"#}
+{#                                 data-theme="dark"></div>#}
+                        </div>
+                        <p><input type="submit" class="sign_sub" value="ОТПРАВИТЬ"></p>
+                        <div class="login_back">
+                            <p><a href="#" class="login_back_a">У вас уже есть аккаунт?</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="forget_sheet">
+                    <form action="" class="login_forget">
+                        <h1>Восстановление</h1>
+                        <p><span><i class="fa fa-user-circle"></i></span><input
+                                type="text" class="login_input" placeholder="Введите логин" autocomplete="on"></p>
+                        <div class="forget_captch">
+{#                            <div class="g-recaptcha" data-sitekey="6LckQUcUAAAAAAEuS_VGNUdjcyCgHCemVcWlpc8-"#}
+{#                                 data-theme="dark"></div>#}
+                        </div>
+                        <p><input type="submit" class="sign_sub" value="ОТПРАВИТЬ"></p>
+                        <div class="login_back">
+                            <p><a href="#" class="login_back_a">У вас уже есть аккаунт?</a></p>
+                        </div>
+                        <div class="first_login">
+                            <p><a href="#" class="first_login_a">Впервые на сайте?</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="login_form">
                     <form action="" class="login_vspl">
                         <h1>Авторизация</h1>
                         <p><span><i class="fa fa-user-circle"></i></span><input
-                                type="text" class="input_login" placeholder="Введите логин" autocomplete="on"></p>
+                                type="text" class="login_input" placeholder="Введите логин" autocomplete="on"></p>
                         <p><span><i class="fa fa-lock"></i></span><input
-                                type="password" class="input_password" placeholder="Введите пароль" autocomplete="off">
+                                type="password" class="login_input" placeholder="Введите пароль" autocomplete="off">
                         </p>
-                        <p><input type="submit" class="sign_in" value="ВОЙТИ"></p>
+                        <div class="login_captch">
+{#                            <div class="g-recaptcha" data-sitekey="6LckQUcUAAAAAAEuS_VGNUdjcyCgHCemVcWlpc8-"#}
+{#                                 data-theme="dark"></div>#}
+                        </div>
+                        <p><input type="submit" class="sign_sub" value="ВОЙТИ"></p>
                         <div class="login_help">
-                            <p><a href="#" class="login_help">Забыли пароль?</a></p>
+                            <p><a href="#" class="login_help_a">Забыли пароль?</a></p>
                         </div>
                         <div class="first_login">
-                            <p><a href="#" class="first_login">Впервые на сайте?</a></p>
+                            <p><a href="#" class="first_login_a">Впервые на сайте?</a></p>
                         </div>
                     </form>
-                </section>
+                </div>
             </div>
         </div>
     </div>
@@ -155,6 +197,7 @@
 <script src="../../static/libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="../../static/libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 <script src="../../static/js/common.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
 </body>
 </html>

@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 from . import views
-urlpatterns = [
+# from .decorators import check_recaptcha
 
-    path('' , views.index , name='home')
+urlpatterns = [
+    path('' , views.index , name='home'),
 ]

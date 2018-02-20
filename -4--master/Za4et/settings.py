@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'g_recaptcha',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'main/templates'),)
+
+GOOGLE_RECAPTCHA_PUBLIC_KEY = '6LckQUcUAAAAAAEuS_VGNUdjcyCgHCemVcWlpc8-'
+GOOGLE_RECAPTCHA_PRIVATE_KEY = '6LckQUcUAAAAAFg_WGh1Ss0-XfLB8asIrSchJUHh'
