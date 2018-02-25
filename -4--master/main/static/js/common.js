@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
 
     $(this).keydown(function (eventObject) {
-        if (eventObject.which == 27){
+        if (eventObject.which == 27) {
             $(".opacity").fadeOut(300);
             $(".login_form").fadeOut(300);
             $(".close_login").fadeOut(300);

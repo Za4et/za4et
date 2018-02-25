@@ -103,13 +103,13 @@ a:active {
 }
 
 html, body {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: #CCCCCC;
+    background: #ffffff;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
 }
@@ -148,7 +148,7 @@ a:hover {
 }
 
 .header_topline a:hover {
-    color: #AC0439;
+    color: #B5B5B5;
     transition: all .6s ease;
 }
 
@@ -205,13 +205,13 @@ a:hover {
     left: 0;
     background-color: #535153;
     opacity: 0.6;
-    z-index: 1001;
+    z-index: 1020;
     display: none;
 }
 
 .close_login {
     position: fixed;
-    z-index: 1005;
+    z-index: 1025;
     top: 74px;
     right: 70px;
     color: #333233;
@@ -232,7 +232,7 @@ a:hover {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 1003;
+    z-index: 1022;
     width: 380px;
     height: 500px;
     margin-left: -190px;
@@ -251,7 +251,7 @@ a:hover {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 1003;
+    z-index: 1023;
     width: 380px;
     height: 500px;
     margin-left: -190px;
@@ -270,7 +270,7 @@ a:hover {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 1004;
+    z-index: 1024;
     width: 380px;
     height: 500px;
     margin-left: -190px;
@@ -289,7 +289,7 @@ a:hover {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 1005;
+    z-index: 1025;
     width: 380px;
     height: 500px;
     margin-left: -190px;
@@ -417,7 +417,7 @@ a:hover {
     margin-top: 30px;
 }
 
-.login_vspl .sign_sub{
+.login_vspl .sign_sub {
     margin-top: 115px;
 }
 
@@ -544,7 +544,6 @@ a:hover {
     background: #ffffff;
     height: 120px;
     width: 100%;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
     z-index: 999;
 }
 
@@ -664,7 +663,272 @@ a:hover {
 
 /*---> search end <---*/
 
-/*---> content <---*/
+/*---> content home <---*/
+
+.home_content {
+    position: relative;
+    height: 652px;
+    margin-top: 30px;
+    z-index: 999;
+}
+
+.home_content .opac_left {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    background-color: #333233;
+    opacity: 0.7;
+    z-index: 1003;
+    transition: 0.5s linear;
+}
+
+.home_content .sheet_op {
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    background-color: #333233;
+    opacity: 0.7;
+    z-index: 1003;
+    transition: 0.5s linear;
+}
+
+.home_content .info_site {
+    position: absolute;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 555px 100%, 0 100%);
+    background-color: #ffffff;
+    width: 617px;
+    height: 305px;
+}
+
+.home_content .date_time {
+    position: absolute;
+    left: 0;
+    margin-top: 315px;
+    clip-path: polygon(0 0, 100% 0, 492px 100%, 0 100%);
+    background-color: #ffffff;
+    width: 553px;
+    height: 305px;
+}
+
+.home_content .block_news {
+    position: absolute;
+    right: 0;
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #ffffff;
+    width: 583px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.home_content .block_attendance_log {
+    position: absolute;
+    right: 0;
+    margin-top: 210px;
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #ffffff;
+    width: 625px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.home_content .block_library {
+    position: absolute;
+    right: 0;
+    margin-top: 420px;
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #ffffff;
+    width: 667px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.home_content .info_site:hover img {
+    transform: scale(1.15);
+}
+
+.home_content .date_time:hover img{
+    transform: scale(1.15);
+}
+
+.home_content .block_news:hover img {
+    transform: scale(1.15);
+}
+
+.home_content .block_attendance_log:hover img {
+    transform: scale(1.15);
+}
+
+.home_content .block_library:hover img {
+    transform: scale(1.15);
+}
+
+.home_content .info_site:hover .opac_left{
+    opacity: 0.2;
+}
+
+.home_content .date_time:hover .opac_left{
+    opacity: 0.2;
+}
+
+.home_content .block_news:hover .sheet_op {
+    opacity: 0.2;
+}
+
+.home_content .block_attendance_log:hover .sheet_op {
+    opacity: 0.2;
+}
+
+.home_content .block_library:hover .sheet_op {
+    opacity: 0.2;
+}
+
+.date_time .sheet_date {
+
+}
+
+.info_site img {
+    position: absolute;
+    width: 617px;
+    z-index: 1001;
+    margin-top: -30px;
+    transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+}
+
+.date_time img {
+    position: absolute;
+    width: 553px;
+    z-index: 1001;
+    transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+}
+
+.block_news img {
+    position: absolute;
+    margin-top: -80px;
+    width: 600px;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.block_attendance_log img {
+    position: absolute;
+    z-index: 1001;
+    width: 630px;
+    margin-top: -80px;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.block_library img {
+    position: absolute;
+    z-index: 1001;
+    width: 700px;
+    margin-top: -150px;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.info_site .text_inf_block {
+    position: absolute;
+    margin-top: 30px;
+    z-index: 1004;
+    color: #ffffff;
+    text-align: center;
+    width: 617px;
+    font-size: 30px;
+}
+
+.text_inf_block .opportunities {
+    margin-top: 20px;
+}
+
+.date_time .text_da_ti {
+    position: absolute;
+    z-index: 1004;
+    color: white;
+    width: 553px;
+    text-align: center;
+}
+
+.text_da_ti .sheet_date {
+    position: relative;
+    left: 0;
+    margin-top: 35px;
+    z-index: 1003;
+    width: 500px;
+    background-color: #52011A;
+    opacity: 0.7;
+    padding-bottom: 20px;
+    clip-path: polygon(0 0, 100% 0, 452px 100%, 0 100%);
+}
+
+.text_da_ti .hello_text {
+    font-size: 20px;
+}
+
+.text_da_ti .number_text {
+    font-size: 80px;
+}
+
+.text_da_ti .month_text {
+    font-size: 24px;
+}
+
+.text_da_ti .day_text {
+    font-size: 24px;
+}
+
+.text_da_ti .week_text {
+    font-size: 24px;
+}
+
+.block_news .text_ne_block {
+    position: absolute;
+    z-index: 1004;
+    color: #ffffff;
+    margin-top: 60px;
+    margin-left: 10px;
+    width: 583px;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.block_attendance_log .text_att_block {
+    position: absolute;
+    z-index: 1004;
+    color: #ffffff;
+    margin-top: 60px;
+    margin-left: 10px;
+    width: 625px;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.block_library .text_li_block {
+    position: absolute;
+    z-index: 1004;
+    color: #ffffff;
+    margin-top: 60px;
+    width: 667px;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+}
 
 /*---> content end <---*/
 
@@ -676,29 +940,29 @@ a:hover {
     box-shadow: 0 0 1em #BBBBBB;
     height: 150px;
 }
+
 /*---> sidebar end<---*/
 
 /*---> footer <---*/
 
-.main_footer{
-    position: absolute;
-    bottom: 0;
+.main_footer {
+    position: relative;
     width: 100%;
     height: 120px;
     background-color: #ffffff;
-    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.05);
+    z-index: 998;
 }
 
-.main_footer .footer_cont{
+.main_footer .footer_cont {
     text-align: center;
 }
 
-.main_footer .footer_cont img{
+.main_footer .footer_cont img {
     margin-top: 10px;
     height: 60px;
 }
 
-.main_footer .bot_text{
+.main_footer .bot_text {
     position: absolute;
     bottom: 0;
     padding-top: 10px;
