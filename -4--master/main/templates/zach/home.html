@@ -7,8 +7,13 @@
 <head>
     {% block title %}За4ет{% endblock %}
 </head>
+
 <body>
 {% block content %}
+
+    {% block preloader %}
+    {% endblock %}
+
     <div class="home_content">
         <div class="container">
             <div class="row">
@@ -58,18 +63,18 @@
                         <img src="../../static/images/da_ti.png">
                         <div class="opac_left"></div>
                     </div>
-                    <a class="block_news" href="#">
+                    <a class="block_news" href="{% url 'news' %}">
                         <img src="../../static/images/news.png">
                         <div class="sheet_op"></div>
                         <div class="text_ne_block">Узнать актуальные <p>новости</p>
                             <p id="week"></p></div>
                     </a>
-                    <a class="block_attendance_log" href="#">
+                    <a class="block_attendance_log" href="{% url 'journals' %}">
                         <img src="../../static/images/att_log.png">
                         <div class="sheet_op"></div>
                         <div class="text_att_block">Посмотреть данные об <p>успеваемости</p></div>
                     </a>
-                    <a class="block_library" href="#">
+                    <a class="block_library" href="{% url 'library' %}">
                         <img src="../../static/images/library.png">
                         <div class="sheet_op"></div>
                         <div class="text_li_block">Найти учебные <p>материалы</p></div>

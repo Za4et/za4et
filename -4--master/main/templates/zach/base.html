@@ -23,16 +23,10 @@
 
     <link rel="stylesheet" href="../../static/libs/bootstrap/bootstrap-grid-3.3.1.min.css"/>
     <link rel="stylesheet" href="../../static/libs/font-awesome-4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="../../static/libs/fancybox/jquery.fancybox.css"/>
-    <link rel="stylesheet" href="../../static/libs/owl-carousel/owl.carousel.css"/>
-    <link rel="stylesheet" href="../../static/libs/countdown/jquery.countdown.css"/>
     <link rel="stylesheet" href="../../static/css/zach/fonts.css"/>
     <link rel="stylesheet" href="../../static/css/zach/main.css"/>
     <link rel="stylesheet" href="../../static/css/zach/media.css"/>
-    <link rel="stylesheet" href="../../static/libs/mobilemenu/jquery.mmenu.css"/>
-    <link rel="stylesheet" href="../../static/libs/superfish/megafish.css"/>
-    <link rel="stylesheet" href="../../static/libs/superfish/superfish.css"/>
-    <link rel="stylesheet" href="../../static/libs/hamburger/hamburgers.css"/>
+    <link rel="stylesheet" href="../../static/css/zach/home.css"/>
 
 </head>
 <body>
@@ -156,18 +150,18 @@
             <div class="col-md-12">
                 <div class="main_menu_left">
                     <ul class="menu_left">
-                        <li><a href="">Главная</a></li>
+                        <li><a href="{% url 'home' %}">Главная</a></li>
                         <p class="line_left"></p>
-                        <li><a href="">Журналы</a></li>
+                        <li><a href="{% url 'journals' %}">Журналы</a></li>
                         <p class="line_left"></p>
-                        <li><a href="">Библиотека</a></li>
+                        <li><a href="{% url 'library' %}">Библиотека</a></li>
                     </ul>
                 </div>
                 <div class="main_menu_right">
                     <ul class="menu_right">
-                        <li><a href="">Информация</a></li>
+                        <li><a href="{% url 'information' %}">Информация</a></li>
                         <p class="line_right"></p>
-                        <li><a href="">Обратная связь</a></li>
+                        <li><a href="{% url 'feedback' %}">Обратная связь</a></li>
                         <p class="line_right"></p>
                         <li><a href=""><i class="fa fa-search fa_spin"></i></a></li>
                     </ul>
