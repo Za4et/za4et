@@ -1,0 +1,4 @@
+django==2.0.2
+django-ckeditor==5.4.0
+django-g-recaptcha==0.2.4
+django-autoslug==1.9.3

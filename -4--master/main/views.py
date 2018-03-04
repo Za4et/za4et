@@ -14,8 +14,6 @@ def index(request):
 def start(request):
     return render(request, 'zach/start.html')
 
-def news(request):
-    return render(request, 'zach/news.html')
 
 def journals(request):
     return render(request, 'zach/left_menu/journals.html')

@@ -19,14 +19,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
 
-    <link rel="stylesheet" href="../../static/libs/bootstrap/bootstrap-grid-3.3.1.min.css"/>
-    <link rel="stylesheet" href="../../static/libs/font-awesome-4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="../../static/css/zach/fonts.css"/>
-    <link rel="stylesheet" href="../../static/css/zach/main.css"/>
-    <link rel="stylesheet" href="../../static/css/zach/media.css"/>
-    <link rel="stylesheet" href="../../static/css/zach/home.css"/>
+    <link rel="stylesheet" href="{% static 'libs/bootstrap/bootstrap-grid-3.3.1.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-4.7.0/css/font-awesome.min.css'%}"/>
+{#    <link rel="stylesheet" href="{% static 'css/zach/'%}"/>#}
+    <link rel="stylesheet" href="{% static 'css/zach/main.css'%}">
+    <link rel="stylesheet" href="{% static 'css/zach/media.css'%}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/home.css'%}"/>
 
 </head>
 <body>
@@ -167,9 +167,9 @@
                     </ul>
                 </div>
                 <div class="logotype">
-                    <a href="{% url 'home' %}" class="a_img"><img src="../../static/images/logo.png"
+                    <a href="{% url 'home' %}" class="a_img"><img src="{% static 'images/logo.png'%}"
                                                                   class="logo_up" alt="Logo" border="0" width="213"></a>
-                    <a href="{% url 'home' %}"><img src="../../static/images/logo_ho.png" class="logo_down" alt="Logo"
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo_ho.png'%}" class="logo_down" alt="Logo"
                                                     border="0" width="213"></a>
                 </div>
                 {#                <div class="main_search">#}
@@ -193,7 +193,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="footer_cont">
-                    <img src="../../static/images/logo_yufu_r.png">
+                    <img src="{% static 'images/logo_yufu_r.png' %}">
                 </div>
             </div>
         </div>

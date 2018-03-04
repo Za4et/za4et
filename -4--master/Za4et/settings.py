@@ -38,7 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'news',
+    'search',
+    'journals',
+    'ckeditor',
     'g_recaptcha',
+    'autoslug'
 ]
 
 MIDDLEWARE = [
@@ -64,6 +69,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
             ],
         },
     },
@@ -105,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 
@@ -120,8 +126,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    '/main/static/'
 
+]
 TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'main/templates'),)
 
 GOOGLE_RECAPTCHA_PUBLIC_KEY = '6LckQUcUAAAAAAEuS_VGNUdjcyCgHCemVcWlpc8-'
 GOOGLE_RECAPTCHA_PRIVATE_KEY = '6LckQUcUAAAAAFg_WGh1Ss0-XfLB8asIrSchJUHh'
+
+
+CKEDITOR_UPLOAD_PATH = "uploads/"  # ck-editor settings
+CKEDITOR_FILENAME_GENERATOR = 'utils.get_filename'
+
+
+CKEDITOR_BROWSE_SHOW_DIRS = True
+CKEDITOR_RESTRICT_BY_DATE = True

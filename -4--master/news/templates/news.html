@@ -10,7 +10,13 @@
 
 <body>
 {% block content %}
-    Новости
+
+
+    {% for news in news %}
+        <a href="{{ news.get_absolute_url }}">{{ news.title}}</a>
+        <p>{{news.text|safe }}<p>
+    {% endfor %}
+
 {% endblock %}
 </body>
 </html>

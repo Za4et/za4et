@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'zach/base.html' %}
+
+
+{% block content %}
+    <div class="container">
+
+    <p>{{ article.title }}</p>
+    <p>{{ article.text|safe|linebreaks }}</p>
+        <p>{{ article.created }}</p>
+        {% for category in article.category.all %}
+            <a href="#">#{{ category }}</a>
+    {%endfor  %}
+    </div>
+{% endblock %}
