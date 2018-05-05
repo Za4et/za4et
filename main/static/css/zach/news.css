@@ -1,0 +1,368 @@
+.news_content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 999;
+}
+
+/* ---> news block university <---*/
+.ne_block_univs {
+    position: relative;
+    width: 100%;
+}
+
+.ne_ictis_univ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 230px;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 218px 0, 100% 100%, 0 100%);
+    display: block;
+}
+
+.ne_ictis_univ img {
+    position: absolute;
+    width: 100%;
+    z-index: 1025;
+}
+
+.ne_inep_univ {
+    position: absolute;
+    top: 0;
+    left: 228px;
+    height: 100%;
+    width: 229px;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 100% 0, 217px 100%, 12px 100%);
+
+}
+
+.ne_inep_univ img {
+    position: absolute;
+    width: 100%;
+    z-index: 1025;
+}
+
+.ne_all_univs {
+    position: absolute;
+    top: 0;
+    left: 455px;
+    height: 100%;
+    width: 229px;
+    background-color: #cccccc;
+    clip-path: polygon(12px 0, 217px 0, 100% 100%, 0 100%);
+}
+
+.ne_all_univ img {
+    position: absolute;
+    width: 100%;
+    z-index: 1025;
+}
+
+.ne_irtsu_univ {
+    position: absolute;
+    top: 0;
+    right: 228px;
+    height: 100%;
+    width: 230px;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 100% 0, 218px 100%, 12px 100%);
+}
+
+.ne_irtsu_univ img {
+    position: absolute;
+    width: 100%;
+    z-index: 1025;
+}
+
+.ne_iues_univ {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 230px;
+    background-color: #cccccc;
+    clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.ne_iues_univ img {
+    position: absolute;
+    width: 100%;
+    z-index: 1025;
+}
+
+.ne_all_label, .ne_ictis_label, .ne_inep_label,
+.ne_irtsu_label, .ne_iues_label {
+    cursor: pointer;
+}
+
+.ne_all_label input, .ne_ictis_label input, .ne_inep_label input,
+.ne_irtsu_label input, .ne_iues_label input {
+    display: none;
+}
+
+.ne_univ_opac, .ne_text_univ, .ne_main_news a{
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.ne_univ_opac {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333233;
+    opacity: 0.7;
+    z-index: 1050;
+}
+
+.ne_text_univ {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    z-index: 1100;
+    opacity: 0;
+}
+
+.ne_text_univ .ne_ictis_img{
+    position: relative;
+    top: -3px;
+    width: 20px;
+}
+
+.ne_text_univ .ne_inep_img{
+    position: relative;
+    top: -3px;
+    width: 30px;
+}
+
+.ne_text_univ .ne_tti_img{
+    position: relative;
+    top: -3px;
+    width: 30px;
+}
+
+.ne_text_univ .ne_irtsu_img{
+    position: relative;
+    top: -3px;
+    width: 30px;
+}
+
+.ne_text_univ .ne_iues_img{
+    position: relative;
+    top: -3px;
+    width: 30px;
+}
+
+.ne_ictis_label:hover .ne_univ_opac {
+    opacity: 0.2;
+}
+
+.ne_ictis_label input:checked ~ .ne_univ_opac {
+    background-color: #52011A;
+    opacity: 1;
+}
+
+.ne_ictis_label input:checked ~ .ne_text_univ {
+    opacity: 1;
+}
+
+.ne_inep_label:hover .ne_univ_opac {
+    opacity: 0.2;
+}
+
+.ne_inep_label input:checked ~ .ne_univ_opac {
+    background-color: #52011A;
+    opacity: 1;
+}
+
+.ne_inep_label input:checked ~ .ne_text_univ {
+    opacity: 1;
+}
+
+.ne_all_label:hover .ne_univ_opac {
+    opacity: 0.2;
+}
+
+.ne_all_label input:checked ~ .ne_univ_opac {
+    background-color: #52011A;
+    opacity: 1;
+}
+
+.ne_all_label input:checked ~ .ne_text_univ {
+    opacity: 1;
+}
+
+.ne_irtsu_label:hover .ne_univ_opac {
+    opacity: 0.2;
+}
+
+.ne_irtsu_label input:checked ~ .ne_univ_opac {
+    background-color: #52011A;
+    opacity: 1;
+}
+
+.ne_irtsu_label input:checked ~ .ne_text_univ {
+    opacity: 1;
+}
+
+.ne_iues_label:hover .ne_univ_opac {
+    opacity: 0.2;
+}
+
+.ne_iues_label input:checked ~ .ne_univ_opac {
+    background-color: #52011A;
+    opacity: 1;
+}
+
+.ne_iues_label input:checked ~ .ne_text_univ {
+    opacity: 1;
+}
+/* ---> news block university end <---*/
+
+/* ---> ne block news <--- */
+
+.ne_block_news{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.block_ne_main_news{
+    position: relative;
+    width: 98.5%;
+    height: 600px;
+    margin-top: 35px;
+    background-color: #E4E4E4;
+    z-index: 1010;
+    overflow: hidden;
+
+}
+
+.block_ne_news_img{
+   position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 90%;
+    height: 250px;
+    background-color: #c4c4c4;
+}
+
+.block_ne_news img{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 250px;
+    z-index: 1030;
+}
+.ne_news_text{
+    position: absolute;
+    left: 350px;
+    height: 100%;
+    width: 775px;
+    z-index: 1030;
+}
+.block_ne_news_text{
+    position: relative;
+    left: 15px;
+    top: 250px;
+    height: 100%;
+    width: 90%;
+    z-index: 1030;
+}
+
+.ne_news_parag{
+    position: relative;
+    margin-top: 15px;
+    font-size: 26px;
+    color: #333233;
+    text-align: justify;
+}
+
+.block__text__short_art{
+     position: relative;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.block_ne_news_tags{
+    position: relative;
+    color: #333233;
+    font-size: 20px;
+    display: flex;
+}
+
+.block_ne_news_date_pub{
+    position: relative;
+    color: #333233;
+    font-size: 20px;
+}
+
+
+.block_ne_but_more a{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 25%;
+    height: 60px;
+    color: #ffffff;
+    padding-top: 10px;
+    background-color: #52011A;
+    font-size: 19px;
+    text-align: center;
+    z-index: 1030;
+    padding-bottom: 10px;
+}
+
+
+
+/* ---> ne block news end <--- */
+/*--> adaptive news start <-- */
+
+.ne_all_univs1{
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 98.5%;
+    background-color: #cccccc;
+}
+.ne_all_univs1_img{
+   height: 60px;
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.block_news_firs_line_univ {
+    position: relative;
+    margin-top: 5px;
+    height: 100%;
+    background-color: #cccccc;
+    display: inline-block;
+    width: 49%;
+    cursor: pointer;
+}
+.block_news_univ_img{
+     height: 60px;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.block_news_second_line_univ{
+    position: relative;
+    margin-top: 5px;
+    height: 100%;
+    background-color: #cccccc;
+    display: inline-block;
+    width: 49%;
+    cursor: pointer;
+}
+.block_news_kartinki{
+    display: none;
+}

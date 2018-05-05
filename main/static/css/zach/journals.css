@@ -1,0 +1,1070 @@
+/*---> university blocks <---*/
+.journals_content{
+position: relative;
+width: 100%;
+margin-top: 15px;
+}
+
+.university {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+.university input {
+    display: none;
+}
+.block_university{
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    height: 80px;
+    margin-top: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+.block_university1{
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    height: 80px;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-items: center;
+}
+.university .ictis_block {
+    position: absolute;
+    left: 0;
+    width: 292px;
+    height: 80px;
+    background-color: #cccccc;
+    z-index: 1100;
+    clip-path: polygon(0 0, 272px 0, 100% 100%, 0 100%);
+    cursor: pointer;
+}
+
+.text_ictis {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.text_ictis img {
+    margin-top: -5px;
+    height: 30px;
+}
+
+.ictis_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.block_univ_ictis .ictis_opac_after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    z-index: 1004;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+.ictis_label input:checked ~ .block_univ_ictis .ictis_opac_after {
+    opacity: 1;
+}
+.ictis_label .block_univ_ictis .ictis_opac_after {
+    width: 100%;
+    height: 100%;
+    background-color: #52011A;
+
+}
+
+/*.ictis_opac.active{*/
+    /*background-color: #0F1F2D;*/
+    /*opacity: 1;*/
+/*}*/
+
+.back_ictis {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.ictis_block:hover .back_ictis{
+    transform: scale(1.15);
+}
+
+/*.back_ictis.active{*/
+    /*transform: scale(1.15);*/
+/*}*/
+
+.radio_ictis{
+    position: absolute;
+    z-index: 1050;
+    width: 293px;
+    height: 200px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/*--------------------*/
+
+.university .inep_block {
+    position: absolute;
+    left: 282px;
+    width: 293px;
+    height: 80px;
+    background-color: #cccccc;
+    z-index: 1100;
+    clip-path: polygon(0 0, 273px 0, 100% 100%, 20px 100%);
+    cursor: pointer;
+}
+
+.text_inep {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.text_inep img {
+    height: 35px;
+}
+
+.inep_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.block_univ_inep .inep_opac_after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    z-index: 1004;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+.inep_label input:checked ~ .block_univ_inep .inep_opac_after {
+    opacity: 1;
+}
+
+.inep_label .block_univ_inep .inep_opac_after {
+    width: 100%;
+    height: 100%;
+    background-color: #52011A;
+
+}
+
+/*.inep_opac.active{*/
+    /*background-color: #0F1F2D;*/
+    /*opacity: 1;*/
+/*}*/
+
+.back_inep {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.inep_block:hover .back_inep{
+    transform: scale(1.15);
+}
+
+/*.back_inep.active{*/
+    /*transform: scale(1.15);*/
+/*}*/
+
+.radio_inep{
+    position: absolute;
+    z-index: 1050;
+    width: 293px;
+    height: 200px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/*--------------------*/
+.block_univ_irtsu .irtsu_opac_after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    z-index: 1004;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.irtsu_label input:checked ~ .block_univ_irtsu .irtsu_opac_after {
+    opacity: 1;
+}
+
+.irtsu_label .block_univ_irtsu .irtsu_opac_after {
+    width: 100%;
+    height: 100%;
+    background-color: #52011A;
+
+}
+.university .irtsu_block {
+    position: absolute;
+    right: 282px;
+    width: 293px;
+    height: 80px;
+    background-color: #cccccc;
+    z-index: 1100;
+    clip-path: polygon(0 0, 273px 0, 100% 100%, 20px 100%);
+    cursor: pointer;
+}
+
+.text_irtsu {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.text_irtsu img {
+    height: 30px;
+    margin-top: -5px;
+}
+
+.irtsu_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.irtsu_block:hover .irtsu_opac{
+    background-color: #52011A;
+    opacity: 1;
+}
+
+/*.irtsu_opac.active{*/
+    /*background-color: #AC0439;*/
+    /*opacity: 1;*/
+/*}*/
+
+.back_irtsu {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.irtsu_block:hover .back_irtsu{
+    transform: scale(1.15);
+}
+
+/*.back_irtsu.active{*/
+    /*transform: scale(1.15);*/
+/*}*/
+
+.radio_irtsu{
+    position: absolute;
+    z-index: 1050;
+    width: 293px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/*--------------------*/
+.block_univ_iues .iues_opac_after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    z-index: 1004;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.iues_label input:checked ~ .block_univ_iues .iues_opac_after {
+    opacity: 1;
+}
+
+.iues_label .block_univ_iues .iues_opac_after {
+    width: 100%;
+    height: 100%;
+    background-color: #52011A;
+
+}
+.university .iues_block {
+    position: absolute;
+    right: 0;
+    width: 292px;
+    height: 80px;
+    background-color: #cccccc;
+    z-index: 1100;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%);
+    cursor: pointer;
+}
+
+.text_iues {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.text_iues img {
+    height: 30px;
+    margin-top: -5px;
+}
+
+.iues_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.iues_block:hover .iues_opac{
+    background-color: #52011A;
+    opacity: 1;
+}
+
+/*.iues_opac.active{*/
+    /*background-color: #A0D233;*/
+    /*opacity: 1;*/
+/*}*/
+
+.back_iues {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.iues_block:hover .back_iues{
+    transform: scale(1.15);
+}
+
+/*.back_iues.active{*/
+    /*transform: scale(1.15);*/
+/*}*/
+
+.radio_iues{
+    position: absolute;
+    z-index: 1050;
+    width: 293px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/*---> university blocks end <---*/
+
+/*---> directions <---*/
+.directions {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    margin-top: 10px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.text_direc_bac, .text_direc_spe, .text_direc_mag {
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+.block_direc_baccalaureate img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+.direc_opac_bac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.text_direc_bac {
+    position: absolute;
+    top: 22px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 26px;
+}
+.block_direc_baccalaureate:hover .text_direc_bac {
+    opacity: 0;
+}
+
+.block_direc_baccalaureate:hover .direc_opac_bac {
+    opacity: 0.2;
+}
+.block_course_bac {
+    position: absolute;
+    color: #ffffff;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+.block_direc_baccalaureate:hover .block_course_bac {
+    opacity: 1;
+}
+
+.block_course_bac input {
+    display: none;
+}
+.text_course_bac {
+    position: absolute;
+    top: 22px;
+    left: 58px;
+    color: #ffffff;
+    font-size: 26px;
+    z-index: 1050;
+    text-align: center;
+}
+
+.first_course_bac, .second_course_bac,
+.third_course_bac, .fourth_course_bac {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #52011A;
+    padding-left: 12px;
+    padding-top: 2px;
+    border-radius: 3px;
+    z-index: 1050;
+    cursor: pointer;
+    -webkit-transform: skew(-14deg);
+    -moz-transform: skew(-14deg);
+    -o-transform: skew(-14deg);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.course_text_sk {
+    position: absolute;
+    padding: auto;
+    -webkit-transform: skew(14deg);
+    -moz-transform: skew(14deg);
+    -o-transform: skew(14deg);
+}
+
+.first_course_bac:hover, .second_course_bac:hover,
+.third_course_bac:hover, .fourth_course_bac:hover {
+    color: #ffffff;
+    background-color: #AC0439;
+}
+
+.first_course_bac {
+    left: 133px;
+}
+
+.label_first_course_bac input:checked ~ .first_course_bac {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.second_course_bac {
+    left: 183px;
+}
+
+.label_second_course_bac input:checked ~ .second_course_bac {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.third_course_bac {
+    left: 233px;
+}
+
+.label_third_course_bac input:checked ~ .third_course_bac {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.fourth_course_bac {
+    left: 283px;
+}
+
+.label_fourth_course_bac input:checked ~ .fourth_course_bac {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+
+.block_directions0{
+    position: relative;
+    width: 98.5%;
+    background-color: #cccccc;
+    cursor: pointer;
+    height: 80px;
+    display: flex;
+}
+.block_directions1{
+    position: relative;
+    width: 98.5%;
+    background-color: #cccccc;
+    cursor: pointer;
+    height: 80px;
+    display: flex;
+    margin-top: 5px;
+
+
+
+}
+.block_directions2{
+    position: relative;
+    width: 98.5%;
+    background-color: #cccccc;
+    cursor: pointer;
+    height: 80px;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.direc_opac{
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    bottom: 1px;
+    z-index: 1002;
+}
+.block_directions0{
+    background-image: url("jrnls/jrnls.bakalavr.png");
+}
+.block_directions1{
+background-image: url("jrnls/jrnls.specialist.png");
+}
+.block_directions2{
+background-image: url("jrnls/jrnls.magistr.png");
+}
+
+
+.directions .baccalaureate {
+    position: absolute;
+    left: 0;
+    height: 80px;
+    width: 387px;
+    z-index: 1000;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 100% 0, 367px 100%, 0 100%);
+    cursor: pointer;
+}
+
+.baccalaureate img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+.direc_opac_spe {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.text_direc_spe {
+    position: absolute;
+    top: 22px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 26px;
+}
+.block_direc_specialty:hover .text_direc_spe {
+    opacity: 0;
+}
+
+.block_direc_specialty:hover .direc_opac_spe {
+    opacity: 0.2;
+}
+.block_course_spe {
+    position: absolute;
+    color: #ffffff;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+
+.block_direc_specialty:hover .block_course_spe {
+    opacity: 1;
+}
+
+.block_course_spe input {
+    display: none;
+}
+
+.text_course_spe {
+    position: absolute;
+    top: 22px;
+    left: 35px;
+    color: #ffffff;
+    font-size: 26px;
+    z-index: 1050;
+    text-align: center;
+}
+
+.first_course_spe, .second_course_spe,
+.third_course_spe, .fourth_course_spe,
+.fifth_course_spe {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #52011A;
+    padding-left: 12px;
+    padding-top: 2px;
+    border-radius: 3px;
+    z-index: 1050;
+    cursor: pointer;
+    -webkit-transform: skew(-14deg);
+    -moz-transform: skew(-14deg);
+    -o-transform: skew(-14deg);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.first_course_spe:hover, .second_course_spe:hover,
+.third_course_spe:hover, .fourth_course_spe:hover,
+.fifth_course_spe:hover {
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.first_course_spe {
+    left: 110px;
+}
+
+.label_first_course_spe input:checked ~ .first_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.second_course_spe {
+    left: 160px;
+}
+
+.label_second_course_spe input:checked ~ .second_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.third_course_spe {
+    left: 210px;
+}
+
+.label_third_course_spe input:checked ~ .third_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.fourth_course_spe {
+    left: 260px;
+}
+
+.label_fourth_course_spe input:checked ~ .fourth_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.fifth_course_spe {
+    left: 310px;
+}
+
+.label_fifth_course_spe input:checked ~ .fifth_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+.directions .specialty {
+    position: absolute;
+    right: 377px;
+    height: 80px;
+    width: 386px;
+    z-index: 1000;
+    background-color: #cccccc;
+    clip-path: polygon(20px 0, 100% 0, 367px 100%, 0 100%);
+    cursor: pointer;
+}
+
+
+.specialty img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+
+.directions .magistracy {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    width: 387px;
+    z-index: 1000;
+    background-color: #cccccc;
+    clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%);
+    cursor: pointer;
+}
+
+.magistracy img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+.direc_opac_mag {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.text_direc_mag {
+    position: absolute;
+    top: 22px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.block_direc_magistracy:hover .text_direc_mag {
+    opacity: 0;
+}
+
+.block_direc_magistracy:hover .direc_opac_mag {
+    opacity: 0.2;
+}
+
+.block_course_mag {
+    position: absolute;
+    color: #ffffff;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+
+.block_direc_magistracy:hover .block_course_mag {
+    opacity: 1;
+}
+
+.block_course_mag input {
+    display: none;
+}
+
+.text_course_mag {
+    position: absolute;
+    top: 22px;
+    left: 109px;
+    color: #ffffff;
+    font-size: 26px;
+    z-index: 1050;
+    text-align: center;
+}
+
+.first_course_mag, .second_course_mag {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #52011A;
+    padding-left: 12px;
+    padding-top: 2px;
+    border-radius: 3px;
+    z-index: 1050;
+    cursor: pointer;
+    -webkit-transform: skew(-14deg);
+    -moz-transform: skew(-14deg);
+    -o-transform: skew(-14deg);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.course_text_sk {
+    -webkit-transform: skew(14deg);
+    -moz-transform: skew(14deg);
+    -o-transform: skew(14deg);
+}
+
+.first_course_mag:hover, .second_course_mag:hover {
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.first_course_mag {
+    left: 184px;
+}
+
+.label_first_course_mag input:checked ~ .first_course_mag {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.second_course_mag {
+    left: 234px;
+}
+
+.label_second_course_mag input:checked ~ .second_course_mag {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+/*.direc_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}*/
+
+/*---> directions end <---*/
+
+/*---> selected journals <---*/
+.selected_journals {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    display: block;
+}
+
+.all_journals_rate {
+    position: absolute;
+    left: 0;
+    height: 640px;
+    width: 512px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 368px 0, 100% 100%, 0 100%);
+}
+
+.all_journals_rate img {
+    position: absolute;
+    left: 0;
+    height: 640px;
+    z-index: 1001;
+}
+
+.window_with_journals {
+    position: absolute;
+    right: 0;
+    height: 640px;
+    width: 762px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 144px 100%);
+}
+
+.window_with_journals img {
+    position: absolute;
+    /*right: -5px;*/
+    width: 762px;
+    z-index: 1001;
+}
+.journ_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    bottom: 1px;
+}
+
+
+
+.block_journals1{
+    position: relative;
+    width: 98.5%;
+    background-color: #cccccc;
+    cursor: pointer;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.block_journals2{
+    position: relative;
+    width: 98.5%;
+    background-color: #cccccc;
+    cursor: pointer;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.block_journals1{
+background-image: url("jrnls/jrnls.lft.png");
+}
+.block_journals2{
+background-image: url("jrnls/jrnls.rght.png");
+}
+
+/*---> selected journals end <---*/
+
+/*---> search journals <---*/
+
+.search_journals {
+    /*height: 80px;*/
+    position: relative;
+    margin-top: 10px;/*10px;*/
+    margin-bottom: 30px;/*30px;*/
+    width: 98.5%;
+    background-color: #cccccc;
+    display: block;
+    height: 130px;
+}
+
+.search_journals img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+    max-width: 100%;
+}
+
+.univ_search_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+}
+
+
+/*---> search journals end <---*/

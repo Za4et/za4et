@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}За4ет{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    {% block preloader %}
+    {% endblock %}
+
+    <div class="home_content">
+        <div class="container">
+            <div class="row">
+
+                    <div class="block block--info">
+                        <div class="block__body block__body--info">
+                        <div class="block__text">Добро пожаловать на сайт,
+                            <p>позволяющий сделать</p>
+                            <p>данные об успеваемости</p>
+                            <p>более централизованными.</p>
+                            <p>Здесь вы можете:</p>
+                        </div>
+                        </div>
+                        </div>
+                    <div class="block block--date">
+                        <div class="block__body block__body--date">
+                        <div class="block__text--date"></div>
+                        <div class="block__text">
+                                <div class="number_text">
+                                    <script type="text/javascript">
+                                        var d = new Date();
+                                        document.write(d.getDate());
+                                    </script>
+                                </div>
+                                <p class="month_text">
+                                    <script type="text/javascript">
+                                        var d = new Date();
+
+                                        var month = ["января,", "февраля,", "марта,", "апреля,", "мая,", "июня,",
+                                            "июля,", "августа,", "сентября,", "октября,", "ноября,", "декабря,"];
+
+                                        document.write(month[d.getMonth()]);
+                                    </script>
+                                </p>
+                                <p class="day_text">
+                                    <script type="text/javascript">
+                                        var d = new Date();
+
+                                        var day = ["Воскресенье", "Понедельник", "Вторник",
+                                            "Среда", "Четверг", "Пятница", "Суббота"];
+
+                                        document.write(day[d.getDay()]);
+                                    </script>
+                                </p>
+{#                                <p id="week" class="week_text"></p>#}
+                            </div>
+
+
+
+                            </div>
+                    </div>
+
+                    <a class="block block--news" href="{% url 'news' %}">
+                        <div class="block__body block__body--news ">
+                        <div class="block__text">Узнать актуальные <p>новости</p></div>
+                        </div>
+                    </a>
+
+                    <a class="block block--uspev" href="{% url 'journals' %}">
+                        <div class="block__body block__body--uspev">
+                        <div class="block__text">Посмотреть данные об <p>успеваемости</p></div>
+                        </div>
+                    </a>
+                    <a class="block block--mater" href="{% url 'library' %}">
+                        <div class="block__body block__body--mater">
+                        <div class="block__text">Найти учебные <p>материалы</p></div>
+                        </div>
+                    </a>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

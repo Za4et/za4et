@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Имя юзера{% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <div class="private_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="office_block">
+                        <div class="block_about_user">
+
+                            <div class="photo_account">
+                                <div class="photo_block">
+                                    <div class="icon_account"><i class="fa fa-user"></i></div>
+                                    <img src="{% static 'images/lk/asd.jpg' %}">
+                                    <div class="photo_opac">
+                                        <form class="upload_photo_profile">
+                                            <input type="file" name="profile_photo" accept="image/*,image/jpeg">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_profile_block">
+                                <div class="block_user_data">
+                                    <div class="text_profile_name">Ложечка Виктория Игоревна</div>
+                                    <div class="text_profile">Место обучения:
+                                        <div class="text_prof_un">
+                                            Институт компьютерных технологий и информационной безопасности
+                                            Академический бакалавр, 2курс аб-о-8 10.03.01 Информационная безопасность
+                                            Информационно-аналитические системы финансового мониторинга
+                                        </div>
+                                    </div>
+                                    <div class="text_profile">Учебная группа:</div>
+                                    <div class="text_prof_group">КТбо2-8</div>
+                                </div>
+                                <div class="prof_line"></div>
+                                <div class="prof_bg_image">
+                                    <img src="{% static 'images/lk/skrep.jpeg' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block_access">
+                            <div class="your_journals_block">
+                                <img src="{% static 'images/lk/lk.journals.png' %}">
+                                <div class="acc_block_opac"></div>
+                            </div>
+                            <div class="available_files_block">
+                                <img src="{% static 'images/lk/lk.book.png' %}">
+                                <div class="acc_block_opac"></div>
+                            </div>
+                            <div class="block_bg_fijourn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

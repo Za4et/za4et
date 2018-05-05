@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Новости{% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <div class="news_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="news_block">
+                        <div class="ne_block_univs">
+
+                            <form class="news_form">
+                                <div class="ne_all_univs1">
+                                    <label class="ne_all_label">
+                                        <input type="radio" name="news_univs" checked="checked" value="news_all">
+                                        <span class="ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/logo_yufu_w.png' %}" class="ne_tti_img">
+                                            ИТА ЮФУ
+                                        </p>
+                                    </label>
+                                    <img class="ne_all_univs1_img" src="{% static 'images/ne/tti_paper.png' %}" alt="">
+                                </div>
+                                <div class="block_news_firs_line_univ block_ne_ictis_univ">
+                                    <label class="ne_ictis_label">
+                                        <input type="radio" name="news_univs" value="news_ictis">
+                                        <span class="ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/jrnls/ictis.logo.png' %}" class="ne_ictis_img">
+                                            ИКТИБ
+                                        </p>
+                                    </label>
+                                    <img class="block_news_univ_img" src="{% static 'images/ne/ictis_paper.png' %}" alt="">
+                                </div>
+
+                                <div class="block_news_firs_line_univ block_ne_inep_univ">
+                                    <label class="ne_inep_label">
+                                        <input type="radio" name="news_univs" value="news_inep">
+                                        <span class="ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/jrnls/inep.logo.png' %}" class="ne_inep_img">
+                                            ИНЭП
+                                        </p>
+                                    </label>
+                                    <img class="block_news_univ_img" src="{% static 'images/ne/inep_paper.png' %}" alt="">
+                                </div>
+
+                                <div class="block_ne_all_univs">
+                                    <label class="ne_all_label">
+                                        <input type="radio" name="news_univs" checked="checked" value="news_all">
+                                        <span class="ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/logo_yufu_w.png' %}" class="ne_tti_img">
+                                            ИТА ЮФУ
+                                        </p>
+                                    </label>
+                                    <img src="{% static 'images/ne/tti_paper.png' %}" alt="">
+                                </div>
+
+                                <div class="block_news_second_line_univ block_ne_irtsu_univ">
+                                    <label class="ne_irtsu_label">
+                                        <input type="radio" name="news_univs" value="news_irtsu">
+                                        <span class="ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/jrnls/irtsu.logo.png' %}" class="ne_irtsu_img">
+                                            ИРТСУ
+                                        </p>
+                                    </label>
+                                    <img class="block_news_univ_img" src="{% static 'images/ne/irtsu_paper.png' %}" alt="">
+                                </div>
+
+                                <div class="block_news_second_line_univ block_ne_iues_univ">
+                                    <label class="ne_iues_label">
+                                        <input type="radio" name="news_univs" value="news_iues">
+                                        <span class="ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/jrnls/iues.logo.png' %}" class="ne_iues_img">
+                                            ИУЭС
+                                        </p>
+                                    </label>
+                                    <img class="block_news_univ_img" src="{% static 'images/ne/iues_paper.png' %}" alt="">
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="ne_block_news">
+                            <div class="block_ne_main_news ne_main_news">
+                                <div class="block_ne_news_img ne_news_img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="block_ne_news_text ne_news_text">
+                                    <div class="ne_news_parag">
+                                        Заголовок 1
+                                    </div>
+                                    <div class="block_ne_news_date_pub">
+                                        Опубликованно: <div class="ne_news_public_date">22.12.3054</div>
+                                    </div>
+                                    <div class="block_ne_news_tags">
+                                        Теги:<div class="ne_news_tags_tg"><a href="">#tti</a></div>
+                                    </div>
+                                    <div class="block__text__short_art ne_news_short_art" >
+                                        Не следует, однако забывать, что укрепление и развитие структуры требуют от нас
+                                        анализа направлений прогрессивного развития. Разнообразный и богатый опыт новая
+                                        модель организационной деятельности требуют определения и уточнения позиций,
+                                        занимаемых участниками в отношении поставленных задач.
+                                    </div>
+                                    <div class="ne_news_tags">
+                                        Теги:<div class="ne_news_tags_tg"><a href="">#tti</a></div>
+                                    </div>
+                                    <div class="ne_news_date_pub">
+                                        Опубликованно: <div class="ne_news_public_date">22.12.3054</div>
+                                    </div>
+                                </div>
+                                <div class="block_ne_but_more ne_but_more">
+                                    <a href="">Читать далее</a>
+                                </div>
+                            </div>
+
+                            <div class="block_ne_main_news ne_main_news">
+                                <div class="block_ne_news_img ne_news_img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="block_ne_news_text ne_news_text">
+                                    <div class="ne_news_parag">
+                                        Заголовок 1
+                                    </div>
+                                    <div class="block_ne_news_date_pub">
+                                        Опубликованно: <div class="ne_news_public_date">22.12.3054</div>
+                                    </div>
+                                    <div class="block_ne_news_tags">
+                                        Теги:<div class="ne_news_tags_tg"><a href="">#tti</a></div>
+                                    </div>
+                                    <div class="block__text__short_art ne_news_short_art" >
+                                        Не следует, однако забывать, что укрепление и развитие структуры требуют от нас
+                                        анализа направлений прогрессивного развития. Разнообразный и богатый опыт новая
+                                        модель организационной деятельности требуют определения и уточнения позиций,
+                                        занимаемых участниками в отношении поставленных задач.
+                                    </div>
+                                    <div class="ne_news_tags">
+                                        Теги:<div class="ne_news_tags_tg"><a href="">#tti</a></div>
+                                    </div>
+                                    <div class="ne_news_date_pub">
+                                        Опубликованно: <div class="ne_news_public_date">22.12.3054</div>
+                                    </div>
+                                </div>
+                                <div class="block_ne_but_more ne_but_more">
+                                    <a href="">Читать далее</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

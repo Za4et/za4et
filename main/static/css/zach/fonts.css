@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/avenir/AvenirNextCyr-Regular.eot');
+    src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+    url('../../fonts/avenir/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/avenir/AvenirNextCyr-Regular.woff') format('woff'),
+    url('../../fonts/avenir/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../../fonts/droid-sans/DroidSans.ttf');
+    src: local('Droid Sans'),
+    url('../../fonts/droid-sans/DroidSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

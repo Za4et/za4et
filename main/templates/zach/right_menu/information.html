@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Информация{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    <div class="information_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="information_block">
+                        <div class="info_text">
+                            <div class="info_text_img"><img src="{% static 'images/inf/zach.png' %}" alt=""></div>
+                            <div class="info_bords">
+                                <div class="info_bord_1"></div>
+                                <div class="info_bord_2"></div>
+                                <div class="info_bord_3"></div>
+                                <div class="info_bord_4"></div>
+                                <div class="info_bord_5"></div>
+                                <div class="info_bord_6"></div>
+                                <div class="info_bord_7"></div>
+                                <div class="info_bord_8"></div>
+                                <div class="info_bord_9"></div>
+                                <div class="info_bord_10"></div>
+                                <div class="info_bord_11"></div>
+                                <div class="info_bord_12"></div>
+                                <div class="info_bord_13"></div>
+                                <div class="info_bord_14"></div>
+                                <div class="info_bord_15"></div>
+                                <div class="info_bord_16"></div>
+                            </div>
+                            <p class="text_info_size info_text_p">
+                                Добро пожаловать на портал “За4ёт”. Сайт, создан командой из 8 студентов, в качестве
+                                курсовой работы по дисциплине “Введение в инженерную деятельность”. На выбор тематики
+                                нас
+                                подтолкнула одна из острых проблем студента - разрозненность данных об успеваемости.</p>
+                            <div class="info_text_img1"><img src="{% static 'images/inf/zach.png' %}" alt=""></div>
+                            <p class="text_info_size info_text_p">Удобное автоматизированное отслеживание успеваемости позволяет студенту с
+                                легкостью контролировать полноту и количество выставляемых баллов. Так же одним из
+                                преимуществ сайта является информационный модуль «Новости», с помощью которого можно
+                                узнать о жизни каждогоинститута инженерной технологической академии в одном месте, а так
+                                же получить актуальную информацию,
+                                связанную с функционированием данного портала. Раздел библиотека позволяет пользователям
+                                найти необходимый учебный материал, отсутствующий в основной библиотеке. Данная функция
+                                обеспечивает преподавателю быстрое распространение лекционного материала между всеми его
+                                студентами.</p>
+                            <p class="text_info_size info_text_no_p">Совокупность всех функций и идей, реализованных на данном портале, направлены на улучшение обучения и быстрый доступ к обучающим данным.</p>
+                            <p class="text_info_size info_text_ac_p">Мы надеемся, что наш сайт удовлетворит ваши запросы!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

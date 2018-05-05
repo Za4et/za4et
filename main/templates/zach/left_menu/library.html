@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+{%load static%}
+<html lang="ru">
+
+<head>
+    {% block title %}Библиотека{% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <div class="library_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="library_block">
+                        <div class="library_search">
+                            <img src="{% static 'images/lbrr/lbrr.search.png' %}">
+                            <div class="opacity_lbrr"></div>
+                            <form class="lbrr_search_form">
+                                <input type="text" class="lbrr_in_search" placeholder="Лекции ОС...">
+                                <input type="submit" value="Найти" class="lbrr_but_sum">
+                            </form>
+                        </div>
+                        <div class="files_block">
+                            <div class="block_library block_library_tree">
+                                <img src="{% static 'images/lbrr/lbrr.left.png' %}">
+                                <div class="opacity_lbrr"></div>
+                            </div>
+                            <div class="block_library block_library_found_files">
+                                <img src="{% static 'images/lbrr/lbrr.rght.png' %}">
+                                <div class="opacity_lbrr"></div>
+                            </div>
+
+                            <div class="library_download">
+                                <img src="{% static 'images/lbrr/lbrr.rght.button.png' %}">
+                                <div class="opacity_lbrr"></div>
+                                <div class="lbrr_download_file">
+                                    <div class="lbrr_icon_down_f">
+                                        <img src="{% static 'images/lbrr/down_1.png' %}" alt="" class="lbrr_down_img_1">
+                                        <img src="{% static 'images/lbrr/down_2.png' %}" alt="" class="lbrr_down_img_2">
+                                    </div>
+                                    <div class="lbrr_text_down_f">Файл</div>
+                                </div>
+                                <div class="lbrr_download_zip">
+
+                                    <div class="lbrr_icon_down_z">
+                                        <img src="{% static 'images/lbrr/down_1.png' %}" alt="" class="lbrr_down_img_1">
+                                        <img src="{% static 'images/lbrr/down_2.png' %}" alt="" class="lbrr_down_img_2">
+                                    </div>
+                                    <div class="lbrr_text_down_z">Архивом</div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="library_download1">
+                             <img src="{% static 'images/lbrr/lbrr.rght.button.png' %}">
+                                <div class="opacity_lbrr1"></div>
+                                <div class="lbrr_download_file">
+                                    <div class="lbrr_icon_down_f">
+                                        <img src="{% static 'images/lbrr/down_1.png' %}" alt="" class="lbrr_down_img_1">
+                                        <img src="{% static 'images/lbrr/down_2.png' %}" alt="" class="lbrr_down_img_2">
+                                    </div>
+                                    <div class="lbrr_text_down_f"><i class="fa fa-download" aria-hidden="true"></i>Файл</div>
+                                </div>
+                                <div class="lbrr_download_zip">
+
+                                    <div class="lbrr_icon_down_z">
+                                        <img src="{% static 'images/lbrr/down_1.png' %}" alt="" class="lbrr_down_img_1">
+                                        <img src="{% static 'images/lbrr/down_2.png' %}" alt="" class="lbrr_down_img_2">
+                                    </div>
+                                    <div class="lbrr_text_down_z"><i class="fa fa-download" aria-hidden="true"></i>Архивом</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>
