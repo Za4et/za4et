@@ -33,22 +33,16 @@
                                 <img src="{% static 'images/lbrr/lbrr.left.png' %}">
                                 <div class="opacity_lbrr"></div>
                                 <div class="lib_materials">
-
+                                    {% for discipline in disciplines %}
                                     <div class="lib_subject">
-                                        <a href="">Математика</a>
+                                        <a href="">{{ discipline.name }}</a>
                                     </div>
-
+                                    {% endfor %}
                                     <div class="lib_subject">
                                         <a href="">Скриптонитский</a>
                                     </div>
-{#                                    {% for material in materials %}#}
-{#                                        {{ material.name }}#}
-{#                                        {{ material.discipline.name }}#}
-{#                                        {{ material.teacher }}#}
-{#                                    {% endfor %}#}
-{#                                    {% for discipline in disciplines %}#}
-{#                                        <a href="#">{{ discipline.name }}</a><br/>#}
-{#                                    {% endfor %}#}
+
+
                                 </div>
                             </div>
 

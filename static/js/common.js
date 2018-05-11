@@ -22,6 +22,16 @@ $(document).ready(function () {
                 , 3500);
         };
 
+        // search
+
+        $(".open_main_search").click(function () {
+            $(".main_search").fadeIn(500);
+        });
+
+        $(".search_main_close").click(function () {
+            $(".main_search").fadeOut(300);
+        });
+
         // login form
 
         $(".login_link").click(function () {
@@ -52,6 +62,7 @@ $(document).ready(function () {
                 $(".forget_sheet").fadeOut(250);
                 $(".register_sheet").fadeOut(200);
                 $(".backg_sheet").fadeOut(150);
+                $(".main_search").fadeOut(300);
             }
         });
 
@@ -109,7 +120,7 @@ $(document).ready(function () {
 
         /* --- bac end --- */
 
-        /* --- bac --- */
+        /* --- spe --- */
 
         if ($('.specialty input').is(':checked')) {
             $('.direc_opac_bac').css('opacity', '');
@@ -144,9 +155,9 @@ $(document).ready(function () {
             }
         })
 
-        /* --- bac end --- */
+        /* --- spe end --- */
 
-        /* --- bac --- */
+        /* --- mag --- */
 
         if ($('.magistracy input').is(':checked')) {
             $('.direc_opac_bac').css('opacity', '');
@@ -180,13 +191,31 @@ $(document).ready(function () {
             }
         })
 
-        /* --- bac end --- */
+        /* --- mag end --- */
 
-        /* --- news --- */
+        /*jrnls*/
+
+        $('.journ_frame').hover(
+            function () {
+                $('.journ_win_frame').css('background-color', '#AC0439')
+            },
+            function () {
+                $('.journ_win_frame').css('background-color', '#333233')
+            });
 
 
+        /*jrnls end*/
 
-        /* --- news end --- */
+        /* lbrr */
 
+        $('.lib_frame').hover(
+            function () {
+                $('.lib_backg_frame').css('background-color', '#AC0439')
+            },
+            function () {
+                $('.lib_backg_frame').css('background-color', '#333233')
+            });
+
+        /* lbrr end */
     }
 );

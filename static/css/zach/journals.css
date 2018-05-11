@@ -836,6 +836,65 @@
     z-index: 1001;
 }
 
+.journ_win_rate{
+    position: absolute;
+    height: 610px;
+    width: 355px;
+    margin: 15px 15px;
+    padding-left: 17px;
+    z-index: 1010;
+    direction: rtl;
+    overflow-y: scroll;
+}
+
+/*.journ_win_rate::-webkit-scrollbar{*/
+    /*width: 8px;*/
+/*}*/
+
+.journal{
+    float: left;
+    position: relative;
+    margin: 0 0 15px 15px;
+    height: 180px;
+    width: 60px;
+    background-color: #52011a;
+    z-index: 1015;
+    cursor: pointer;
+}
+
+.journal_circle{
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 22px;
+    height: 22px;
+    border-radius: 30px;
+    border: 3px solid #ffffff;
+    background-color: #333233;
+}
+
+.journal_backg_n{
+    position: absolute;
+    top: 60px;
+    left: 12px;
+    width: 36px;
+    height: 109px;
+    background-color: #fff0ff;
+}
+
+
+.journal_name{
+    position: absolute;
+    top: 40px;
+    left: -36px;
+    width: 109px;
+    color: #333233;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+/*win with journ*/
+
 .window_with_journals {
     position: absolute;
     right: 0;
@@ -860,6 +919,41 @@
     height: 100%;
     width: 100%;
     z-index: 1002;
+}
+
+.journ_win_frame{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 727px;
+    height: 610px;
+    z-index: 1010;
+    background-color: #333233;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 139px 100%);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.journ_backg_frame{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 721px;
+    height: 604px;
+    z-index: 1012;
+    background-color: #52011a;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 139px 100%);
+}
+
+.journ_frame{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 727px;
+    height: 610px;
+    z-index: 1015;
 }
 
 /*---> selected journals end <---*/

@@ -9,6 +9,11 @@
     z-index: 999;
 }
 
+.home_block{
+    position: relative;
+    width: 100%;
+}
+
 .home_content .opac_left {
     position: absolute;
     width: 100%;
@@ -32,11 +37,10 @@
 .home_content .info_site {
     position: absolute;
     left: 0;
-    /*clip-path: url("#mask_info_site");*/
-    clip-path: polygon(0 0, 100% 0, 555px 100%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 555px 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 540px 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 540px 100%, 0 100%);
     background-color: #ffffff;
-    width: 617px;
+    width: 602px;
     height: 365px;
 }
 
@@ -44,20 +48,20 @@
     position: absolute;
     left: 0;
     margin-top: 375px;
-    clip-path: polygon(0 0, 100% 0, 492px 100%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 492px 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 477px 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 477px 100%, 0 100%);
     background-color: #ffffff;
-    width: 553px;
+    width: 538px;
     height: 365px;
 }
 
 .home_content .block_news {
     position: absolute;
     right: 0;
-    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
-    -webkit-clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(41px 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(41px 0, 100% 0, 100% 100%, 0 100%);
     background-color: #ffffff;
-    width: 583px;
+    width: 569px;
     height: 240px;
     cursor: pointer;
 
@@ -67,10 +71,10 @@
     position: absolute;
     right: 0;
     margin-top: 250px;
-    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
-    -webkit-clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(41px 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(41px 0, 100% 0, 100% 100%, 0 100%);
     background-color: #ffffff;
-    width: 625px;
+    width: 611px;
     height: 240px;
     cursor: pointer;
 }
@@ -82,7 +86,7 @@
     clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
     -webkit-clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
     background-color: #ffffff;
-    width: 667px;
+    width: 652px;
     height: 240px;
     cursor: pointer;
 }

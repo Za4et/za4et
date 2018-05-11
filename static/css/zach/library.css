@@ -83,6 +83,44 @@
     z-index: 1005;
 }
 
+.lib_materials{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 340px;
+    height: 690px;
+    padding-left: 15px;
+    z-index: 1015;
+    overflow-y: scroll;
+    direction: rtl;
+}
+
+.lib_subject{
+    position: relative;
+    width: 310px;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-top: 3px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.lib_subject a{
+    color: #52011a;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.lib_subject a:hover{
+    color: #AC0439;
+}
+
+/*founfiles*/
+
 .found_files {
     position: absolute;
     right: 0;
@@ -97,6 +135,47 @@
     position: absolute;
     z-index: 1005;
 }
+
+.lib_backg_frame {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 729px;
+    height: 600px;
+    background-color: #333233;
+    z-index: 1010;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 121px 100%);
+}
+
+.lib_win_frame {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 723px;
+    height: 594px;
+    background-color: #ffffff;
+    z-index: 1010;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 120px 100%);
+}
+
+.lib_frame{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 723px;
+    height: 594px;
+    z-index: 1015;
+}
+
+.lib_win_frame:hover +~ .lib_backg_frame{
+    background-color: #AC0439;
+}
+
+/*download*/
 
 .library_download {
     position: absolute;

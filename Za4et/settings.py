@@ -83,7 +83,7 @@ DATABASES = {
             'NAME': 'za4et',
             'USER': 'za4et',
             'PASSWORD': 'za4et228',
-            'HOST': 'localhost',
+            'HOST': 'zorkgb05.fvds.ru',
             'PORT': '',
         }
     }
