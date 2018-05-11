@@ -193,13 +193,3 @@ class Journal(models.Model):
     def __str__(self):
         return self.link
 
-
-class Task(models.Model):
-    CHOICES = (('open', 'open'), ('closed', 'closed'))
-    task = models.CharField(max_length=200)
-    date = models.DateField(default=timezone.now())
-    status = models.CharField(max_length=200, choices=CHOICES)
-
-
-class Executor(models.Model):
-    task = models.ManyToManyField(Task)

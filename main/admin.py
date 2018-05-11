@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from main.models import News, Category, Institute, Files, Teacher, TagFiles, Discipline, Journal, Group, FormStyding, \
-    Task, Executor, Student
+Student
 
 admin.site.register(News)
 
@@ -14,8 +14,6 @@ class TagAdmin(admin.ModelAdmin):
 
 admin.site.register(Discipline)
 admin.site.register(Category)
-admin.site.register(Student)
-admin.site.register(Task)
 admin.site.register(Teacher)
 admin.site.register(Group)
 admin.site.register(FormStyding)

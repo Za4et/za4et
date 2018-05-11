@@ -9,7 +9,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 
 from Za4et.local_settings import BASE_DIR
-from main.models import News, Files, Discipline, Group, Student
+from main.models import News, Files, Discipline, Group, Student, Journal
 
 
 def index(request):
@@ -51,7 +51,7 @@ def library(request):
         return render(request, 'zach/left_menu/library.html', {'materials': materials, 'search': search})
     else:
         disciplines = Discipline.objects.all()
-        return render(request, 'zach/left_menu/library.html', {'disciplines': disciplines})
+        return render(request, 'zach/left_menu/library.html', {'disciplines': disciplines.order_by('name')})
 
 
 def questions(request):
@@ -91,11 +91,48 @@ def get_files(request):
 
 def logn(request):
     user = request.POST['login']
-    print(user)
     password = request.POST['pass']
     user = authenticate(username=user, password=password)
     login(request, user)
     return redirect('/account/')
 
+
+from django.http import Http404
+
+
 def res_search(request):
-    return render(request, 'zach/res_search.html')
+    search_list = {}
+    if request.GET.get('main_search'):
+        if request.GET.get('news'):
+            news_check = True
+            news = request.GET.get('main_search')
+            news_list = News.objects.filter(Q(title__icontains=news) |
+                                            Q(text__icontains=news) |
+                                            Q(institute__name__icontains=news) |
+                                            Q(category__title__icontains=news)
+
+                                            )
+            search_list['new_on']=news_check
+            search_list['news'] = news_list
+        if request.GET.get('library'):
+            library_check = True
+            print(library_check)
+            library = request.GET.get('main_search')
+            materials = Files.objects.filter(Q(name__icontains=library) |
+                                             Q(tag__name__icontains=library) |
+                                             Q(discipline__name__icontains=library) |
+                                             Q(teacher__fio__icontains=library))
+            search_list['materials'] = materials
+            search_list['library_on'] = library_check
+        if request.GET.get('journals'):
+            groups_check = True
+            journals = request.GET.get('main_search')
+            group_list = Journal.objects.filter(Q(group__name__icontains=journals) |
+                                                Q(discipline__name__icontains=journals)
+                                                ).values('link', 'group__name', 'group__slug')
+            search_list['groups'] = group_list
+            search_list['groups_on'] = groups_check
+
+        return render(request, 'zach/res_search.html', search_list)
+    else:
+        return Http404

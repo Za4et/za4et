@@ -108,13 +108,10 @@
                                         <script>
                                             function cut_text(id)
                                             {
-
-
                                                 var elem = document.getElementById(id);
                                                 var htmlObject = $(elem);
                                                 var tag = '.short-'+id;
                                                 $('.short{{ new.id }}').append(htmlObject.text().slice(0,200)+'...');
-
                                             }
 
                                             cut_text('{{ new.id }}')

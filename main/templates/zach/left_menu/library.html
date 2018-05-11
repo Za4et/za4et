@@ -28,7 +28,6 @@
                         </div>
 
                         <div class="files_block">
-
                             <div class="tree_files">
                                 <img src="{% static 'images/lbrr/lbrr.left.png' %}">
                                 <div class="opacity_lbrr"></div>
@@ -38,21 +37,21 @@
                                         <a href="">{{ discipline.name }}</a>
                                     </div>
                                     {% endfor %}
+                                {% for material in materials %}
                                     <div class="lib_subject">
-                                        <a href="">Скриптонитский</a>
+                                        <a href="">{{ material.name }}</a>
                                     </div>
-
-
+                                {% endfor %}
                                 </div>
                             </div>
-
+                        </div>
                             <div class="found_files">
                                 <img src="{% static 'images/lbrr/lbrr.rght.png' %}">
                                 <div class="opacity_lbrr"></div>
                                 <div class="lib_backg_frame">
                                     <div class="lib_win_frame">
                                         <div class="lib_frame">
-                                            <iframe src="#" name="lib_frame" class="lib_frame"></iframe>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
