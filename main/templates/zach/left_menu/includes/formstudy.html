@@ -1,0 +1,90 @@
+{% load static %}
+<div class="directions">
+
+    <div class="baccalaureate">
+        <img src="{% static 'images/jrnls/jrnls_bakalavr.png' %}">
+        <div class="direc_opac_bac"></div>
+        <div class="text_direc_bac">Бакалавриат</div>
+        <div class="block_course_bac">
+            <div class="text_course_bac">Курс:</div>
+            <label class="label_first_course_bac">
+                <input type="radio" name="course" value="1_course_bac" class="input_first_bac">
+                <div class="first_course_bac" onclick="get_journals('Бакалавриат' , 1)">
+                    <div class="course_text_sk" >1</div>
+                </div>
+            </label>
+            <label class="label_second_course_bac">
+                <input type="radio" name="course" value="2_course_bac">
+                <div class="second_course_bac" onclick="get_journals('Бакалавриат' , 2)">
+                    <div class="course_text_sk" >2</div>
+                </div>
+            </label>
+            <label class="label_third_course_bac">
+                <input type="radio" name="course" value="3_course_bac">
+                <div class="third_course_bac" onclick="get_journals('Бакалавриат' , 3)">
+                    <div class="course_text_sk" >3</div>
+                </div>
+            </label>
+            <label class="label_fourth_course_bac" onclick="get_journals('Бакалавриат' , 4)">
+                <input type="radio" name="course" value="4_course_bac">
+                <div class="fourth_course_bac">
+                    <div class="course_text_sk" >4</div>
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="specialty">
+        <img src="{% static 'images/jrnls/jrnls_specialist.png' %}">
+        <div class="direc_opac_spe"></div>
+        <div class="text_direc_spe">Специалитет</div>
+        <div class="block_course_spe">
+            <div class="text_course_spe">Курс:</div>
+            <label class="label_first_course_spe">
+                <input type="radio" name="course" value="1_course_spe">
+                <div class="first_course_spe" onclick="get_journals('Специалитет' , 1)">
+                    <div class="course_text_sk" >1</div>
+                </div>
+            </label>
+            <label class="label_second_course_spe">
+                <input type="radio" name="course" value="2_course_spe">
+                <div class="second_course_spe" onclick="get_journals('Специалитет' , 2)">
+                    <div class="course_text_sk" >2</div>
+                </div>
+            </label>
+            <label class="label_third_course_spe">
+                <input type="radio" name="course" value="3_course_spe">
+                <div class="third_course_spe" onclick="get_journals('Специалитет' , 3)">
+                    <div class="course_text_sk" >3</div>
+                </div>
+            </label>
+            <label class="label_fourth_course_spe">
+                <input type="radio" name="course" value="4_course_spe">
+                <div class="fourth_course_spe" onclick="get_journals('Специалитет' , 4)">
+                    <div class="course_text_sk" >4</div>
+                </div>
+            </label>
+            <label class="label_fifth_course_spe">
+                <input type="radio" name="course" value="4_course_spe">
+                <div class="fifth_course_spe" onclick="get_journals('Специалитет' , 5)">
+                    <div class="course_text_sk" >5</div>
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="magistracy">
+        <img src="{% static 'images/jrnls/jrnls_magistr.png' %}">
+        <div class="direc_opac_mag"></div>
+        <div class="text_direc_mag">Магистратура</div>
+        <div class="block_course_mag">
+            <div class="text_course_mag">Курс:</div>
+            <label class="label_first_course_mag">
+                <input type="radio" name="course" value="1_course_mag" onclick="get_journals('Магистратура' , 1)">
+                <div class="first_course_mag" >1</div>
+            </label>
+            <label class="label_second_course_mag">
+                <input type="radio" name="course" value="2_course_mag" onclick="get_journals('Магистратура' , 2)">
+                <div class="second_course_mag" >2</div>
+            </label>
+        </div>
+    </div>
+</div>

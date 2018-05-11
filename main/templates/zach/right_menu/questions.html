@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Вопросы?{% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <div class="questions_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="questions_block">
+                        <div class="quest_jour_block">
+                            <div class="quest_jour_gif"></div>
+                            <div class="quest_jour_text">
+                                <div class="quest_jour_text_parag">Журналы</div>
+                                <div class="quest_jour_text_about">
+                                    Работа с разделом "Журналы" осуществляется путем выбора пунктов меню. Для того,
+                                    чтобы получить данные о вашей успеваемости, для началала выберите институт, в
+                                    котором проходите обучение, затем выберите подразделение и курс, на которых
+                                    обучаетесь. После проделанных действий в левом окне появится список групп,
+                                    подходящих под выбранные условия, выберите ту, в которой состоите, после чего вы
+                                    получите доступ к предварительному, а также полному просмотрам вашей успеваемости.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quest_lib_block">
+                            <div class="quest_lib_gif"></div>
+                            <div class="quest_lib_text">
+                                <div class="quest_lib_text_parag">Библиотека</div>
+                                <div class="quest_lib_text_about">
+                                    Работа с разделом "Библиотека" осуществляется путем поиска интересующей вас
+                                    литературы. Для начала введите ключевое(ые) слово(а) в поле поисковой строки, а
+                                    затем
+                                    нажмите на кнопку поиска. После проделанных действий в левом окне появиться список
+                                    файлов, имеющих в своем имени, схожие с введенными вами, ключевые слова. Выберите
+                                    интересующий вас файл, после чего вы получите возможность к предварительному
+                                    просмотру, а также скачиванию в двух вариантах: файлом/архивом.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quest_text_form_req">
+                            <p>Если у вас остались вопросы, либо вы хотите сообщить об ошибке,</p>
+                            <p>то воспользуйтесь формой обратной связи</p>
+                        </div>
+                        <div class="quest_form_quest">
+                            <form>
+                                <div class="quest_text_que">Ваши ФИО:</div>
+                                <input type="text" class="quest_form_input" placeholder="Иванов Иван Иванович">
+                                <div class="quest_text_que">Ваш Email:</div>
+                                <input type="email" class="quest_form_input" placeholder="ivanov_i_i@mail.ru">
+                                <div class="quest_text_que">Напишите текст вашего вопроса или опишите возникшую проблему:</div>
+                                <textarea name=""></textarea>
+                                <input type="submit" class="quest_form_sum">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

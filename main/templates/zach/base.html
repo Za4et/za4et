@@ -1,0 +1,268 @@
+{% load staticfiles %}
+{% load profile %}
+<!DOCTYPE html>
+
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    {#    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">#}
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'libs/bootstrap/bootstrap-grid-3.3.1.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-4.7.0/css/font-awesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-5.0.8/css/fontawesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/fonts.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/media.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/home.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/library.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/account.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/news.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/res_search.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/information_questions.css' %}"/>
+
+</head>
+<body>
+
+<header class="top_header">
+    <div class="header_topline">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="soc_button">
+                        <a href="http://sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                      aria-hidden="true"></i>
+                            ЮФУ</a>
+                        <a href="http://ictis.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                            aria-hidden="true"></i>
+                            ИКТИБ</a>
+                        <a href="http://inep.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                           aria-hidden="true"></i>
+                            ИНЭП</a>
+                        <a href="http://rtf.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                          aria-hidden="true"></i>
+                            ИРТСУ</a>
+                        <a href="http://iues.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                           aria-hidden="true"></i>
+                            ИУЭС</a>
+                    </div>
+                    <div class="vk_button">
+                        <a href="https://vk.com/sfedu_official" target="_blank"><i class="fa fa-vk"
+                                                                                   aria-hidden="true"></i>
+                            ЮФУ</a>
+                    </div>
+                    {% if user.is_authenticated %}
+                        <div id="login_button" class="login_link"><i class="fa fa-user"></i> {% get_full_name %}</div>
+                    {% else %}
+                        <div id="login_button" class="login_link"><i class="fa fa-user"></i> Авторизация</div>
+                    {% endif %}
+
+                    <div class="contacts_head">
+                        <a href="http://asu.tti.sfedu.ru/Raspisanie/Default.aspx?isPotok=121&Semestr=1"
+                           target="_blank"><i class="fa fa-calendar" aria-hidden="true"></i> Расписание занятий</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="login">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="backg_sheet">
+                </div>
+                <div class="register_sheet">
+                    <form action="" class="log_register">
+                        <h1>Регистрация</h1>
+                        <p><span><i class="fa fa-user"></i></span><input
+                                type="text" class="login_input" placeholder="Введите Имя" autocomplete="on"></p>
+                        <p><span><i class="fa fa-user-plus"></i></span><input
+                                type="text" class="login_input" placeholder="Введите Фамилию" autocomplete="off">
+                        </p>
+                        <p><span><i class="fa fa-at"></i></span><input
+                                type="email" class="login_input" placeholder="Введите e-mail" autocomplete="off">
+                        </p>
+                        <div class="reg_captch">
+                            {#                            <div class="g-recaptcha" data-sitekey="6LckQUcUAAAAAAEuS_VGNUdjcyCgHCemVcWlpc8-"#}
+                            {#                                 data-theme="dark"></div>#}
+                        </div>
+                        <p><input type="submit" class="sign_sub" value="ОТПРАВИТЬ"></p>
+                        <div class="login_back">
+                            <p><a href="#" class="login_back_a">У вас уже есть аккаунт?</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="forget_sheet">
+                    <form action="" class="login_forget">
+                        <h1>Восстановление</h1>
+                        <p><span><i class="fa fa-user-circle"></i></span><input
+                                type="text" class="login_input" placeholder="Введите логин" autocomplete="on"></p>
+                        <div class="forget_captch">
+                            {#                            <div class="g-recaptcha" data-sitekey="6LckQUcUAAAAAAEuS_VGNUdjcyCgHCemVcWlpc8-"#}
+                            {#                                 data-theme="dark"></div>#}
+                        </div>
+                        <p><input type="submit" class="sign_sub" value="ОТПРАВИТЬ"></p>
+                        <div class="login_back">
+                            <p><a href="#" class="login_back_a">У вас уже есть аккаунт?</a></p>
+                        </div>
+                        <div class="first_login">
+                            <p><a href="#" class="first_login_a">Впервые на сайте?</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="login_form">
+                    <form action="/login/" method="post" class="login_vspl">
+                        <h1>Авторизация</h1>
+                        {% csrf_token %}
+                        <p><span><i class="fa fa-user-circle"></i></span>
+                            <input type="text" class="login_input" placeholder="Введите логин" autocomplete="on"
+                                   name="login"></p>
+                        <p><span><i class="fa fa-lock"></i></span><input
+                                type="password" class="login_input" name="pass" placeholder="Введите пароль"
+                                autocomplete="off">
+                        </p>
+                        <div class="login_captch">
+                            {#                            <div class="g-recaptcha" data-sitekey="6LckQUcUAAAAAAEuS_VGNUdjcyCgHCemVcWlpc8-"#}
+                            {#                                 data-theme="dark"></div>#}
+                        </div>
+                        <p><input type="submit" class="sign_sub" value="ВОЙТИ"></p>
+                        <div class="login_help">
+                            <p><a href="#" class="login_help_a">Забыли пароль?</a></p>
+                        </div>
+                        <div class="first_login">
+                            <p><a href="#" class="first_login_a">Впервые на сайте?</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="close_login"><i class="fa fa-times"></i></div>
+
+<div class="opacity"></div>
+
+<div class="header_head">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main_menu_left">
+                    <ul class="menu_left">
+                        <li><a href="{% url 'home' %}">Главная</a></li>
+                        <p class="line_left"></p>
+                        <li><a href="{% url 'journals' %}">Журналы</a></li>
+                        <p class="line_left"></p>
+                        <li><a href="{% url 'library' %}">Библиотека</a></li>
+                    </ul>
+                </div>
+                <div class="main_menu_right">
+                    <ul class="menu_right">
+                        <li><a href="{% url 'information' %}">Информация</a></li>
+                        <p class="line_right"></p>
+                        <li><a href="{% url 'questions' %}">Возник вопрос?</a></li>
+                        <p class="line_right"></p>
+                        <li class="open_main_search"><i class="fa fa-search"></i></li>
+                    </ul>
+                </div>
+                <div class="logotype">
+                    <a href="{% url 'home' %}" class="a_img"><img src="{% static 'images/logo.png' %}"
+                                                                  class="logo_up" alt="Logo" border="0" width="213"></a>
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo_ho.png' %}" class="logo_down" alt="Logo"
+                                                    border="0" width="213"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main_search">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="search_content">
+                    <div class="search_main_bckg">
+                    </div>
+                    <div class="search_main_img">
+                        <img src="{% static 'images/loupe.png' %}">
+                    </div>
+                    <div class="search_main_close">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <form class="search_main_form">
+                        <input type="text" class="search_main_in_text">
+                        <input type="submit" class="search_main_in_subm" value="Найти">
+
+                        <div class="search_main_labels">
+
+                            <p>Искать в разделе:</p>
+
+                            <label class="search_main_cheked_news">
+                                <input type="checkbox" class="search_main_ch_news">
+                                <span class="search_main_sp_ne"></span>
+                                <p class="search_main_text_ne">Новости</p>
+                            </label>
+
+                            <label class="search_main_cheked_jour">
+                                <input type="checkbox" class="search_main_ch_jour">
+                                <span class="search_main_sp_jo"></span>
+                                <p class="search_main_text_jo">Журналы</p>
+                            </label>
+
+                            <label class="search_main_cheked_lib">
+                                <input type="checkbox" class="search_main_ch_lib">
+                                <span class="search_main_sp_li"></span>
+                                <p class="search_main_text_li">Библиотека</p>
+                            </label>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<footer class="main_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer_cont">
+                    <img src="{% static 'images/logo_yufu_r.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bot_text">
+        Сайт создан компанией студентов ИКТИБа при поддержке велосипедов и костылей!
+    </div>
+</footer>
+
+<script src="../../static/libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="http://momentjs.com/downloads/moment.min.js"></script>
+<script src="../../static/libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="../../static/js/common.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="../../static/js/data.js"></script>
+<script src=" {% static 'js/api.js' %}"></script>
+</body>
+</html>

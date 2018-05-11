@@ -1,0 +1,227 @@
+.private_content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 999;
+}
+
+.block_about_user{
+    position: relative;
+    width: 100%;
+    height: 320px;
+}
+
+.block_access{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.data_profile_block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 980px;
+    width: 100%;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ---> photo_account <--- */
+
+.photo_account {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    width: 220px;
+    height: 220px;
+    margin-top: -110px;
+    z-index: 1025;
+    background-color: #ffffff;
+    clip-path: circle(110px at 50% 50%);
+}
+
+.photo_block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -105px;
+    margin-left: -105px;
+    height: 210px;
+    width: 210px;
+    z-index: 1030;
+    clip-path: circle(100px at 50% 50%);
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
+.icon_account {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-size: 160px;
+    z-index: 1035;
+    color: #ffffff;
+}
+
+.photo_block img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1050;
+}
+
+.photo_opac {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1100;
+    background-color: #333233;
+    opacity: 0;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.photo_block:hover .photo_opac {
+    opacity: 0.7;
+}
+
+.upload_photo_profile {
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+/* ---> photo_account end <--- */
+
+/* ---> data_profile_block <--- */
+
+.block_user_data{
+    position: absolute;
+    left: 390px;
+    height: 100%;
+    width: 700px;
+    z-index: 1020;
+}
+
+.text_profile_name{
+    position: relative;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.text_profile{
+    position: relative;
+    float: left;
+    margin: 10px 0 0 30px;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.text_prof_un{
+    position: relative;
+    margin: 10px 0 0 30px;
+    text-align: justify;
+    font-size: 20px;
+    color: #f9f9f9;
+}
+
+.text_prof_group{
+    position: relative;
+    width: 200px;
+    height: 20px;
+    margin: 16px 0 0 10px;
+    font-size: 20px;
+    color: #f9f9f9;
+    float: left;
+}
+
+/* ---> data_profile_block end <--- */
+
+/* ---> prof bg image <---*/
+
+.prof_line{
+    position: absolute;
+    top: 320px;
+    height: 10px;
+    width: 100%;
+    z-index: 5000;
+    background-color: #ffffff;
+}
+
+.prof_bg_image img{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1010;
+}
+
+/* ---> prof bg image end <---*/
+
+/* ---> your_journals_block <--- */
+
+.your_journals_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 320px;
+    z-index: 2025;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 315px 0, 100% 100%, 0 100%);
+}
+
+.your_journals_block img{
+    position: absolute;
+    z-index: 2027;
+}
+
+.acc_block_opac{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333233;
+    opacity: 0.7;
+    z-index: 2030;
+}
+
+/* ---> your_journals_block end <--- */
+
+/* ---> available_files_block <--- */
+
+.available_files_block{
+    position: absolute;
+    top: 330px;
+    left: 0;
+    width: 445px;
+    height: 320px;
+    z-index: 2025;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 382px 0, 100% 100%, 0 100%);
+}
+
+.available_files_block img{
+    position: absolute;
+    z-index: 2027;
+}
+
+/* ---> available_files_block end <--- */
+
+/* ---> block_bg_fijourn <--- */
+
+.block_bg_fijourn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 650px;
+    width: 455px;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 325px 0, 100% 100%, 0 100%);
+}
+
+/* ---> block_for_viewing end <--- */

@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/avenir/AvenirNextCyr-Regular.eot');
+    src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+    url('../../fonts/avenir/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/avenir/AvenirNextCyr-Regular.woff') format('woff'),
+    url('../../fonts/avenir/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Zero 5';
+    src: url('../../fonts/zero-5/zero_5.otf');
+    src: local('Zero 5'),
+    url('../../fonts/zero-5/zero_5.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADEE';
+    src: url('../../fonts/madee/11684.otf');
+    src: local('MADEE'),
+    url('../../fonts/madee/11684.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../../fonts/droid-sans/DroidSans.ttf');
+    src: local('Droid Sans'),
+    url('../../fonts/droid-sans/DroidSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

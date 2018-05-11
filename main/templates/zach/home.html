@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}За4ет{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    {% block preloader %}
+    {% endblock %}
+
+    <div class="home_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="home_block">
+                        <div class="info_site">
+                            <img src="{% static 'images/home/info.png' %}">
+                            <div class="opac_left"></div>
+                            <div class="text_inf_block">Добро пожаловать на сайт,
+                                <p>позволяющий сделать</p>
+                                <p>данные об успеваемости</p>
+                                <p>более централизованными.</p>
+                                <p class="opportunities">Здесь вы можете:</p>
+                            </div>
+                        </div>
+                        <div class="date_time">
+                            <div class="text_da_ti">
+                                <div class="sheet_date">
+                                    <div class="number_text">
+                                        <script type="text/javascript">
+                                            var d = new Date();
+                                            document.write(d.getDate());
+                                        </script>
+                                    </div>
+                                    <p class="month_text">
+                                        <script type="text/javascript">
+                                            var d = new Date();
+
+                                            var month = ["января,", "февраля,", "марта,", "апреля,", "мая,", "июня,",
+                                                "июля,", "августа,", "сентября,", "октября,", "ноября,", "декабря,"];
+
+                                            document.write(month[d.getMonth()]);
+                                        </script>
+                                    </p>
+                                    <p class="day_text">
+                                        <script type="text/javascript">
+                                            var d = new Date();
+
+                                            var day = ["Воскресенье", "Понедельник", "Вторник",
+                                                "Среда", "Четверг", "Пятница", "Суббота"];
+
+                                            document.write(day[d.getDay()]);
+                                        </script>
+                                    </p>
+                                    {#                                <p id="week" class="week_text"></p>#}
+                                </div>
+                            </div>
+                            <img src="{% static 'images/home/da_ti.png' %}">
+                            <div class="opac_left"></div>
+                        </div>
+                        <a class="block_news" href="{% url 'news' %}">
+                            <img src="{% static 'images/home/news.png' %}">
+                            <div class="sheet_op"></div>
+                            <div class="text_ne_block">Узнать актуальные <p>новости</p></div>
+                        </a>
+                        <a class="block_attendance_log" href="{% url 'journals' %}">
+                            <img src="{% static 'images/home/att_log.png' %}">
+                            <div class="sheet_op"></div>
+                            <div class="text_att_block">Посмотреть данные об <p>успеваемости</p></div>
+                        </a>
+                        <a class="block_library" href="{% url 'library' %}">
+                            <img src="{% static 'images/home/library.png' %}">
+                            <div class="sheet_op"></div>
+                            <div class="text_li_block">Найти учебные <p>материалы</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

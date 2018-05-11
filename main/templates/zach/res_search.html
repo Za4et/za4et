@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Полученные результаты{% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <div class="search_res_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search_res_block">
+                        <div class="res_search_top">
+                            <img src="{% static 'images/res_search/res_srch_top.png' %}" alt="">
+                            <div class="res_search_opac"></div>
+                            <div class="res_search_top_tx">
+                                Результаты поиска:
+                            </div>
+                        </div>
+
+                        {# ничего не нашлось #}
+
+                        {#                        <div class="search_not_found">#}
+                        {#                            <img src="{% static 'images/res_search/search_not_f.png' %}" alt="">#}
+                        {#                            <p>По вашему запросу ничего не найдено!</p>#}
+                        {#                        </div>#}
+
+                        {# ничего не нашлось - end #}
+
+                        {# если что-то нашлось #}
+
+                        <div class='res_search_menu'>
+                            <div class='res_search_news'>
+                                <div class="res_search_news_text">
+                                    Новости:
+                                </div>
+                                <img src="{% static 'images/res_search/res_srch_nws.png' %}" alt="">
+                                <div class="res_search_opac"></div>
+                                <div class="res_search_block_news">
+
+                                    {# ничего не нашлось в данном разделе, но есть в другом #}
+
+                                    {#                                    <div class="res_search_not_f">#}
+                                    {#                                        <img src="{% static 'images/res_search/search_404.png' %}" alt="">#}
+                                    {#                                        <p>По вашему запросу в данном разделе ничегоне найдено!</p>#}
+                                    {#                                    </div>#}
+
+                                    {# ничего не нашлось в данном разделе, но есть в другом - end #}
+
+                                    <div class="res_search_new">
+                                        <div class="res_search_new_img">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="res_search_new_parag">
+                                            <a href="">
+                                                Заголовок статьи
+                                            </a>
+                                        </div>
+                                        <div class="res_search_new_sh_tx">
+                                            <p>лол кек 228 попиросим - хурма по 39 руб лол кек 228 попиросим - хурма
+                                                по 39 руб лол кек 228 попиросим - хурма по 39 руб лол кек 228
+                                                попиросим - хурма по 39 руб</p>
+                                        </div>
+                                        <div class="res_search_new_tags">
+                                            Тэги: <a href="">#tti</a>
+                                        </div>
+                                    </div>
+
+                                    ----
+
+                                    <div class="res_search_new">
+                                        <div class="res_search_new_img">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="res_search_new_parag">
+                                            <a href="">
+                                                Заголовок статьи
+                                            </a>
+                                        </div>
+                                        <div class="res_search_new_sh_tx">
+                                            <p>лол кек 228 попиросим - хурма по 39 руб лол кек 228 попиросим - хурма
+                                                по 39 руб лол кек 228 попиросим - хурма по 39 руб лол кек 228
+                                                попиросим - хурма по 39 руб</p>
+                                        </div>
+                                        <div class="res_search_new_tags">
+                                            Тэги: <a href="">#tti</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class='res_search_jour'>
+                                <div class="res_search_jour_text">
+                                    Журналы:
+                                </div>
+                                <img src="{% static 'images/res_search/res_srch_jrnls.png' %}" alt="">
+                                <div class="res_search_opac"></div>
+                                <div class="res_search_block_jour">
+
+                                    {# ничего не нашлось в данном разделе, но есть в другом #}
+
+                                    {#                                    <div class="res_search_not_f">#}
+                                    {#                                        <img src="{% static 'images/res_search/search_404.png' %}" alt="">#}
+                                    {#                                        <p>По вашему запросу в данном разделе ничегоне найдено!</p>#}
+                                    {#                                    </div>#}
+
+                                    {# ничего не нашлось в данном разделе, но есть в другом - end #}
+
+                                    <div class="res_search_mov_win">
+
+                                        <div class="res_search_journal">
+                                            <a href="">
+                                                <div class="res_search_journal_circle"></div>
+                                                <div class="res_search_journal_bg">
+                                                    <div class="res_search_journal_nm">
+                                                        КТбо2-8
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="res_search_journal">
+                                            <a href="">
+                                                <div class="res_search_journal_circle"></div>
+                                                <div class="res_search_journal_bg">
+                                                    <div class="res_search_journal_nm">
+                                                        КТбо2-10
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="res_search_journal">
+                                            <a href="">
+                                                <div class="res_search_journal_circle"></div>
+                                                <div class="res_search_journal_bg">
+                                                    <div class="res_search_journal_nm">
+                                                        КТбо2-5
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='res_search_lib'>
+                                <div class="res_search_lib_text">
+                                    Библиотека:
+                                </div>
+                                <img src="{% static 'images/res_search/res_srch_lbrr.png' %}" alt="">
+                                <div class="res_search_opac"></div>
+                                <div class="res_search_block_lib">
+
+                                    {# ничего не нашлось в данном разделе, но есть в другом #}
+
+                                    {#                                    <div class="res_search_not_f">#}
+                                    {#                                        <img src="{% static 'images/res_search/search_404.png' %}" alt="">#}
+                                    {#                                        <p>По вашему запросу в данном разделе ничегоне найдено!</p>#}
+                                    {#                                    </div>#}
+
+                                    {# ничего не нашлось в данном разделе, но есть в другом - end #}
+
+                                    <div class="res_search_line_file">
+                                        <div class="res_search_name_file">
+                                            <a href="">Имя файла</a>
+                                        </div>
+                                        <div class="res_search_down_file">
+                                            <i class="fa fa-download"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="res_search_line_file">
+                                        <div class="res_search_name_file">
+                                            <a href="">Имя файла</a>
+                                        </div>
+                                        <div class="res_search_down_file">
+                                            <i class="fa fa-download"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        {# если что-то нашлось - end #}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

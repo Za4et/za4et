@@ -1,0 +1,291 @@
+/*---> content home <---*/
+
+.home_content {
+    flex: 1 0 auto;
+    position: relative;
+    height: 740px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    z-index: 999;
+}
+
+.home_content .opac_left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333233;
+    opacity: 0.7;
+    z-index: 1003;
+    transition: 0.5s linear;
+}
+
+.home_content .sheet_op {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333233;
+    opacity: 0.7;
+    z-index: 1003;
+    transition: 0.5s linear;
+}
+
+.home_content .info_site {
+    position: absolute;
+    left: 0;
+    /*clip-path: url("#mask_info_site");*/
+    clip-path: polygon(0 0, 100% 0, 555px 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 555px 100%, 0 100%);
+    background-color: #ffffff;
+    width: 617px;
+    height: 365px;
+}
+
+.home_content .date_time {
+    position: absolute;
+    left: 0;
+    margin-top: 375px;
+    clip-path: polygon(0 0, 100% 0, 492px 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 492px 100%, 0 100%);
+    background-color: #ffffff;
+    width: 553px;
+    height: 365px;
+}
+
+.home_content .block_news {
+    position: absolute;
+    right: 0;
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #ffffff;
+    width: 583px;
+    height: 240px;
+    cursor: pointer;
+
+}
+
+.home_content .block_attendance_log {
+    position: absolute;
+    right: 0;
+    margin-top: 250px;
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #ffffff;
+    width: 625px;
+    height: 240px;
+    cursor: pointer;
+}
+
+.home_content .block_library {
+    position: absolute;
+    right: 0;
+    margin-top: 500px;
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #ffffff;
+    width: 667px;
+    height: 240px;
+    cursor: pointer;
+}
+
+.home_content .info_site:hover img {
+    transform: scale(1.15);
+}
+
+.home_content .date_time:hover img {
+    transform: scale(1.15);
+}
+
+.home_content .block_news:hover img {
+    transform: scale(1.15);
+}
+
+.home_content .block_attendance_log:hover img {
+    transform: scale(1.15);
+}
+
+.home_content .block_library:hover img {
+    transform: scale(1.15);
+}
+
+.home_content .info_site:hover .opac_left {
+    opacity: 0.2;
+}
+
+.home_content .date_time:hover .opac_left {
+    opacity: 0.2;
+}
+
+.home_content .block_news:hover .sheet_op {
+    opacity: 0.2;
+}
+
+.home_content .block_attendance_log:hover .sheet_op {
+    opacity: 0.2;
+}
+
+.home_content .block_library:hover .sheet_op {
+    opacity: 0.2;
+}
+
+.date_time .sheet_date {
+
+}
+
+.info_site img {
+    position: absolute;
+    height: 365px;
+    z-index: 1001;
+    transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+}
+
+.date_time img {
+    position: absolute;
+    height: 365px;
+    z-index: 1001;
+    transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+}
+
+.block_news img {
+    position: absolute;
+    right: 0;
+    height: 240px;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.block_attendance_log img {
+    position: absolute;
+    right: 0;
+    z-index: 1001;
+    height: 240px;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.block_library img {
+    position: absolute;
+    right: 0;
+    z-index: 1001;
+    height: 240px;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.info_site .text_inf_block {
+    position: absolute;
+    margin-top: 60px;
+    z-index: 1004;
+    color: #ffffff;
+    text-align: center;
+    width: 617px;
+    font-size: 30px;
+}
+
+.text_inf_block .opportunities {
+    margin-top: 20px;
+}
+
+.date_time .text_da_ti {
+    position: absolute;
+    z-index: 1004;
+    color: white;
+    height: 100%;
+    width: 553px;
+    text-align: center;
+}
+
+.text_da_ti .sheet_date {
+    position: relative;
+    left: 0;
+    z-index: 1003;
+    height: 295px;
+    width: 500px;
+    margin-top: 35px;
+    background-color: #52011A;
+    opacity: 0.7;
+    clip-path: polygon(0 0, 100% 0, 452px 100%, 0 100%);
+}
+
+/*.text_da_ti .hello_text {*/
+/*position: absolute;*/
+/*width: 100%;*/
+/*font-size: 20px;*/
+/*}*/
+
+.text_da_ti .number_text {
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 90px;
+}
+
+.text_da_ti .month_text {
+    position: absolute;
+    width: 100%;
+    margin-top: 125px;
+    font-size: 30px;
+}
+
+.text_da_ti .day_text {
+    position: absolute;
+    width: 100%;
+    margin-top: 170px;
+    font-size: 30px;
+}
+
+.text_da_ti .week_text {
+    position: absolute;
+    width: 100%;
+    margin-top: 215px;
+    font-size: 30px;
+}
+
+.block_news .text_ne_block {
+    position: absolute;
+    z-index: 1004;
+    color: #ffffff;
+    margin-top: 80px;
+    margin-left: 10px;
+    width: 583px;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.block_attendance_log .text_att_block {
+    position: absolute;
+    z-index: 1004;
+    color: #ffffff;
+    margin-top: 80px;
+    margin-left: 10px;
+    width: 625px;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.block_library .text_li_block {
+    position: absolute;
+    z-index: 1004;
+    color: #ffffff;
+    margin-top: 80px;
+    width: 667px;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*---> content end <---*/
