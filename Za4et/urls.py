@@ -17,6 +17,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.http import HttpResponse
+from django.shortcuts import render
 from django.urls import path, include
 
 from Za4et import settings
@@ -26,11 +27,16 @@ def sitemap(request):
     return HttpResponse('Sitemap.xml')
 
 
+def google_bot(request):
+    return render(request, 'google6a6420e729ccc5fb.html')
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v0/', include('api.urls')),
     path('sitemap.xml/', sitemap),
-    path('', include('main.urls'))
+    path('', include('main.urls')),
+    path('google6a6420e729ccc5fb.html/', google_bot)
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
