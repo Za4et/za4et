@@ -31,12 +31,17 @@ def google_bot(request):
     return render(request, 'google6a6420e729ccc5fb.html')
 
 
+def yandex_bot(request):
+    return render(request, 'yandex_2b22988392c6cecf.html')
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v0/', include('api.urls')),
     path('sitemap.xml/', sitemap),
     path('', include('main.urls')),
-    path('google6a6420e729ccc5fb.html/', google_bot)
+    path('google6a6420e729ccc5fb.html/', google_bot),
+    path('yandex_2b22988392c6cecf.html/', yandex_bot)
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
