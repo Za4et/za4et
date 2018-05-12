@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecdc69b3-428d-4352-8689-e2f11540de00" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Za4et/urls.py" afterPath="$PROJECT_DIR$/Za4et/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/res_search.html" afterPath="$PROJECT_DIR$/main/templates/zach/res_search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/left_menu/library.html" afterPath="$PROJECT_DIR$/main/templates/zach/left_menu/library.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="library.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="library.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/templates/zach/left_menu/library.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="84" column="10" lean-forward="false" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -104,14 +103,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Za4et/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-              <folding>
-                <element signature="e#629#671#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="33">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,9 +202,9 @@
         <option value="$PROJECT_DIR$/main/views.py" />
         <option value="$PROJECT_DIR$/main/templates/error includes/main_search_error.html" />
         <option value="$PROJECT_DIR$/main/templates/base_includes/main_search.html" />
-        <option value="$PROJECT_DIR$/main/templates/zach/left_menu/library.html" />
         <option value="$PROJECT_DIR$/main/templates/zach/res_search.html" />
         <option value="$PROJECT_DIR$/Za4et/urls.py" />
+        <option value="$PROJECT_DIR$/main/templates/zach/left_menu/library.html" />
       </list>
     </option>
   </component>
@@ -673,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526082986543</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add sitemap.xml url">
+      <created>1526085641840</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1526085641840</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -770,7 +774,8 @@
     <MESSAGE value="v2" />
     <MESSAGE value="collect_stat" />
     <MESSAGE value="add back search" />
-    <option name="LAST_COMMIT_MESSAGE" value="add back search" />
+    <MESSAGE value="add sitemap.xml url" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sitemap.xml url" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1064,14 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/zach/left_menu/library.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/zach/res_search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1092,11 +1089,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Za4et/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="e#629#671#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="33">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/zach/left_menu/library.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="84" column="10" lean-forward="false" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
