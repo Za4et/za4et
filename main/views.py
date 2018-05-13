@@ -58,7 +58,7 @@ def library(request):
         for f_path in file_names:
             fdir, fname = os.path.split(f_path)
             zip_path = os.path.join(zip_subdir, fname)
-            zf.write(f_path.encode('ascii'), zip_path.encode('ascii'))
+            zf.write(f_path.encode('utf-8'), zip_path.encode('utf-8'))
         zf.close()
         resp = HttpResponse(s.getvalue(), content_type="application/x-zip-compressed")
         resp['Content-Disposition'] = 'attachment; filename=%s' % zip_filename
