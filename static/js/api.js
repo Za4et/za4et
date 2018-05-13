@@ -89,7 +89,7 @@ function get_materials(discipline) {
             $('.lib_frame').append('<input type="checkbox" onClick="toggle(this)" />Выбрать все<br/>');
             for (i = 0; i < data.names.length; i++) {
 
-                $('.lib_frame').append('<input type="checkbox" class="material_check" name="foo" value="' + data.file_urls[i] + '"  id="foo">' + data.names[i] + '<br/>');
+                $('.lib_frame').append('<input style="display: none" type="text" name="discipline" value="'+discipline+'">'+'<input type="checkbox" class="material_check" name="foo" value="' +[data.names[i],data.file_urls[i] ]+ '"  id="foo">' + data.names[i] + '<br/>');
 
             }
         }
