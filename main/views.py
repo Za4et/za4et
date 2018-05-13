@@ -42,6 +42,23 @@ def journals(request):
 
 
 def library(request):
+    if request.method == 'POST':
+        file_names = dict(request.POST)['foo']
+        zip_subdir = 'some_files'
+        zip_filename = "%s.zip" % zip_subdir
+        s = BytesIO()
+        zf = zipfile.ZipFile(s, "w")
+
+        for f_path in file_names:
+            fdir, fname = os.path.split(f_path)
+            zip_path = os.path.join(zip_subdir, fname)
+            zf.write(f_path, zip_path)
+        zf.close()
+        resp = HttpResponse(s.getvalue(), content_type="application/x-zip-compressed")
+        resp['Content-Disposition'] = 'attachment; filename=%s' % zip_filename
+
+        return resp
+
     if request.GET.get('search'):
         search = request.GET.get('search')
         materials = Files.objects.filter(Q(name__icontains=search) |
@@ -112,7 +129,7 @@ def res_search(request):
                                             Q(category__title__icontains=news)
 
                                             )
-            search_list['new_on']=news_check
+            search_list['new_on'] = news_check
             search_list['news'] = news_list
         if request.GET.get('library'):
             library_check = True

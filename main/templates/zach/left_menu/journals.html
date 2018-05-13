@@ -17,60 +17,37 @@
                         {#                        {% for group in groups %}#}
                         {#                            <a href="{{ group.journal__link }}" target="jframe">{{ group.name }}</a>#}
                         {#                        {% endfor %}#}
-                        {#                        {% for search_group in search_groups %}#}
-                        {#                            <a href="{{ search_group.journal__link }}" target="jframe">{{ search_group.name }}</a>#}
-                        {#                        {% endfor %}#}
+
 
                         <div class="all_journals_rate">
                             <img src="{% static 'images/jrnls/jrnls.lft.png' %}">
                             <div class="journ_opac"></div>
                             <div class="journ_win_rate">
-
-                                <div class="journal">
-                                    <div class="journal_circle"></div>
-                                    <div class="journal_backg_n">
-                                        <div class="journal_name">
-                                            КТбо2-8
+                                {% for group in groups %}
+                                    <div class="journal">
+                                        <div class="journal_circle"></div>
+                                        <div class="journal_backg_n">
+                                            <div class="journal_name">
+                                                <a href="{{ group.journal__link }}" target="jframe">{{ group.name }}</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                {% endfor %}
+                                {% for search_group in search_groups %}
 
-                                <div class="journal">
-                                    <div class="journal_circle"></div>
-                                    <div class="journal_backg_n">
-                                        <div class="journal_name">
-                                            КТбо2-8
+
+                                    <div class="journal">
+                                        <div class="journal_circle"></div>
+                                        <div class="journal_backg_n">
+                                            <a href="{{ search_group.journal__link }}" target="jframe"
+                                               style="color: #743733">
+                                            <div class="journal_name">
+                                                {{ search_group.name }}
+                                            </div
+                                            ></a>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="journal">
-                                    <div class="journal_circle"></div>
-                                    <div class="journal_backg_n">
-                                        <div class="journal_name">
-                                            КТбо2-8
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="journal">
-                                    <div class="journal_circle"></div>
-                                    <div class="journal_backg_n">
-                                        <div class="journal_name">
-                                            КТбо2-8
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="journal">
-                                    <div class="journal_circle"></div>
-                                    <div class="journal_backg_n">
-                                        <div class="journal_name">
-                                            КТбо2-8
-                                        </div>
-                                    </div>
-                                </div>
-
+                                {% endfor %}
                             </div>
                         </div>
                         <div class="window_with_journals">

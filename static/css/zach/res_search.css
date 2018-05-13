@@ -106,7 +106,7 @@
     color: #ffffff;
     z-index: 1020;
     text-align: center;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .res_search_not_f{

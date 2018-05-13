@@ -2,7 +2,7 @@
 from django.http import JsonResponse
 from django.utils.encoding import smart_str
 
-from main.models import News, Institute, Group
+from main.models import News, Institute, Group, Files
 
 
 def get_news(request, institute):
@@ -13,6 +13,7 @@ def get_news(request, institute):
     title_list = []
     date_list = []
     url_list = []
+
     if institute == 'all':
         news = News.objects.all()
     else:
@@ -25,11 +26,10 @@ def get_news(request, institute):
         image_list.append(new.image.url)
         for cat in new.category.all():
             cat_list.append(str('<a href="/tag/' + cat.title + '">' + '#' + cat.title + '</a>'))
-
-        tag_list.append(cat_list)
-        title_list.append(new.title)
-        date_list.append(new.published)
-        url_list.append(new.get_absolute_url())
+            tag_list.append(cat_list)
+            title_list.append(new.title)
+            date_list.append(new.published)
+            url_list.append(new.get_absolute_url())
 
     data = {
         'text': text_list,
@@ -45,11 +45,26 @@ def get_news(request, institute):
 
 def get_journals(request, institute, form_edu, course):
     groups_list = []
-    groups = Group.objects.filter(institute__slug=institute, form_edu__name=form_edu, cource=course).values(
-        'journal__link', 'name')
-    print(groups)
+    link_list = []
+    groups = Group.objects.filter(institute__slug=institute, form_edu__name=form_edu, cource=course).values('name',
+                                                                                                            'journal__link')
     for group in groups:
-        groups_list.append(group['journal__link'])
-    data = {'data': groups_list}
-    print(groups_list)
+        groups_list.append(group['name'])
+        link_list.append(group['journal__link'])
+    data = {'links': link_list,
+            'groups': groups_list,
+            }
+    return JsonResponse(data)
+
+
+def get_materials(request, discipline):
+    print(discipline)
+    material_list = []
+    material_name_list = []
+    disciplines = Files.objects.filter(discipline__name=discipline)
+    for discipline in disciplines:
+        material_list.append(discipline.file.url)
+        material_name_list.append(discipline.name)
+    data = {'file_urls': material_list,
+            'names': material_name_list}
     return JsonResponse(data)

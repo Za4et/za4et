@@ -53,14 +53,52 @@ function get_journals(form, course) {
         if (elements[i].checked)
             var institute = (elements[i].value);
     }
-    console.log(form, course, institute);
     $.ajax({
-        url: '/api/v0/get_journals/' + institute + '/' + form + '/' + course+'/',
+        url: '/api/v0/get_journals/' + institute + '/' + form + '/' + course + '/',
         type: 'GET',
         success: function (data) {
-            console.log(data)
+            $('.journal').hide();
+            if (data.groups.length >= 1)
+                for (i = 0; i < data.groups.length; i++) {
+                    $('.journ_win_rate').append('<div class="journal">' +
+                        '<div class="journal_circle"></div>' +
+                        '<div class="journal_backg_n">' +
+                        '<div class="journal_name">' +
+                        '<a href="' + data.links[i] + '" target="jframe">' + data.groups[i] + '</a>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>');
+                }
+
+            else if (data.groups.length === 0) {
+                $('.journal').hide()
+            }
         }
+    })
+}
+
+function get_materials(discipline) {
+    discipline = discipline.replace(/^\s*/, '');
+    $.ajax({
+
+        type: 'GET',
+        url: '/api/v0/get_materials/' + discipline,
+        success: function (data) {
+
+            $('.lib_frame').html('');
+            $('.lib_frame').append('<input type="checkbox" onClick="toggle(this)" />Выбрать все<br/>');
+            for (i = 0; i < data.names.length; i++) {
+
+                $('.lib_frame').append('<input type="checkbox" class="material_check" name="foo" value="' + data.file_urls[i] + '"  id="foo">' + data.names[i] + '<br/>');
+
+            }
+        }
+
 
     })
 }
 
+
+function submit_form() {
+    document.getElementById("lib_form").submit();
+}

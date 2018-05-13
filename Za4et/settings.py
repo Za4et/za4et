@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'main',
     'g_recaptcha',
     'ckeditor',
-    'api'
+    'api',
+    'rest_framework'
+
 ]
 
 MIDDLEWARE = [
