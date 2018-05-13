@@ -28,7 +28,7 @@ def get_news(request, institute):
 
         tag_list.append(cat_list)
         title_list.append(new.title)
-        date_list.append(new.created)
+        date_list.append(new.published)
         url_list.append(new.get_absolute_url())
 
     data = {
