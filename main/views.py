@@ -47,8 +47,11 @@ def library(request):
         files = dict(request.POST)['foo']
         for i in files:
             file_names.append(BASE_DIR + i)
-        zip_subdir = request.POST['discipline'].encode("utf-8")
-        zip_filename = "%s.zip" % zip_subdir
+        zip_subdir = request.POST['discipline']
+        try:
+            zip_filename = "%s.zip" % zip_subdir.encode('utf-8')
+        except:
+            zip_filename = "%s.zip" % zip_subdir.encode('ascii')
         s = BytesIO()
         zf = zipfile.ZipFile(s, "w")
 
