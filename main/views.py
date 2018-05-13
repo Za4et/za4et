@@ -45,13 +45,12 @@ def library(request):
     if request.method == 'POST':
         file_names = []
         files = dict(request.POST)['foo']
+        print(dict(request.POST)['foo'])
         for i in files:
             file_names.append(BASE_DIR + i)
         zip_subdir = request.POST['discipline']
-        try:
-            zip_filename = "%s.zip" % zip_subdir.encode('utf-8')
-        except:
-            zip_filename = "%s.zip" % zip_subdir.encode('ascii')
+
+        zip_filename = "%s.zip" % zip_subdir
         s = BytesIO()
         zf = zipfile.ZipFile(s, "w")
 
