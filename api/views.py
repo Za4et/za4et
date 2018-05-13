@@ -58,7 +58,6 @@ def get_journals(request, institute, form_edu, course):
 
 
 def get_materials(request, discipline):
-    print(discipline)
     material_list = []
     material_name_list = []
     disciplines = Files.objects.filter(discipline__name=discipline)
