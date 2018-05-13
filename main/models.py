@@ -10,19 +10,19 @@ from django.db import models
 from django.utils import timezone
 
 
-def news_upload_to(filename):
+def news_upload_to(instance,filename):
     rand = random.randrange(0, sys.maxsize)
     rand = str(rand)
     return os.path.join('news_imgs/', rand + os.path.splitext(filename)[1])
 
 
-def file_upload_to(filename):
+def file_upload_to(instance,filename):
     rand = random.randrange(0, sys.maxsize)
     rand = str(rand)
     return os.path.join('materials/', rand + os.path.splitext(filename)[1])
 
 
-def avatar_upload(filename):
+def avatar_upload(instance,filename):
     rand = random.randrange(0, sys.maxsize)
     rand = str(rand)
     return os.path.join('avatars/', rand + os.path.splitext(filename)[1])

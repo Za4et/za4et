@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecdc69b3-428d-4352-8689-e2f11540de00" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/base.html" afterPath="$PROJECT_DIR$/main/templates/zach/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/home.html" afterPath="$PROJECT_DIR$/main/templates/zach/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/start.html" afterPath="$PROJECT_DIR$/main/templates/zach/start.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,16 +49,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/templates/base_includes/main_search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="102" lean-forward="false" selection-start-line="23" selection-start-column="102" selection-end-line="23" selection-end-column="102" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Za4et/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/templates/zach/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+              <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -117,6 +106,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/templates/zach/start.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -183,7 +182,6 @@
         <option value="$PROJECT_DIR$/main/templates/zach/account.html" />
         <option value="$PROJECT_DIR$/Za4et/local_settings.py" />
         <option value="C:/Python35/Lib/site-packages/autoslug/settings.py" />
-        <option value="$PROJECT_DIR$/main/templates/zach/start.html" />
         <option value="$PROJECT_DIR$/main/static/css/zach/home.css" />
         <option value="$PROJECT_DIR$/main/static/css/zach/main.css" />
         <option value="$PROJECT_DIR$/main/templates/zach/search.html" />
@@ -214,6 +212,7 @@
         <option value="$PROJECT_DIR$/Za4et/urls.py" />
         <option value="$PROJECT_DIR$/main/templates/zach/base.html" />
         <option value="$PROJECT_DIR$/main/templates/zach/home.html" />
+        <option value="$PROJECT_DIR$/main/templates/zach/start.html" />
       </list>
     </option>
   </component>
@@ -223,7 +222,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-127" />
     <option name="y" value="119" />
     <option name="width" value="1448" />
@@ -707,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526156662447</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fix title">
+      <created>1526160136070</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1526160136070</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -723,7 +729,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1448" height="868" extended-state="6" />
+    <frame x="-4" y="-4" width="1448" height="868" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2213467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -781,7 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update information" />
     <MESSAGE value="Update quest" />
     <MESSAGE value="beta" />
     <MESSAGE value="add gunicorn" />
@@ -806,7 +811,8 @@
     <MESSAGE value="add sitemap.xml url" />
     <MESSAGE value="fix library html" />
     <MESSAGE value="add meta_tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="add meta_tags" />
+    <MESSAGE value="fix title" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix title" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,14 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/zach/start.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/static/css/zach/library.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1136,7 +1134,15 @@
     <entry file="file://$PROJECT_DIR$/main/templates/zach/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/zach/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
