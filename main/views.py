@@ -8,7 +8,7 @@ from django.db.models import Q
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 
-from Za4et.local_settings import BASE_DIR
+from Za4et.settings import BASE_DIR
 from main.models import News, Files, Discipline, Group, Student, Journal
 
 
@@ -43,7 +43,10 @@ def journals(request):
 
 def library(request):
     if request.method == 'POST':
-        file_names = dict(request.POST)['foo']
+        file_names = []
+        files = dict(request.POST)['foo']
+        for i in files:
+            file_names.append(BASE_DIR + i)
         zip_subdir = 'some_files'
         zip_filename = "%s.zip" % zip_subdir
         s = BytesIO()
