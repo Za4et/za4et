@@ -130,7 +130,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'main/templates'),)
 
-GOOGLE_RECAPTCHA_PUBLIC_KEY = '6LckQUcUAAAAAAEuS_VGNUdjcyCgHCemVcWlpc8-'
-GOOGLE_RECAPTCHA_PRIVATE_KEY = '6LckQUcUAAAAAFg_WGh1Ss0-XfLB8asIrSchJUHh'
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LfnJFkUAAAAABqrjRwOKhOscaMvXVzg4nQE7iAp'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
