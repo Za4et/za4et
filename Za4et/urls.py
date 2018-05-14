@@ -15,16 +15,18 @@ Including another URLconf
 """
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.sitemaps.views import sitemap
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from django.http import HttpResponse
 from django.shortcuts import render
 from django.urls import path, include
 
 from Za4et import settings
+from main.sitemaps import ArticleSitemap, StaticViewSitemap
 
-
-def sitemap(request):
-    return HttpResponse('Sitemap.xml')
+sitemaps = {
+    'articles': ArticleSitemap,
+    'static': StaticViewSitemap,
+}
 
 
 def google_bot(request):
@@ -38,7 +40,8 @@ def yandex_bot(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v0/', include('api.urls')),
-    path('sitemap.xml/', sitemap),
+    path('sitemap.xml/', sitemap, {'sitemaps': sitemaps},
+         name='django.contrib.sitemaps.views.sitemap'),
     path('', include('main.urls')),
     path('google6a6420e729ccc5fb.html/', google_bot),
     path('yandex_2b22988392c6cecf.html/', yandex_bot)

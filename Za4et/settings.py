@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # Application definition
-
+SITE_ID = 1
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'g_recaptcha',
     'ckeditor',
     'api',
-    'rest_framework'
+    'rest_framework',
+    'django.contrib.sitemaps',
+    'django.contrib.sites'
 
 ]
 
