@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecdc69b3-428d-4352-8689-e2f11540de00" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/article.html" afterPath="$PROJECT_DIR$/main/templates/zach/article.html" />
     </list>
@@ -94,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,8 +102,8 @@
       <file leaf-file-name="article.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/templates/zach/article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+            <state relative-caret-position="170">
+              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -414,13 +413,6 @@
       <updated>1516891312005</updated>
       <workItem from="1518960828379" duration="76000" />
       <workItem from="1519693830225" duration="649000" />
-    </task>
-    <task id="LOCAL-00008" summary="Update quest">
-      <created>1523627017031</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1523627017032</updated>
     </task>
     <task id="LOCAL-00009" summary="Update quest">
       <created>1523627614217</created>
@@ -758,7 +750,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526324331865</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="add news meta_tags">
+      <created>1526324839665</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1526324839665</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -832,7 +831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="true" />
     <MESSAGE value="utf-8" />
     <MESSAGE value="fix filename" />
     <MESSAGE value="fix verbose for disc" />
@@ -857,7 +855,8 @@
     <MESSAGE value="fix path" />
     <MESSAGE value="fix download" />
     <MESSAGE value="add test meta_tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test meta_tags" />
+    <MESSAGE value="add news meta_tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="add news meta_tags" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1184,7 +1183,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1223,8 +1222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/zach/article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>

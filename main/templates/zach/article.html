@@ -9,10 +9,10 @@
 <head>
     {% block title %}{{ article.title }}{% endblock %}
     {% block meta_head %}
-        <meta property="og:title" content={{ article.title }}/>
+        <meta property="og:title" content="{{ article.title }}"/>
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://za4et2018.ru{{ article.get_absolute_url }}" />
-        <meta property="og:image" content="{{ article.image.url }}" />
+        <meta property="og:image" content="https://za4et2018.ru{{ article.image.url }}" />
     {% endblock %}
 </head>
 
