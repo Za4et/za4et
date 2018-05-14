@@ -7,7 +7,13 @@
 <html lang="ru">
 
 <head>
-    {% block title %}Новости{% endblock %}
+    {% block meta_head %}
+        <meta name="description" content="Актуальные новости для студентов и преподавателей ИТА ЮФУ."/>
+    {% endblock %}
+
+    {% block title %}
+        Новости
+    {% endblock %}
 </head>
 
 <body>
@@ -102,16 +108,15 @@
                                             {{ new.text|safe }}
                                         </div>
 
-                                        <div  class="ne_news_short_art short{{ new.id }}">
+                                        <div class="ne_news_short_art short{{ new.id }}">
 
                                         </div>
                                         <script>
-                                            function cut_text(id)
-                                            {
+                                            function cut_text(id) {
                                                 var elem = document.getElementById(id);
                                                 var htmlObject = $(elem);
-                                                var tag = '.short-'+id;
-                                                $('.short{{ new.id }}').append(htmlObject.text().slice(0,200)+'...');
+                                                var tag = '.short-' + id;
+                                                $('.short{{ new.id }}').append(htmlObject.text().slice(0, 200) + '...');
                                             }
 
                                             cut_text('{{ new.id }}')

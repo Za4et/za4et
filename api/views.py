@@ -60,7 +60,7 @@ def get_journals(request, institute, form_edu, course):
 def get_materials(request, discipline):
     material_list = []
     material_name_list = []
-    disciplines = Files.objects.filter(discipline__name=discipline)
+    disciplines = Files.objects.filter(discipline__name=discipline).order_by('name')
     for discipline in disciplines:
         material_list.append(discipline.file.url)
         material_name_list.append(discipline.name)

@@ -8,6 +8,10 @@
 
 <head>
     {% block title %}Библиотека{% endblock %}
+    {% block meta_head %}
+        <meta name="description"
+              content="Найти учебные материалы, просмотреть электронные ресурсы библиотеки, собранную преподавателями и студентами ИТА ЮФУ."/>
+    {% endblock %}
 </head>
 
 <body>
@@ -33,15 +37,15 @@
                                 <div class="opacity_lbrr"></div>
                                 <div class="lib_materials">
                                     {% for discipline in disciplines %}
-                                    <div class="lib_subject" onclick="get_materials(this.textContent)">
-                                       <a>{{ discipline.name }}</a>
-                                    </div>
+                                        <div class="lib_subject" onclick="get_materials(this.textContent)">
+                                            <a>{{ discipline.name }}</a>
+                                        </div>
                                     {% endfor %}
-                                {% for material in materials %}
-                                    <div class="lib_subject">
-                                        <a href="">{{ material.name }}</a>
-                                    </div>
-                                {% endfor %}
+                                    {% for material in materials %}
+                                        <div class="lib_subject">
+                                            <a href="">{{ material.name }}</a>
+                                        </div>
+                                    {% endfor %}
                                 </div>
                             </div>
 
@@ -52,10 +56,11 @@
                                     <div class="lib_win_frame" style="text-align: justify">
                                         <form action="." method="post" id="lib_form">
                                             {% csrf_token %}
-                                        <div class="lib_frame" align="center">
+                                            <div class="lib_frame" align="center">
 
 
-                                        </div></form>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +68,7 @@
                             <div class="library_download">
                                 <img src="{% static 'images/lbrr/lbrr.rght.button.png' %}">
                                 <div class="opacity_lbrr"></div>
-                                <div class="lbrr_download_file" >
+                                <div class="lbrr_download_file">
                                     <div class="lbrr_icon_down_f">
                                         <img src="{% static 'images/lbrr/down_1.png' %}" alt="" class="lbrr_down_img_1">
                                         <img src="{% static 'images/lbrr/down_2.png' %}" alt="" class="lbrr_down_img_2">
@@ -84,7 +89,7 @@
                 </div>
             </div>
 
-    </div>
+        </div>
     </div>
 {% endblock %}
 </body>
