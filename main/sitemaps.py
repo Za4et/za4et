@@ -11,18 +11,13 @@ class ArticleSitemap(Sitemap):
         return News.objects.all().order_by('published')
 
     def lastmod(self, obj):
-        return obj.date
+        return obj.published
 
-    def location(self, obj):
-        return obj.slug
+
 
 
 class StaticViewSitemap(Sitemap):
     priority = 0.5
     changefreq = 'daily'
 
-    def items(self):
-        return ['index']
 
-    def location(self, item):
-        return reverse(item)

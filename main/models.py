@@ -10,19 +10,19 @@ from django.db import models
 from django.utils import timezone
 
 
-def news_upload_to(instance,filename):
+def news_upload_to(instance, filename):
     rand = random.randrange(0, sys.maxsize)
     rand = str(rand)
     return os.path.join('news_imgs/', rand + os.path.splitext(filename)[1])
 
 
-def file_upload_to(instance,filename):
+def file_upload_to(instance, filename):
     rand = random.randrange(0, sys.maxsize)
     rand = str(rand)
     return os.path.join('materials/', rand + os.path.splitext(filename)[1])
 
 
-def avatar_upload(instance,filename):
+def avatar_upload(instance, filename):
     rand = random.randrange(0, sys.maxsize)
     rand = str(rand)
     return os.path.join('avatars/', rand + os.path.splitext(filename)[1])
@@ -193,3 +193,12 @@ class Journal(models.Model):
     def __str__(self):
         return self.link
 
+
+class Task(models.Model):
+    task = models.CharField(max_length=200)
+    status = models.CharField(choices=[('1', 'open'), ('2', 'closed')], max_length=200)
+    date = models.DateField(default=timezone.now)
+
+
+class Executor(models.Model):
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
