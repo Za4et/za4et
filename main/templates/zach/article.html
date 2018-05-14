@@ -8,6 +8,12 @@
 
 <head>
     {% block title %}{{ article.title }}{% endblock %}
+    {% block meta_head %}
+        <meta property="og:title" content={{ article.title }}/>
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://za4et2018.ru{{ article.get_absolute_url }}" />
+        <meta property="og:image" content="{{ article.image.url }}" />
+    {% endblock %}
 </head>
 
 <body>
@@ -25,7 +31,7 @@
                         </div>
                         <div class="article_text">
                             <p>
-                                {{article.text|safe }}
+                                {{ article.text|safe }}
                             </p>
                         </div>
                         <div class="article_block_op">
@@ -34,7 +40,8 @@
                             </div>
 
                             <div class="article_tag">
-                                Тэги: {% for cat in article.category.all %}<a href="{% url 'tag' cat.title %}">&num;{{ cat }}</a>{% endfor %}
+                                Тэги: {% for cat in article.category.all %}
+                                <a href="{% url 'tag' cat.title %}">&num;{{ cat }}</a>{% endfor %}
                             </div>
                         </div>
                     </div>
