@@ -1,5 +1,5 @@
 from django.contrib.sitemaps import Sitemap
-from django.urls import reverse
+
 from main.models import News
 
 
@@ -14,10 +14,6 @@ class ArticleSitemap(Sitemap):
         return obj.published
 
 
-
-
 class StaticViewSitemap(Sitemap):
     priority = 0.5
     changefreq = 'daily'
-
-

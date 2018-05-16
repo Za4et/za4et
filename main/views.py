@@ -7,7 +7,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
+from django.utils.encoding import smart_str
 
+from Za4et import settings
 from Za4et.settings import BASE_DIR
 from main.models import News, Files, Discipline, Group, Student, Journal
 
@@ -43,25 +45,35 @@ def journals(request):
 
 def library(request):
     if request.method == 'POST':
-        file_names = []
-        files = dict(request.POST)['foo']
-        print(dict(request.POST)['foo'])
-        for i in files:
-            file_names.append(BASE_DIR + i)
-        zip_subdir = request.POST['discipline']
-        zip_filename = "%s.zip" % zip_subdir
-        s = BytesIO()
-        zf = zipfile.ZipFile(s, "w")
+        if request.POST['file'] == 'true':
+            file_names = []
+            files = dict(request.POST)['foo']
+            for i in files:
+                file_names.append(BASE_DIR + i)
+            for file in file_names:
+                response = HttpResponse(content_type='application/force-download')
+                response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file)
+                response['X-Sendfile'] = smart_str(file)
+                return response
+        else:
+            file_names = []
+            files = dict(request.POST)['foo']
+            for i in files:
+                file_names.append(BASE_DIR + i)
+            zip_subdir = request.POST['discipline']
+            zip_filename = "%s.zip" % zip_subdir
+            s = BytesIO()
+            zf = zipfile.ZipFile(s, "w")
 
-        for f_path in file_names:
-            fdir, fname = os.path.split(f_path)
-            zip_path = os.path.join(zip_subdir, fname)
-            zf.write(f_path, zip_path)
-        zf.close()
-        resp = HttpResponse(s.getvalue(), content_type="application/x-zip-compressed")
-        resp['Content-Disposition'] = 'attachment; filename=%s' % zip_filename
+            for f_path in file_names:
+                fdir, fname = os.path.split(f_path)
+                zip_path = os.path.join(zip_subdir, fname)
+                zf.write(f_path, zip_path)
+            zf.close()
+            resp = HttpResponse(s.getvalue(), content_type="application/x-zip-compressed")
+            resp['Content-Disposition'] = 'attachment; filename=%s' % zip_filename
 
-        return resp
+            return resp
 
     if request.GET.get('search'):
         search = request.GET.get('search')
@@ -111,11 +123,12 @@ def get_files(request):
 
 
 def logn(request):
-    user = request.POST['login']
-    password = request.POST['pass']
-    user = authenticate(username=user, password=password)
-    login(request, user)
-    return redirect('/account/')
+    if request.recaptcha_is_valid:
+        user = request.POST['login']
+        password = request.POST['pass']
+        user = authenticate(username=user, password=password)
+        login(request, user)
+        return redirect('/account/')
 
 
 from django.http import Http404

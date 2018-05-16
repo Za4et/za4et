@@ -219,10 +219,20 @@ $(document).ready(function () {
         /* lbrr end */
     }
 );
-
+var hided =false;
 function toggle(source) {
     checkboxes = document.getElementsByClassName('material_check');
     for (var i = 0, n = checkboxes.length; i < n; i++) {
         checkboxes[i].checked = source.checked;
+    }
+    if (hided === false) {
+        $('.lbrr_download_file').hide();
+        hided = true;
+    }
+    else if (hided===true) {
+
+        $('.lbrr_download_file').css('display', 'block')
+        hided = false;
+
     }
 }

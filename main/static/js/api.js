@@ -1,3 +1,14 @@
+function checkbox_counts() {
+    var numberOfChecked = $('input:checkbox:checked').length;
+    if (numberOfChecked - 3 > 2) {
+        $('.lbrr_download_file').hide();
+    }
+    else if (numberOfChecked - 4 < 2) {
+        $('.lbrr_download_file').css('display', 'block')
+    }
+
+}
+
 function get_post(url) {
     $.ajax({
         type: 'GET',
@@ -89,7 +100,7 @@ function get_materials(discipline) {
             $('.lib_frame').append('<input type="checkbox" onClick="toggle(this)" />Выбрать все<br/>');
             for (i = 0; i < data.names.length; i++) {
 
-                $('.lib_frame').append('<input style="display: none" type="text" name="discipline" value="'+discipline+'">'+'<input type="checkbox" class="material_check" name="foo" value="' +data.file_urls[i]+ '"  id="foo">' + data.names[i] + '<br/>');
+                $('.lib_frame').append('<input  style="display: none" type="text" name="discipline" value="' + discipline + '">' + '<input type="checkbox" class="material_check" name="foo" value="' + data.file_urls[i] + '"  id="foo" onclick="checkbox_counts()">' + data.names[i] + '<br/>');
 
             }
         }
@@ -100,5 +111,11 @@ function get_materials(discipline) {
 
 
 function submit_form() {
+    document.getElementById("lib_form").submit();
+}
+
+function submit_form_file() {
+
+    $('.lib_frame').append('<input type="text" style="display:none" name="file" value="true"/>');
     document.getElementById("lib_form").submit();
 }
