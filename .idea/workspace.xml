@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecdc69b3-428d-4352-8689-e2f11540de00" name="Default" comment="add grecaptcha">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/rest_framework/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/rest_framework/css/bootstrap-tweaks.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/rest_framework/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/rest_framework/css/default.css" />
+    <list default="true" id="ecdc69b3-428d-4352-8689-e2f11540de00" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/bootstrap-tweaks.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/font-awesome-4.0.3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/css/highlight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/css/jquery.json-view.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/img/grid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/js/api.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/sitemaps.py" afterPath="$PROJECT_DIR$/main/sitemaps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/static/js/api.js" afterPath="$PROJECT_DIR$/main/static/js/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/static/js/common.js" afterPath="$PROJECT_DIR$/main/static/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/left_menu/library.html" afterPath="$PROJECT_DIR$/main/templates/zach/left_menu/library.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templatetags/profile.py" afterPath="$PROJECT_DIR$/main/templatetags/profile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/api.js" afterPath="$PROJECT_DIR$/static/js/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/common.js" afterPath="$PROJECT_DIR$/static/js/common.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -254,7 +254,7 @@
             <path>
               <item name="za4et-prod" type="b2602c69:ProjectViewProjectNode" />
               <item name="za4et-prod" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="za4et-prod" type="b2602c69:ProjectViewProjectNode" />
@@ -445,13 +445,6 @@
       <updated>1516891312005</updated>
       <workItem from="1518960828379" duration="76000" />
       <workItem from="1519693830225" duration="649000" />
-    </task>
-    <task id="LOCAL-00014" summary="fix static_root">
-      <created>1524083908183</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1524083908183</updated>
     </task>
     <task id="LOCAL-00015" summary="fix urls">
       <created>1524084555592</created>
@@ -789,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526331159642</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="fix download button">
+      <created>1526491538331</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1526491538332</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -806,7 +806,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="868" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@Za4et" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30810812" sideWeight="0.47421202" order="11" side_tool="false" content_ui="tabs" />
@@ -815,7 +814,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.49426934" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4310811" sideWeight="0.51790833" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45" sideWeight="0.46561605" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22707736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22707736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -864,7 +863,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix filter" />
     <MESSAGE value="fix news_images" />
     <MESSAGE value="fix unicode" />
     <MESSAGE value="update news" />
@@ -889,7 +887,8 @@
     <MESSAGE value="add social buttons" />
     <MESSAGE value="add sitemap.xml" />
     <MESSAGE value="add grecaptcha" />
-    <option name="LAST_COMMIT_MESSAGE" value="add grecaptcha" />
+    <MESSAGE value="fix download button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix download button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
