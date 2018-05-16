@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecdc69b3-428d-4352-8689-e2f11540de00" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/bootstrap-tweaks.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/font-awesome-4.0.3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/css/prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/css/highlight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/css/jquery.json-view.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/img/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/img/grid.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rest_framework/docs/js/api.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -446,13 +434,6 @@
       <workItem from="1518960828379" duration="76000" />
       <workItem from="1519693830225" duration="649000" />
     </task>
-    <task id="LOCAL-00015" summary="fix urls">
-      <created>1524084555592</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1524084555592</updated>
-    </task>
     <task id="LOCAL-00016" summary="fix urls">
       <created>1524084587422</created>
       <option name="number" value="00016" />
@@ -789,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526491538332</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="fix download button">
+      <created>1526491626712</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1526491626712</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
