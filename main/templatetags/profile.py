@@ -19,7 +19,6 @@ def permissions_group(context, context_group, link):
     student = Student.objects.get(username=request_user)
     try:
         group = Group.objects.get(student__fio=student.fio)
-        print(group, context_group)
         if str(context_group) == str(group):
             return str('href=' +link + ' '+'target=jframe')
         else:
