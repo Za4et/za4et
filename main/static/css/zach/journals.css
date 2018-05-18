@@ -826,7 +826,7 @@
     width: 512px;
     background-color: #cccccc;
     z-index: 1000;
-    clip-path: polygon(0 0, 368px 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 367px 0, 367px 100%, 0 100%);
 }
 
 .all_journals_rate img {
@@ -899,10 +899,10 @@
     position: absolute;
     right: 0;
     height: 640px;
-    width: 762px;
+    width: 763px;
     background-color: #cccccc;
     z-index: 1000;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 144px 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .window_with_journals img {
@@ -925,11 +925,11 @@
     position: absolute;
     right: 15px;
     top: 15px;
-    width: 727px;
+    width: 732px;
     height: 610px;
     z-index: 1010;
-    background-color: #333233;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 139px 100%);
+    background-color: #52011a;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
@@ -940,11 +940,34 @@
     position: absolute;
     right: 3px;
     top: 3px;
-    width: 721px;
+    width: 726px;
     height: 604px;
     z-index: 1012;
-    background-color: #52011a;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 139px 100%);
+    background-color: #E4E4E4;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.journ_select_text,
+.journ_err_select_text{
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.journ_select_text{
+    text-align: center;
+    color: #52011a;
+    font-size: 28px;
+    margin-top: 200px;
+}
+
+.journ_err_select_text{
+    margin-top: 240px;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: #52011a;
 }
 
 .journ_frame{
