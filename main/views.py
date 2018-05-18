@@ -45,17 +45,18 @@ def journals(request):
 
 def library(request):
     if request.method == 'POST':
-        if request.POST['file'] == 'true':
-            file_names = []
-            files = dict(request.POST)['foo']
-            for i in files:
-                file_names.append(BASE_DIR + i)
-            for file in file_names:
-                response = HttpResponse(content_type='application/force-download')
-                response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file)
-                response['X-Sendfile'] = smart_str(file)
-                return response
-        else:
+        try:
+            if request.POST['file'] == 'true':
+                file_names = []
+                files = dict(request.POST)['foo']
+                for i in files:
+                    file_names.append(BASE_DIR + i)
+                for file in file_names:
+                    response = HttpResponse(content_type='application/force-download')
+                    response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(file)
+                    response['X-Sendfile'] = smart_str(file)
+                    return response
+        except:
             file_names = []
             files = dict(request.POST)['foo']
             for i in files:

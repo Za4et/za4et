@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^94j5%kh+n_tah0olqi+njd%1u(((fd9*4c1t2219jx0&s&2d3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -82,15 +82,15 @@ WSGI_APPLICATION = 'Za4et.wsgi.application'
 
 
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'za4et',
-            'USER': 'za4et',
-            'PASSWORD': 'za4et228',
-            'HOST': 'zorkgb05.fvds.ru',
-            'PORT': '',
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'za4et',
+        'USER': 'za4et',
+        'PASSWORD': 'za4et228',
+        'HOST': 'zorkgb05.fvds.ru',
+        'PORT': '',
     }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -127,7 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'main/templates'),)
 
 GOOGLE_RECAPTCHA_SECRET_KEY = '6LfnJFkUAAAAABqrjRwOKhOscaMvXVzg4nQE7iAp'

@@ -13,23 +13,21 @@ def get_news(request, institute):
     title_list = []
     date_list = []
     url_list = []
-
     if institute == 'all':
         news = News.objects.all()
     else:
         inst = Institute.objects.get(slug=str(institute))
         news = News.objects.filter(institute=inst)
-
     for new in news:
         cat_list = []
         text_list.append(new.text)
         image_list.append(new.image.url)
+        title_list.append(new.title)
+        date_list.append(new.published)
+        url_list.append(new.get_absolute_url())
         for cat in new.category.all():
             cat_list.append(str('<a href="/tag/' + cat.title + '">' + '#' + cat.title + '</a>'))
             tag_list.append(cat_list)
-            title_list.append(new.title)
-            date_list.append(new.published)
-            url_list.append(new.get_absolute_url())
 
     data = {
         'text': text_list,

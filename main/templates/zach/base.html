@@ -36,14 +36,19 @@
 </head>
 <body>
 {% include 'base_includes/top_header.html' %}
+{% if user.is_authenticated %}
+    {% else%}
 {% include 'base_includes/login_form.html' %}
-<div class="close_login"><i class="fa fa-times"></i></div>
-<div class="opacity"></div>
+    <div class="close_login"><i class="fa fa-times"></i></div>
+    <div class="opacity"></div>
+{% endif %}
+
 {% include 'base_includes/header.html' %}
 {% include 'base_includes/main_search.html' %}
 {% block content %}
 {% endblock %}
 {% include 'base_includes/footer.html' %}
+<script src="{% static 'js/helpers.js'%}"></script>
 <script src="../../static/libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="http://momentjs.com/downloads/moment.min.js"></script>
 <script src="../../static/libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>

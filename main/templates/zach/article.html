@@ -37,10 +37,11 @@
 
                         <div class="article_block_op">
                             <div class="article_date_cr">
-                                Дата создания: {{ article.published }}
+                                Дата публикации: {{ article.published }}
                             </div>
 
                             <div class="article_tag">
+
                                 Тэги: {% for cat in article.category.all %}
                                 <a href="{% url 'tag' cat.title %}">&num;{{ cat }}</a>{% endfor %}
                             </div>

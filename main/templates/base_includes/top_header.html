@@ -28,7 +28,7 @@
                             ЮФУ</a>
                     </div>
                     {% if user.is_authenticated %}
-                        <div id="login_button" class="login_link"><i class="fa fa-user"></i> {% get_full_name %}</div>
+                        <div id="login_button" class="login_link"><i class="fa fa-user"></i> <a href="/account"> {% get_full_name %}</a></div>
                     {% else %}
                         <div id="login_button" class="login_link"><i class="fa fa-user"></i> Авторизация</div>
                     {% endif %}

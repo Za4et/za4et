@@ -1,6 +1,6 @@
 {% extends 'zach/base.html' %}
 {% load staticfiles %}
-
+{% load profile %}
 {% block title %}Журналы{% endblock %}
 {% block content %}
     <link rel="stylesheet" href="{% static 'css/zach/journals.css' %}"/>
@@ -11,14 +11,10 @@
                     <div class="university">
                         {% include 'zach/left_menu/includes/institutes.html' %}
                     </div>
+                {% if user.is_authenticated %}
                     {% include 'zach/left_menu/includes/formstudy.html' %}
+                {% endif %}
                     <div class="selected_journals">
-
-                        {#                        {% for group in groups %}#}
-                        {#                            <a href="{{ group.journal__link }}" target="jframe">{{ group.name }}</a>#}
-                        {#                        {% endfor %}#}
-
-
                         <div class="all_journals_rate">
                             <img src="{% static 'images/jrnls/jrnls.lft.png' %}">
                             <div class="journ_opac"></div>
@@ -28,14 +24,14 @@
                                         <div class="journal_circle"></div>
                                         <div class="journal_backg_n">
                                             <div class="journal_name">
-                                                <a href="{{ group.journal__link }}" target="jframe">{{ group.name }}</a>
+                                                <a class="permission_link" {% if user.is_authenticated %}
+                                                    {% permissions_group group.name group.journal__link %}
+                                                   {% else %}{% endif %} onclick="permisiion_journal(this.getAttribute('href'))">{{ group.name }}</a>
                                             </div>
                                         </div>
                                     </div>
                                 {% endfor %}
                                 {% for search_group in search_groups %}
-
-
                                     <div class="journal">
                                         <div class="journal_circle"></div>
                                         <div class="journal_backg_n">
@@ -54,16 +50,19 @@
                             <div class="journ_win_frame">
                                 <div class="journ_backg_frame">
                                     <div class="journ_select_text">
+                                        {% if user.is_authenticated %}
                                         <p>Для того, чтобы просмотреть</p>
                                         <p>свою успеваемость,</p>
                                         <p>выберите вуз, направление и группу,</p>
                                         <p>в которой обучаетесь.</p>
+                                        {% else %}
+                                           <p>Упс!</p>
+                                            Журналы недоступны<br/> неавторизованным пользователям!
+                                        {% endif %}
                                     </div>
-{#                                    <div class="journ_err_select_text">#}
-{#                                        <p>Выберите журнал группы,</p>#}
-{#                                        <p>в которой состоите!</p>#}
-{#                                    </div>#}
+
                                     <iframe src="" name="jframe" class="journ_frame"></iframe>
+
                                 </div>
                             </div>
                             <img src="{% static 'images/jrnls/jrnls.rght.png' %}">
@@ -83,4 +82,5 @@
             </div>
         </div>
     </div>
+
 {% endblock %}
