@@ -75,7 +75,7 @@
     width: 512px;
     background-color: #cccccc;
     z-index: 1000;
-    clip-path: polygon(0 0, 368px 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 495px 0, 495px 100%, 0 100%);
 }
 
 .tree_files img {
@@ -87,7 +87,7 @@
     position: absolute;
     top: 15px;
     left: 15px;
-    width: 340px;
+    width: 463px;
     height: 690px;
     padding-left: 15px;
     z-index: 1015;
@@ -97,14 +97,14 @@
 
 .lib_subject{
     position: relative;
-    width: 310px;
+    width: 430px;
     height: 50px;
     margin-bottom: 15px;
     padding-top: 3px;
     background-color: #f4f4f4;
     text-align: center;
     font-size: 28px;
-
+    cursor: pointer;
 }
 
 .lib_subject a{
@@ -128,7 +128,7 @@
     width: 762px;
     background-color: #cccccc;
     z-index: 1000;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 126px 100%);
+    clip-path: polygon(128px 0, 100% 0, 100% 100%, 128px 100%);
 }
 
 .found_files img {
@@ -140,35 +140,50 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 729px;
+    width: 604px;
     height: 600px;
-    background-color: #333233;
+    background-color: #52011a;
     z-index: 1010;
     transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 121px 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .lib_win_frame {
     position: absolute;
     top: 3px;
     right: 3px;
-    width: 723px;
+    width: 598px;
     height: 594px;
     background-color: #ffffff;
     z-index: 1010;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 120px 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .lib_frame{
     position: absolute;
     top: 0;
     right: 0;
-    width: 723px;
+    width: 100%;
     height: 594px;
+    padding-left: 15px;
     z-index: 1015;
+    font-size: 25px;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.lib_select_text{
+    text-align: center;
+    font-size: 36px;
+    color: #52011a;
+    margin-top: 260px;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
 }
 
 .lib_win_frame:hover +~ .lib_backg_frame{
@@ -185,7 +200,7 @@
     width: 634px;
     background-color: #cccccc;
     z-index: 1000;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 16px 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     border: none;
 }
 
@@ -223,7 +238,7 @@
 }
 
 .lbrr_download_file {
-    clip-path: polygon(0 0, 212px 0, 100% 100%, 10px 100%);
+    clip-path: polygon(0 0, 212px 0, 100% 100%, 0 100%);
     left: 94px;
 }
 

@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecdc69b3-428d-4352-8689-e2f11540de00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/templates/404.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/file1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/file2.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/serializer.py" afterPath="$PROJECT_DIR$/main/static/js/helpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Za4et.iml" afterPath="$PROJECT_DIR$/.idea/Za4et.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/helpers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Za4et/settings.py" afterPath="$PROJECT_DIR$/Za4et/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/views.py" afterPath="$PROJECT_DIR$/api/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/static/js/api.js" afterPath="$PROJECT_DIR$/main/static/js/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/base_includes/footer.html" afterPath="$PROJECT_DIR$/main/templates/base_includes/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/base_includes/login_form.html" afterPath="$PROJECT_DIR$/main/templates/base_includes/login_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/base_includes/top_header.html" afterPath="$PROJECT_DIR$/main/templates/base_includes/top_header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/article.html" afterPath="$PROJECT_DIR$/main/templates/zach/article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/base.html" afterPath="$PROJECT_DIR$/main/templates/zach/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/zach/left_menu/journals.html" afterPath="$PROJECT_DIR$/main/templates/zach/left_menu/journals.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templatetags/profile.py" afterPath="$PROJECT_DIR$/main/templatetags/profile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/zach/journals.css" afterPath="$PROJECT_DIR$/static/css/zach/journals.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/zach/library.css" afterPath="$PROJECT_DIR$/static/css/zach/library.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/api.js" afterPath="$PROJECT_DIR$/static/js/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/common.js" afterPath="$PROJECT_DIR$/static/js/common.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/main/templates/zach/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
-              <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+              <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -113,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/main/templates/zach/left_menu/journals.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="56" column="68" lean-forward="true" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
+              <caret line="56" column="68" lean-forward="false" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -137,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/main/templates/base_includes/login_form.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
-              <caret line="53" column="66" lean-forward="true" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
+              <caret line="53" column="66" lean-forward="false" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#p#2;n#form#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -148,8 +136,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Za4et/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="374">
+              <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
               <folding>
                 <element signature="e#306#315#0" expanded="true" />
               </folding>
@@ -161,7 +149,7 @@
         <entry file="file://$PROJECT_DIR$/main/static/js/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -183,7 +171,7 @@
         <entry file="file://$PROJECT_DIR$/main/static/css/zach/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
-              <caret line="544" column="34" lean-forward="true" selection-start-line="544" selection-start-column="34" selection-end-line="544" selection-end-column="34" />
+              <caret line="544" column="34" lean-forward="false" selection-start-line="544" selection-start-column="34" selection-end-line="544" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -349,13 +337,7 @@
             <path>
               <item name="za4et-prod" type="b2602c69:ProjectViewProjectNode" />
               <item name="za4et-prod" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="za4et-prod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="za4et-prod" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="za4et-prod" type="b2602c69:ProjectViewProjectNode" />
@@ -633,13 +615,6 @@
       <updated>1516891312005</updated>
       <workItem from="1518960828379" duration="76000" />
       <workItem from="1519693830225" duration="649000" />
-    </task>
-    <task id="LOCAL-00017" summary="fix">
-      <created>1524086234330</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1524086234330</updated>
     </task>
     <task id="LOCAL-00018" summary="fix">
       <created>1524249125842</created>
@@ -977,7 +952,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526491655217</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="final fixes v0">
+      <created>1526650904991</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1526650904992</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -994,16 +976,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="868" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@Za4et" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30810812" sideWeight="0.47421202" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@Za4et" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30810812" sideWeight="0.47421202" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4310811" sideWeight="0.4820917" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.49713466" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.49426934" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25405404" sideWeight="0.51790833" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25405404" sideWeight="0.51790833" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45" sideWeight="0.46561605" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18051577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18051577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1446,7 +1427,7 @@
     <entry file="file://$PROJECT_DIR$/main/static/css/zach/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="544" column="34" lean-forward="true" selection-start-line="544" selection-start-column="34" selection-end-line="544" selection-end-column="34" />
+          <caret line="544" column="34" lean-forward="false" selection-start-line="544" selection-start-column="34" selection-end-line="544" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1454,7 +1435,7 @@
     <entry file="file://$PROJECT_DIR$/main/templates/zach/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
-          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1472,7 +1453,7 @@
     <entry file="file://$PROJECT_DIR$/main/templates/zach/left_menu/journals.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="56" column="68" lean-forward="true" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
+          <caret line="56" column="68" lean-forward="false" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -1482,7 +1463,7 @@
     <entry file="file://$PROJECT_DIR$/main/templates/base_includes/login_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
-          <caret line="53" column="66" lean-forward="true" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
+          <caret line="53" column="66" lean-forward="false" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#input#0;n#p#2;n#form#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -1492,7 +1473,7 @@
     <entry file="file://$PROJECT_DIR$/main/static/js/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1507,8 +1488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Za4et/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
           <folding>
             <element signature="e#306#315#0" expanded="true" />
           </folding>

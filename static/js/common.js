@@ -197,10 +197,14 @@ $(document).ready(function () {
 
         $('.journ_frame').hover(
             function () {
-                $('.journ_win_frame').css('background-color', '#AC0439')
+                $('.journ_win_frame').css('background-color', '#AC0439');
+                $('.journ_select_text').css('color', '#AC0439');
+                $('.journ_err_select_text').css('color', '#AC0439');
             },
             function () {
-                $('.journ_win_frame').css('background-color', '#333233')
+                $('.journ_win_frame').css('background-color', '#52011a');
+                $('.journ_select_text').css('color', '#52011a');
+                $('.journ_err_select_text').css('color', '#52011a');
             });
 
 
@@ -210,10 +214,12 @@ $(document).ready(function () {
 
         $('.lib_frame').hover(
             function () {
-                $('.lib_backg_frame').css('background-color', '#AC0439')
+                $('.lib_backg_frame').css('background-color', '#AC0439');
+                $('.lib_select_text').css('color', '#AC0439');
             },
             function () {
-                $('.lib_backg_frame').css('background-color', '#333233')
+                $('.lib_backg_frame').css('background-color', '#52011a');
+                $('.lib_select_text').css('color', '#52011a');
             });
 
         /* lbrr end */
@@ -228,11 +234,14 @@ function toggle(source) {
     if (hided === false) {
         $('.lbrr_download_file').hide();
         hided = true;
+        $('.lbrr_download_zip').css('clip-path','polygon(0 0, 100% 0, 100% 100%, 0 100%)');
+        $('.lbrr_download_zip').css('right','200px');
     }
     else if (hided===true) {
 
-        $('.lbrr_download_file').css('display', 'block')
+        $('.lbrr_download_file').css('display', 'block');
         hided = false;
-
+        $('.lbrr_download_zip').css('clip-path','polygon(0 0, 100% 0, 100% 100%, 10px 100%)');
+        $('.lbrr_download_zip').css('right','95px');
     }
 }
