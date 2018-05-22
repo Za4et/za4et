@@ -8,7 +8,7 @@
 
 
 <head>
-    {% block title %}{{ account.fio }}{% endblock %}
+    {% block title %}Личный кабинет{% endblock %}
 </head>
 
 <body>
@@ -31,9 +31,9 @@
                                                   enctype="multipart/form-data">
                                                 {% csrf_token %}
                                                 <label class="up_pho_pro_lab">
-                                                    <input type="file" name="profile_photo" accept="image/*,image/jpeg"
-                                                           onchange="this.form.submit()">
-                                                    <span><i class="fa fa-upload"></i></span>
+
+                                                    <span><i class="fa fa-upload"><input  type="file" name="profile_photo" accept="image/*,image/jpeg"
+                                                                                          onchange="this.form.submit()"></i></span>
                                                     <p>Загрузить фото</p>
                                                 </label>
                                             </form>
