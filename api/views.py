@@ -2,7 +2,7 @@
 from django.http import JsonResponse
 from django.utils.encoding import smart_str
 
-from main.models import News, Institute, Group, Files
+from main.models import News, Institute, Group, Files, Student
 
 
 def get_news(request, institute):
@@ -46,9 +46,13 @@ def get_journals(request, institute, form_edu, course):
     link_list = []
     groups = Group.objects.filter(institute__slug=institute, form_edu__name=form_edu, cource=course).values('name',
                                                                                                             'journal__link')
+    student = Student.objects.get(username=request.user)
     for group in groups:
         groups_list.append(group['name'])
-        link_list.append(group['journal__link'])
+        if str(student.group) == str(group['name']):
+            link_list.append(group['journal__link'])
+        else:
+            link_list.append('#')
     data = {'links': link_list,
             'groups': groups_list,
             }

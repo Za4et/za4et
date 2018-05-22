@@ -223,9 +223,22 @@ $(document).ready(function () {
             });
 
         /* lbrr end */
+
+        /* acc */
+
+        $('.acc_journal').click(
+          function () {
+              $('.journal_view_block').toggle(300)
+          }
+        );
+        /* acc end*/
+
     }
 );
-var hided =false;
+
+
+var hided = false;
+
 function toggle(source) {
     checkboxes = document.getElementsByClassName('material_check');
     for (var i = 0, n = checkboxes.length; i < n; i++) {
@@ -234,14 +247,14 @@ function toggle(source) {
     if (hided === false) {
         $('.lbrr_download_file').hide();
         hided = true;
-        $('.lbrr_download_zip').css('clip-path','polygon(0 0, 100% 0, 100% 100%, 0 100%)');
-        $('.lbrr_download_zip').css('right','200px');
+        $('.lbrr_download_zip').css('clip-path', 'polygon(0 0, 100% 0, 100% 100%, 0 100%)');
+        $('.lbrr_download_zip').css('right', '200px');
     }
-    else if (hided===true) {
+    else if (hided === true) {
 
         $('.lbrr_download_file').css('display', 'block');
         hided = false;
-        $('.lbrr_download_zip').css('clip-path','polygon(0 0, 100% 0, 100% 100%, 10px 100%)');
-        $('.lbrr_download_zip').css('right','95px');
+        $('.lbrr_download_zip').css('clip-path', 'polygon(0 0, 100% 0, 100% 100%, 10px 100%)');
+        $('.lbrr_download_zip').css('right', '95px');
     }
 }

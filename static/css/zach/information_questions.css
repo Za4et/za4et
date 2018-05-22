@@ -121,7 +121,7 @@
 
 .info_bord_11{
     position: relative;
-    height: 38px;
+    height: 34px;
     width: 515px;
     float: left;
 }
@@ -187,7 +187,13 @@
     float: left;
     width: 650px;
     height: 400px;
-    background-color: #cccccc;
+    background-color: #ffffff;
+}
+
+.quest_jour_gif img{
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .quest_jour_text{
@@ -223,7 +229,13 @@
     float: right;
     width: 650px;
     height: 400px;
-    background-color: #cccccc;
+    background-color: #ffffff;
+}
+
+.quest_lib_gif img{
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .quest_lib_text{

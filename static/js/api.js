@@ -79,7 +79,7 @@ function get_journals(form, course) {
                         '<div class="journal_circle"></div>' +
                         '<div class="journal_backg_n">' +
                         '<div class="journal_name">' +
-                        '<a href="' + data.links[i] + '" target="jframe">' + data.groups[i] + '</a>' +
+                        '<a class="permission_link" href="' + data.links[i] + '" target="jframe" onclick="permisiion_journal(this.getAttribute(\'href\'))">' + data.groups[i] + '</a>' +
                         '</div>' +
                         '</div>' +
                         '</div>');

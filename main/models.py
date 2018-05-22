@@ -16,6 +16,12 @@ def news_upload_to(instance, filename):
     return os.path.join('news_imgs/', rand + os.path.splitext(filename)[1])
 
 
+def background_image_up(instance, filename):
+    rand = random.randrange(0, sys.maxsize)
+    rand = str(rand)
+    return os.path.join('bckgrnd_imgs/', rand + os.path.splitext(filename)[1])
+
+
 def file_upload_to(instance, filename):
     rand = random.randrange(0, sys.maxsize)
     rand = str(rand)
@@ -174,6 +180,7 @@ class Student(User):
     place_of_styding = models.TextField(verbose_name='Место обучения студента')
     group = models.ForeignKey(Group, on_delete=models.CASCADE, verbose_name='Учебная группа')
     avatar = models.ImageField(upload_to=avatar_upload, blank=True, null=True)
+    background_image = models.ImageField(upload_to=background_image_up, null=True, blank=True)
 
     def __str__(self):
         return self.fio

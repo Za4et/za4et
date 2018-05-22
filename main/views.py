@@ -7,9 +7,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
+from django.utils.datastructures import MultiValueDictKeyError
 from django.utils.encoding import smart_str
 
-from Za4et import settings
 from Za4et.settings import BASE_DIR
 from main.models import News, Files, Discipline, Group, Student, Journal
 
@@ -29,8 +29,18 @@ def news(request):
 
 @login_required
 def account(request):
-    user = Student.objects.get(username=request.user)
-    return render(request, 'zach/account.html', {'account': user})
+    if request.method == 'POST':
+        student = Student.objects.get(username=request.user)
+        try:
+            student.background_image = request.FILES['profile_backg']
+            student.save()
+        except MultiValueDictKeyError:
+            student.avatar = request.FILES['profile_photo']
+            student.save()
+    user = Student.objects.filter(username=request.user).values('group__journal__link', 'fio', 'group__name',
+                                                                'background_image',
+                                                                'place_of_styding', 'avatar')
+    return render(request, 'zach/account.html', {'accounts': user})
 
 
 def journals(request):
@@ -151,7 +161,6 @@ def res_search(request):
             search_list['news'] = news_list
         if request.GET.get('library'):
             library_check = True
-            print(library_check)
             library = request.GET.get('main_search')
             materials = Files.objects.filter(Q(name__icontains=library) |
                                              Q(tag__name__icontains=library) |
