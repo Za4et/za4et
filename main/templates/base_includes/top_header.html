@@ -1,0 +1,56 @@
+{% load profile %}
+{% load static %}
+<header class="top_header">
+    <div class="header_topline">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="soc_button">
+                        <a href="http://sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                      aria-hidden="true"></i>
+                            ЮФУ</a>
+                        <a href="http://ictis.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                            aria-hidden="true"></i>
+                            ИКТИБ</a>
+                        <a href="http://inep.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                           aria-hidden="true"></i>
+                            ИНЭП</a>
+                        <a href="http://rtf.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                          aria-hidden="true"></i>
+                            ИРТСУ</a>
+                        <a href="http://iues.sfedu.ru/" target="_blank"><i class="fa fa-external-link"
+                                                                           aria-hidden="true"></i>
+                            ИУЭС</a>
+                    </div>
+                    <div class="vk_button">
+                        <a href="https://vk.com/sfedu_official" target="_blank"><i class="fa fa-vk"
+                                                                                   aria-hidden="true"></i>
+                            ЮФУ</a>
+                    </div>
+
+
+
+                    {% if user.is_authenticated %}
+                        <div class="exit_acc">
+                            <a href="/logout">
+                            <img src="{% static 'images/sign_out_white.png' %}" alt="" class="exit_prof_0">
+                            <img src="{% static 'images/sign_out_white.png' %}" alt="" class="exit_prof_1">
+                            <img src="{% static 'images/sign_out_grey.png' %}" alt="" class="exit_prof_2">
+                            </a>
+                        </div>
+                        <div id="login_button" class="login_link"><i class="fa fa-user"></i> <a
+                                href="/account"> {% get_full_name %}</a></div>
+
+                    {% else %}
+                        <div id="login_button" class="login_link"><i class="fa fa-user"></i> Авторизация</div>
+                    {% endif %}
+
+                    <div class="contacts_head">
+                        <a href="http://asu.tti.sfedu.ru/Raspisanie/Default.aspx?isPotok=121&Semestr=1"
+                           target="_blank"><i class="fa fa-calendar" aria-hidden="true"></i> Расписание занятий</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,1046 @@
+/*---> university blocks <---*/
+.journals_content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.university {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+}
+
+.university input {
+    display: none;
+}
+
+.university .ictis_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 287px;
+    height: 100%;
+    background-color: #cccccc;
+    z-index: 1100;
+    clip-path: polygon(0 0, 275px 0, 100% 100%, 0 100%);
+    cursor: pointer;
+}
+
+.text_ictis {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.text_ictis img {
+    margin-top: -5px;
+    height: 30px;
+}
+
+.ictis_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.ictis_block:hover .ictis_opac {
+    opacity: 0.3;
+}
+
+.ictis_block .ictis_opac_after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    z-index: 1004;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.ictis_label input:checked ~ .ictis_block .ictis_opac_after {
+    opacity: 1;
+}
+
+.ictis_label .ictis_block .ictis_opac_after {
+    width: 100%;
+    height: 100%;
+    background-color: #52011A;
+
+}
+
+.back_ictis {
+    position: absolute;
+    height: 100%;
+    width: 293px;
+    z-index: 1001;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+/*--------------------*/
+
+.university .inep_block {
+    position: absolute;
+    left: 285px;
+    width: 286px;
+    height: 100%;
+    background-color: #cccccc;
+    z-index: 1100;
+    clip-path: polygon(0 0, 274px 0, 100% 100%, 12px 100%);
+    cursor: pointer;
+}
+
+.text_inep {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.text_inep img {
+    height: 35px;
+}
+
+.inep_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.inep_block:hover .inep_opac {
+    opacity: 0.3;
+}
+
+.inep_block .inep_opac_after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    z-index: 1004;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.inep_label input:checked ~ .inep_block .inep_opac_after {
+    opacity: 1;
+}
+
+.inep_label .inep_block .inep_opac_after {
+    width: 100%;
+    height: 100%;
+    background-color: #52011A;
+
+}
+
+.back_inep {
+    position: absolute;
+    height: 100%;
+    width: 293px;
+    z-index: 1001;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+/*--------------------*/
+
+.university .irtsu_block {
+    position: absolute;
+    right: 285px;
+    width: 286px;
+    height: 100%;
+    background-color: #cccccc;
+    z-index: 1100;
+    clip-path: polygon(0 0, 274px 0, 100% 100%, 12px 100%);
+    cursor: pointer;
+}
+
+.text_irtsu {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.text_irtsu img {
+    height: 30px;
+    margin-top: -5px;
+}
+
+.irtsu_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.irtsu_block:hover .irtsu_opac {
+    opacity: 0.3;
+}
+
+.irtsu_block .irtsu_opac_after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    z-index: 1004;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.irtsu_label input:checked ~ .irtsu_block .irtsu_opac_after {
+    opacity: 1;
+}
+
+.irtsu_label .irtsu_block .irtsu_opac_after {
+    width: 100%;
+    height: 100%;
+    background-color: #52011A;
+
+}
+
+.back_irtsu {
+    position: absolute;
+    height: 100%;
+    width: 293px;
+    z-index: 1001;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+/*--------------------*/
+
+.university .iues_block {
+    position: absolute;
+    right: 0;
+    width: 287px;
+    height: 100%;
+    background-color: #cccccc;
+    z-index: 1100;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%);
+    cursor: pointer;
+}
+
+.text_iues {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.text_iues img {
+    height: 30px;
+    margin-top: -5px;
+}
+
+.iues_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.iues_block:hover .iues_opac {
+    opacity: 0.3;
+}
+
+.iues_block .iues_opac_after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    z-index: 1004;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.iues_label input:checked ~ .iues_block .iues_opac_after {
+    opacity: 1;
+}
+
+.iues_label .iues_block .iues_opac_after {
+    width: 100%;
+    height: 100%;
+    background-color: #52011A;
+
+}
+
+.back_iues {
+    position: absolute;
+    height: 100%;
+    width: 293px;
+    z-index: 1001;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+/*---> university blocks end <---*/
+
+/*---> directions <---*/
+
+.directions {
+    position: relative;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.text_direc_bac, .text_direc_spe, .text_direc_mag {
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.directions .baccalaureate {
+    position: absolute;
+    left: 0;
+    height: 80px;
+    width: 387px;
+    z-index: 1000;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 100% 0, 367px 100%, 0 100%);
+    cursor: pointer;
+}
+
+.baccalaureate img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+
+.direc_opac_bac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.text_direc_bac {
+    position: absolute;
+    top: 22px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.baccalaureate:hover .text_direc_bac {
+    opacity: 0;
+}
+
+.baccalaureate:hover .direc_opac_bac {
+    opacity: 0.2;
+}
+
+.block_course_bac {
+    position: absolute;
+    color: #ffffff;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+
+.baccalaureate:hover .block_course_bac {
+    opacity: 1;
+}
+
+.block_course_bac input {
+    display: none;
+}
+
+.text_course_bac {
+    position: absolute;
+    top: 22px;
+    left: 58px;
+    color: #ffffff;
+    font-size: 26px;
+    z-index: 1050;
+    text-align: center;
+}
+
+.first_course_bac, .second_course_bac,
+.third_course_bac, .fourth_course_bac {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #52011A;
+    padding-left: 12px;
+    padding-top: 2px;
+    border-radius: 3px;
+    z-index: 1050;
+    cursor: pointer;
+    -webkit-transform: skew(-14deg);
+    -moz-transform: skew(-14deg);
+    -o-transform: skew(-14deg);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.course_text_sk {
+    position: absolute;
+    padding: auto;
+    -webkit-transform: skew(14deg);
+    -moz-transform: skew(14deg);
+    -o-transform: skew(14deg);
+}
+
+.first_course_bac:hover, .second_course_bac:hover,
+.third_course_bac:hover, .fourth_course_bac:hover {
+    color: #ffffff;
+    background-color: #AC0439;
+}
+
+.first_course_bac {
+    left: 133px;
+}
+
+.label_first_course_bac input:checked ~ .first_course_bac {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.second_course_bac {
+    left: 183px;
+}
+
+.label_second_course_bac input:checked ~ .second_course_bac {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.third_course_bac {
+    left: 233px;
+}
+
+.label_third_course_bac input:checked ~ .third_course_bac {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.fourth_course_bac {
+    left: 283px;
+}
+
+.label_fourth_course_bac input:checked ~ .fourth_course_bac {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+/*--------------------*/
+
+.directions .specialty {
+    position: absolute;
+    right: 377px;
+    height: 80px;
+    width: 386px;
+    z-index: 1000;
+    background-color: #cccccc;
+    clip-path: polygon(20px 0, 100% 0, 367px 100%, 0 100%);
+    cursor: pointer;
+}
+
+.specialty img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+
+.direc_opac_spe {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.text_direc_spe {
+    position: absolute;
+    top: 22px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.specialty:hover .text_direc_spe {
+    opacity: 0;
+}
+
+.specialty:hover .direc_opac_spe {
+    opacity: 0.2;
+}
+
+.block_course_spe {
+    position: absolute;
+    color: #ffffff;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+
+.specialty:hover .block_course_spe {
+    opacity: 1;
+}
+
+.block_course_spe input {
+    display: none;
+}
+
+.text_course_spe {
+    position: absolute;
+    top: 22px;
+    left: 35px;
+    color: #ffffff;
+    font-size: 26px;
+    z-index: 1050;
+    text-align: center;
+}
+
+.first_course_spe, .second_course_spe,
+.third_course_spe, .fourth_course_spe,
+.fifth_course_spe {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #52011A;
+    padding-left: 12px;
+    padding-top: 2px;
+    border-radius: 3px;
+    z-index: 1050;
+    cursor: pointer;
+    -webkit-transform: skew(-14deg);
+    -moz-transform: skew(-14deg);
+    -o-transform: skew(-14deg);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.first_course_spe:hover, .second_course_spe:hover,
+.third_course_spe:hover, .fourth_course_spe:hover,
+.fifth_course_spe:hover {
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.first_course_spe {
+    left: 110px;
+}
+
+.label_first_course_spe input:checked ~ .first_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.second_course_spe {
+    left: 160px;
+}
+
+.label_second_course_spe input:checked ~ .second_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.third_course_spe {
+    left: 210px;
+}
+
+.label_third_course_spe input:checked ~ .third_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.fourth_course_spe {
+    left: 260px;
+}
+
+.label_fourth_course_spe input:checked ~ .fourth_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.fifth_course_spe {
+    left: 310px;
+}
+
+.label_fifth_course_spe input:checked ~ .fifth_course_spe {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+/*--------------------*/
+
+.directions .magistracy {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    width: 387px;
+    z-index: 1000;
+    background-color: #cccccc;
+    clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%);
+    cursor: pointer;
+}
+
+.magistracy img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+
+.direc_opac_mag {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.text_direc_mag {
+    position: absolute;
+    top: 22px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.magistracy:hover .text_direc_mag {
+    opacity: 0;
+}
+
+.magistracy:hover .direc_opac_mag {
+    opacity: 0.2;
+}
+
+.block_course_mag {
+    position: absolute;
+    color: #ffffff;
+    font-size: 26px;
+    opacity: 0;
+    transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+
+.magistracy:hover .block_course_mag {
+    opacity: 1;
+}
+
+.block_course_mag input {
+    display: none;
+}
+
+.text_course_mag {
+    position: absolute;
+    top: 22px;
+    left: 109px;
+    color: #ffffff;
+    font-size: 26px;
+    z-index: 1050;
+    text-align: center;
+}
+
+.first_course_mag, .second_course_mag {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #52011A;
+    padding-left: 12px;
+    padding-top: 2px;
+    border-radius: 3px;
+    z-index: 1050;
+    cursor: pointer;
+    -webkit-transform: skew(-14deg);
+    -moz-transform: skew(-14deg);
+    -o-transform: skew(-14deg);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.course_text_sk {
+    -webkit-transform: skew(14deg);
+    -moz-transform: skew(14deg);
+    -o-transform: skew(14deg);
+}
+
+.first_course_mag:hover, .second_course_mag:hover {
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.first_course_mag {
+    left: 184px;
+}
+
+.label_first_course_mag input:checked ~ .first_course_mag {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+.second_course_mag {
+    left: 234px;
+}
+
+.label_second_course_mag input:checked ~ .second_course_mag {
+    top: 10px;
+    height: 60px;
+    padding-top: 11px;
+    background-color: #AC0439;
+    color: #ffffff;
+}
+
+/*---> directions end <---*/
+
+/*---> selected journals <---*/
+
+.selected_journals {
+    position: relative;
+    height: 640px;
+    margin-top: 10px;
+}
+
+.all_journals_rate {
+    position: absolute;
+    left: 0;
+    height: 640px;
+    width: 512px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 367px 0, 367px 100%, 0 100%);
+}
+
+.all_journals_rate img {
+    position: absolute;
+    left: 0;
+    height: 640px;
+    z-index: 1001;
+}
+
+.journ_win_rate{
+    position: absolute;
+    height: 610px;
+    width: 355px;
+    margin: 15px 15px;
+    padding-left: 17px;
+    z-index: 1010;
+    direction: rtl;
+    overflow-y: scroll;
+}
+
+/*.journ_win_rate::-webkit-scrollbar{*/
+    /*width: 8px;*/
+/*}*/
+
+.journal{
+    float: left;
+    position: relative;
+    margin: 0 0 15px 15px;
+    height: 180px;
+    width: 60px;
+    background-color: #52011a;
+    z-index: 1015;
+    cursor: pointer;
+}
+
+.journal_circle{
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 22px;
+    height: 22px;
+    border-radius: 30px;
+    border: 3px solid #ffffff;
+    background-color: #333233;
+}
+
+.journal_backg_n{
+    position: absolute;
+    top: 60px;
+    left: 12px;
+    width: 36px;
+    height: 109px;
+    background-color: #fff0ff;
+}
+
+
+.journal_name{
+    position: absolute;
+    top: 40px;
+    left: -36px;
+    width: 109px;
+    color: #333233;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+/*win with journ*/
+
+.window_with_journals {
+    position: absolute;
+    right: 0;
+    height: 640px;
+    width: 763px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.window_with_journals img {
+    position: absolute;
+    /*right: -5px;*/
+    width: 762px;
+    z-index: 1001;
+}
+
+.journ_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+}
+
+.journ_win_frame{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 732px;
+    height: 610px;
+    z-index: 1010;
+    background-color: #52011a;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.journ_backg_frame{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 726px;
+    height: 604px;
+    z-index: 1012;
+    background-color: #E4E4E4;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.journ_select_text,
+.journ_err_select_text{
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.journ_select_text{
+    text-align: center;
+    color: #52011a;
+    font-size: 28px;
+    margin-top: 200px;
+}
+
+.journ_err_select_text{
+    margin-top: 240px;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: #52011a;
+}
+
+.journ_frame{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 727px;
+    height: 610px;
+    z-index: 1015;
+}
+
+/*---> selected journals end <---*/
+
+/*---> search journals <---*/
+
+.search_journals {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 80px;
+    background-color: #cccccc;
+}
+
+.search_journals img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+
+.univ_search_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+}
+
+.search_journals input {
+    position: absolute;
+    z-index: 1050;
+}
+
+.jrnl_in_search {
+    top: 15px;
+    left: 95px;
+    width: 740px;
+    height: 50px;
+    border: 0;
+    clip-path: polygon(0 0, 100% 0, 730px 100%, 0 100%);
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.jrnl_but_sum {
+    top: 15px;
+    right: 95px;
+    width: 209px;
+    height: 50px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #52011A;
+    border: 0;
+    clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.jrnl_but_sum:hover {
+    background-color: #AC0439;
+}
+
+/*---> search journals end <---*/

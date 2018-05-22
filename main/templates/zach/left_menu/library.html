@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Библиотека{% endblock %}
+    {% block meta_head %}
+        <meta name="description"
+              content="Найти учебные материалы, просмотреть электронные ресурсы библиотеки, собранную преподавателями и студентами ИТА ЮФУ."/>
+    {% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <div class="library_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="library_block">
+                        <div class="library_search">
+                            <img src="{% static 'images/lbrr/lbrr.search.png' %}">
+                            <div class="opacity_lbrr"></div>
+                            <form class="lbrr_search_form" method="get" name="search">
+                                <input type="text" class="lbrr_in_search" placeholder="Лекции ОС..." name="search"
+                                       value="{{ search }}">
+                                <input type="submit" value="Найти" class="lbrr_but_sum">
+                            </form>
+                        </div>
+
+                        <div class="files_block">
+                            <div class="tree_files">
+                                <img src="{% static 'images/lbrr/lbrr.left.png' %}">
+                                <div class="opacity_lbrr"></div>
+                                <div class="lib_materials">
+                                    {% for discipline in disciplines %}
+                                        <div class="lib_subject" onclick="get_materials(this.textContent)">
+                                            <a>{{ discipline.name }}</a>
+                                        </div>
+                                    {% endfor %}
+                                    {% for material in materials %}
+                                        <div class="lib_subject">
+                                            <a href="">{{ material.name }}</a>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            <div class="found_files">
+                                <img src="{% static 'images/lbrr/lbrr.rght.png' %}">
+                                <div class="opacity_lbrr"></div>
+                                <div class="lib_backg_frame">
+                                    <div class="lib_win_frame" style="text-align: justify">
+                                        <form action="." method="post" id="lib_form">
+                                            {% csrf_token %}
+                                            <div class="lib_frame" align="center">
+                                                <div class="lib_select_text">Выберите предмет!</div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="library_download">
+                                <img src="{% static 'images/lbrr/lbrr.rght.button.png' %}">
+                                <div class="opacity_lbrr"></div>
+                                <div class="lbrr_download_file" onclick="submit_form_file()">
+                                    <div class="lbrr_icon_down_f">
+                                        <img src="{% static 'images/lbrr/down_1.png' %}" alt="" class="lbrr_down_img_1">
+                                        <img src="{% static 'images/lbrr/down_2.png' %}" alt="" class="lbrr_down_img_2">
+                                    </div>
+                                    <div class="lbrr_text_down_f">Файл</div>
+                                </div>
+                                <div class="lbrr_download_zip" onclick="submit_form()">
+
+                                    <div class="lbrr_icon_down_z">
+                                        <img src="{% static 'images/lbrr/down_1.png' %}" alt="" class="lbrr_down_img_1">
+                                        <img src="{% static 'images/lbrr/down_2.png' %}" alt="" class="lbrr_down_img_2">
+                                    </div>
+                                    <div class="lbrr_text_down_z">Архивом</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

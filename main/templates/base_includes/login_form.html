@@ -1,0 +1,75 @@
+
+<div class="login">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="backg_sheet">
+                </div>
+                <div class="register_sheet">
+                    <form action="" class="log_register">
+                        <h1>Регистрация</h1>
+                        <p><span><i class="fa fa-user"></i></span><input
+                                type="text" class="login_input" placeholder="Введите Имя" autocomplete="on"></p>
+                        <p><span><i class="fa fa-user-plus"></i></span><input
+                                type="text" class="login_input" placeholder="Введите Фамилию" autocomplete="off">
+                        </p>
+                        <p><span><i class="fa fa-at"></i></span><input
+                                type="email" class="login_input" placeholder="Введите e-mail" autocomplete="off">
+                        </p>
+                        <div class="reg_captch" data-callback="recaptchaCallback">
+
+                                <div data-callback="recaptchaCallback" class="g-recaptcha" data-sitekey="6LfnJFkUAAAAAN87JUlLyPdX_JfQahyYBDBDOuU9"></div>
+
+                        </div>
+                        <p><input type="submit" class="sign_sub" value="ОТПРАВИТЬ"></p>
+                        <div class="login_back">
+                            <p><a href="#" class="login_back_a">У вас уже есть аккаунт?</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="forget_sheet">
+                    <form action="" class="login_forget">
+                        <h1>Восстановление</h1>
+                        <p><span><i class="fa fa-user-circle"></i></span><input
+                                type="text" class="login_input" placeholder="Введите логин" autocomplete="on"></p>
+                        <div class="forget_captch">
+
+                                <div data-callback="recaptchaCallback" class="g-recaptcha" data-sitekey="6LfnJFkUAAAAAN87JUlLyPdX_JfQahyYBDBDOuU9"></div>
+
+                        </div>
+                        <p><input type="submit" class="sign_sub" value="ОТПРАВИТЬ"></p>
+                        <div class="login_back">
+                            <p><a href="#" class="login_back_a">У вас уже есть аккаунт?</a></p>
+                        </div>
+                        <div class="first_login">
+                            <p><a href="#" class="first_login_a">Впервые на сайте?</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="login_form">
+                    <form action="/login/" method="post" class="login_vspl">
+                        <h1>Авторизация</h1>
+                        {% csrf_token %}
+                        <p><span><i class="fa fa-user-circle"></i></span>
+                            <input type="text" class="login_input" placeholder="Введите логин" autocomplete="on"
+                                   name="login" required></p>
+                        <p><span><i class="fa fa-lock"></i></span><input required
+                                type="password" class="login_input" name="pass" placeholder="Введите пароль"
+                                autocomplete="off">
+                        </p>
+                        <div class="login_captch">
+                            <div data-callback="recaptchaCallback" class="g-recaptcha" data-sitekey="6LfnJFkUAAAAAN87JUlLyPdX_JfQahyYBDBDOuU9"></div>
+                        </div>
+                        <p><input type="button" class="sign_sub" value="ВОЙТИ" style="opacity: .3"></p>
+                        <div class="login_help">
+                            <p><a href="#" class="login_help_a">Забыли пароль?</a></p>
+                        </div>
+                        <div class="first_login">
+                            <p><a href="#" class="first_login_a">Впервые на сайте?</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

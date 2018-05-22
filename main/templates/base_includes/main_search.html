@@ -1,0 +1,47 @@
+{% load static %}
+<div class="main_search">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="search_content">
+                    <div class="search_main_bckg">
+                    </div>
+                    <div class="search_main_img">
+                        <img src="{% static 'images/loupe.png' %}">
+                    </div>
+                    <div class="search_main_close">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <form class="search_main_form" method="get" name="search" action="/search/">
+                        <input type="text" name="main_search" class="search_main_in_text">
+                        <input type="submit" class="search_main_in_subm" value="Найти">
+
+                        <div class="search_main_labels">
+
+                            <p>Искать в разделе:</p>
+
+                            <label class="search_main_cheked_news">
+                                <input type="checkbox" class="search_main_ch_news" name="news" checked>
+                                <span class="search_main_sp_ne"></span>
+                                <p class="search_main_text_ne">Новости</p>
+                            </label>
+
+                            <label class="search_main_cheked_jour">
+                                <input type="checkbox" class="search_main_ch_jour" name="journals" checked>
+                                <span class="search_main_sp_jo"></span>
+                                <p class="search_main_text_jo">Журналы</p>
+                            </label>
+
+                            <label class="search_main_cheked_lib">
+                                <input type="checkbox" class="search_main_ch_lib" name="library" checked>
+                                <span class="search_main_sp_li"></span>
+                                <p class="search_main_text_li">Библиотека</p>
+                            </label>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

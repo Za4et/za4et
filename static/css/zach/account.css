@@ -1,0 +1,390 @@
+.private_content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 999;
+}
+
+.block_about_user {
+    position: relative;
+    width: 100%;
+    height: 320px;
+}
+
+.block_access {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.data_profile_block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 980px;
+    width: 100%;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ---> photo_account <--- */
+
+.photo_account {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    width: 220px;
+    height: 220px;
+    margin-top: -110px;
+    z-index: 1025;
+    background-color: #ffffff;
+    clip-path: circle(110px at 50% 50%);
+}
+
+.photo_block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -105px;
+    margin-left: -105px;
+    height: 210px;
+    width: 210px;
+    z-index: 1030;
+    clip-path: circle(100px at 50% 50%);
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
+.icon_account {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-size: 160px;
+    z-index: 1035;
+    color: #ffffff;
+}
+
+.photo_block img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1050;
+}
+
+.photo_opac {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1100;
+    background-color: #333233;
+    opacity: 0;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.photo_block:hover .photo_opac {
+    opacity: 0.8;
+}
+
+.upload_photo_profile {
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.up_pho_pro_lab {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1110;
+    cursor: pointer;
+}
+
+.up_pho_pro_lab input {
+    display: none;
+}
+
+.up_pho_pro_lab span {
+    position: absolute;
+    font-size: 80px;
+    margin: -40px 0 0 30px;
+    color: #ffffff;
+}
+
+.up_pho_pro_lab p {
+    position: absolute;
+    font-size: 22px;
+    margin: 60px 0 0 -10px;
+    color: #ffffff;
+}
+
+/* ---> photo_account end <--- */
+
+/* ---> data_profile_block <--- */
+
+.block_user_data {
+    position: absolute;
+    left: 390px;
+    height: 100%;
+    width: 700px;
+    z-index: 1020;
+}
+
+.text_profile_name {
+    position: relative;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.text_profile {
+    position: relative;
+    float: left;
+    margin: 10px 0 0 30px;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.text_prof_un {
+    position: relative;
+    margin: 10px 0 0 30px;
+    text-align: justify;
+    font-size: 20px;
+    color: #f9f9f9;
+}
+
+.text_prof_group {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    margin: 16px 0 0 10px;
+    font-size: 20px;
+    color: #f9f9f9;
+    float: left;
+}
+
+/* ---> data_profile_block end <--- */
+
+/* ---> prof bg image <---*/
+
+.prof_line {
+    position: absolute;
+    top: 320px;
+    height: 10px;
+    width: 100%;
+    z-index: 5000;
+    background-color: #ffffff;
+}
+
+.prof_bg_image img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1010;
+}
+
+.up_pho_back_lab {
+    position: absolute;
+    cursor: pointer;
+}
+
+.up_prof_back_i {
+    position: absolute;
+    top: 10px;
+    left: 1080px;
+    width: 0;
+    height: 0;
+    z-index: 1200;
+    font-size: 40px;
+    color: #ffffff;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.up_prof_back_i:hover {
+    color: #AC0439;
+}
+
+/* ---> prof bg image end <---*/
+
+/* ---> your_journals_block <--- */
+
+.your_journals_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 320px;
+    z-index: 2025;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 315px 0, 100% 100%, 0 100%);
+}
+
+.your_journals_block img {
+    position: absolute;
+    z-index: 2027;
+}
+
+.acc_block_opac {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333233;
+    opacity: 0.7;
+    z-index: 2030;
+}
+
+.acc_parag{
+    position: absolute;
+    top: 10px;
+    color: #ffffff;
+    margin-left: 35px;
+    font-size: 24px;
+    z-index: 2100;
+}
+
+.acc_journal{
+    position: absolute;
+    z-index: 2100;
+    width: 60px;
+    height: 180px;
+    margin: 90px 0 0 140px;
+    background-color: #52011a;
+    cursor: pointer;
+}
+
+.acc_journal a{
+    position: absolute;
+    z-index: 2220;
+    width: 100%;
+    height: 100%;
+}
+
+.acc_jour_circle{
+    position: absolute;
+    top: 25px;
+    left: 17.5px;
+    width: 25px;
+    height: 25px;
+    color: #333233;
+    background-color: #333233;
+    border-radius: 25px;
+    border: 3px solid #ffffff;
+}
+
+.acc_jour_back{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 30px;
+    height: 95px;
+    background-color: #ffffff;
+}
+
+.acc_jour_text{
+    position: absolute;
+    left: -3px;
+    bottom: 50px;
+    font-size: 18px;
+    transform: rotate(-90deg);
+}
+
+/* ---> your_journals_block end <--- */
+
+/* ---> available_files_block <--- */
+
+.available_files_block {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    width: 445px;
+    height: 320px;
+    z-index: 2025;
+    background-color: #cccccc;
+    clip-path: polygon(0 0, 382px 0, 100% 100%, 0 100%);
+}
+
+.available_files_block img {
+    position: absolute;
+    z-index: 2027;
+}
+
+.files_text{
+    position: absolute;
+    width: 300px;
+    margin: 100px 0 0 55px;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2200;
+}
+
+/* ---> available_files_block end <--- */
+
+/* ---> block_bg_fijourn <--- */
+
+.block_bg_fijourn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 650px;
+    width: 455px;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 325px 0, 100% 100%, 0 100%);
+}
+
+.journal_view_block{
+    position: relative;
+    top: 345px;
+    left: 465px;
+    width: 660px;
+    height: 620px;
+    background-color: #ffffff;
+    border: 3px solid #52011a;
+    display: none;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.journal_view_block:hover {
+    border: 3px solid #AC0439;
+}
+
+.acc_frame{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    z-index: 1015;
+    font-size: 25px;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.acc_select_text{
+    text-align: center;
+    font-size: 32px;
+    color: #52011a;
+    margin-top: 260px;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+
+}
+
+.journal_view_block:hover +~ .acc_backg_frame{
+    background-color: #AC0439;
+}
+
+/* ---> block_for_viewing end <--- */

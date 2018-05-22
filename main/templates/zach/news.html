@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block meta_head %}
+        <meta name="description" content="Актуальные новости для студентов и преподавателей ИТА ЮФУ."/>
+    {% endblock %}
+
+    {% block title %}
+        Новости
+    {% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <script src="../../static/libs/jquery/jquery-1.11.1.min.js"></script>
+    <div class="news_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="news_block">
+                        <div class="ne_block_univs">
+                            <form class="news_form">
+                                <div class="ne_ictis_univ">
+                                    <label class="ne_ictis_label">
+                                        <input type="radio" name="news_univs" value="news_ictis"
+                                               onclick="get_post('{% url 'api:get_news' "iktib" %}')">
+                                        <span class="ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/jrnls/ictis.logo.png' %}" class="ne_ictis_img">
+                                            ИКТИБ
+                                        </p>
+                                    </label>
+                                    <img src="{% static 'images/ne/ictis_paper.png' %}" alt="">
+                                </div>
+                                <div class="ne_inep_univ">
+                                    <label class="ne_inep_label">
+                                        <input type="radio" name="news_univs" value="news_inep"
+                                               onchange="get_post('{% url 'api:get_news' "inep" %}')">
+                                        <span class=" ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/jrnls/inep.logo.png' %}" class="ne_inep_img">
+                                            ИНЭП
+                                        </p>
+                                    </label>
+                                    <img src="{% static 'images/ne/inep_paper.png' %}" alt="">
+                                </div>
+
+                                <div class="ne_all_univs">
+                                    <label class="ne_all_label">
+                                        <input type="radio" name="news_univs" checked="checked" value="news_all"
+                                               onclick="get_post('{% url 'api:get_news' "all" %}')">
+                                        <span class="ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/logo_yufu_w.png' %}" class="ne_tti_img">
+                                            ИТА ЮФУ
+                                        </p>
+                                    </label>
+                                    <img src="{% static 'images/ne/tti_paper.png' %}" alt="">
+                                </div>
+
+                                <div class="ne_irtsu_univ">
+                                    <label class="ne_irtsu_label">
+                                        <input type="radio" name="news_univs" value="news_irtsu"
+                                               onclick="get_post('{% url 'api:get_news' "irtsu" %}')">
+                                        <span class=" ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/jrnls/irtsu.logo.png' %}" class="ne_irtsu_img">
+                                            ИРТСУ
+                                        </p>
+                                    </label>
+                                    <img src="{% static 'images/ne/irtsu_paper.png' %}" alt="">
+                                </div>
+
+                                <div class="ne_iues_univ">
+                                    <label class="ne_iues_label">
+                                        <input type="radio" name="news_univs" value="news_iues"
+                                               onclick="get_post('{% url 'api:get_news' "iues" %}')">
+                                        <span class="ne_univ_opac"></span>
+                                        <p class="ne_text_univ">
+                                            <img src="{% static 'images/jrnls/iues.logo.png' %}" class="ne_iues_img">
+                                            ИУЭС
+                                        </p>
+                                    </label>
+                                    <img src="{% static 'images/ne/iues_paper.png' %}" alt="">
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="ne_block_news">
+                            {% for new in news %}
+                                <div class="ne_main_news">
+                                    <div class="ne_news_img">
+                                        <img src="{{ new.image.url }}" alt="">
+                                    </div>
+                                    <div class="ne_news_text">
+                                        <div class="ne_news_parag">
+                                            <a href="{{ new.get_absolute_url }}">{{ new.title }}</a>
+                                        </div>
+                                        <div id="{{ new.id }}" style="display: none">
+                                            {{ new.text|safe }}
+                                        </div>
+
+                                        <div class="ne_news_short_art short{{ new.id }}">
+
+                                        </div>
+                                        <script>
+                                            function cut_text(id) {
+                                                var elem = document.getElementById(id);
+                                                var htmlObject = $(elem);
+                                                var tag = '.short-' + id;
+                                                $('.short{{ new.id }}').append(htmlObject.text().slice(0, 200) + '...');
+                                            }
+
+                                            cut_text('{{ new.id }}')
+                                        </script>
+                                        <div class="ne_news_tags">
+                                            Теги:
+                                            <div class="ne_news_tags_tg">{% for cat in new.category.all %}
+                                                <a href="{% url 'tag' cat.title %}">#{{ cat }}</a>{% endfor %}</div>
+                                        </div>
+                                        <div class="ne_news_date_pub">
+                                            Опубликованно:
+                                            <div class="ne_news_public_date">{{ new.published }}</div>
+                                        </div>
+                                    </div>
+                                    <div class="ne_but_more">
+                                        <a href="{{ new.get_absolute_url }}">Читать далее</a>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/api.js' %}"></script>
+{% endblock %}
+</body>
+</html>

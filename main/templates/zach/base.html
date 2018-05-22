@@ -1,0 +1,60 @@
+{% load staticfiles %}
+{% load profile %}
+<!DOCTYPE html>
+
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    {% block meta_head %}
+    {% endblock %}
+    <title>За4ет | {% block title %}{% endblock %}</title>
+
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'libs/bootstrap/bootstrap-grid-3.3.1.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-4.7.0/css/font-awesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-5.0.8/css/fontawesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/fonts.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/media.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/home.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/library.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/account.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/news.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/res_search.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/zach/information_questions.css' %}"/>
+    <meta name="yandex-verification" content="2b22988392c6cecf" />
+</head>
+<body>
+{% include 'base_includes/top_header.html' %}
+{% if user.is_authenticated %}
+    {% else%}
+{% include 'base_includes/login_form.html' %}
+    <div class="close_login"><i class="fa fa-times"></i></div>
+    <div class="opacity"></div>
+{% endif %}
+
+{% include 'base_includes/header.html' %}
+{% include 'base_includes/main_search.html' %}
+{% block content %}
+{% endblock %}
+{% include 'base_includes/footer.html' %}
+<script src="{% static 'js/helpers.js'%}"></script>
+<script src="../../static/libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="http://momentjs.com/downloads/moment.min.js"></script>
+<script src="../../static/libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="../../static/js/common.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="../../static/js/data.js"></script>
+<script src=" {% static 'js/api.js' %}"></script>
+</body>
+</html>

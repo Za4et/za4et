@@ -1,0 +1,33 @@
+{% load static %}
+<div class="header_head">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main_menu_left">
+                    <ul class="menu_left">
+                        <li><a href="{% url 'home' %}">Главная</a></li>
+                        <p class="line_left"></p>
+                        <li><a href="{% url 'journals' %}">Журналы</a></li>
+                        <p class="line_left"></p>
+                        <li><a href="{% url 'library' %}">Библиотека</a></li>
+                    </ul>
+                </div>
+                <div class="main_menu_right">
+                    <ul class="menu_right">
+                        <li><a href="{% url 'information' %}">Информация</a></li>
+                        <p class="line_right"></p>
+                        <li><a href="{% url 'questions' %}">Возник вопрос?</a></li>
+                        <p class="line_right"></p>
+                        <li class="open_main_search"><i class="fa fa-search"></i></li>
+                    </ul>
+                </div>
+                <div class="logotype">
+                    <a href="{% url 'home' %}" class="a_img"><img src="{% static 'images/logo.png' %}"
+                                                                  class="logo_up" alt="Logo" border="0" width="213"></a>
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo_ho.png' %}" class="logo_down" alt="Logo"
+                                                    border="0" width="213"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

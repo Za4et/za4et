@@ -1,0 +1,323 @@
+.library_content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 999;
+}
+
+/* ---> library search <--- */
+
+.library_search {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: #cccccc;
+}
+
+.library_search img {
+    position: absolute;
+    z-index: 1005;
+}
+
+.library_search input {
+    position: absolute;
+    z-index: 1050;
+}
+
+.lbrr_in_search {
+    top: 15px;
+    left: 95px;
+    width: 740px;
+    height: 50px;
+    border: 0;
+    clip-path: polygon(0 0, 730px 0, 100% 100%, 0 100%);
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.lbrr_but_sum {
+    top: 15px;
+    right: 95px;
+    width: 209px;
+    height: 50px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #52011A;
+    border: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10px 100%);
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.lbrr_but_sum:hover {
+    background-color: #AC0439;
+}
+
+/* ---> library search end <--- */
+
+/* ---> files block <--- */
+
+.files_block {
+    position: relative;
+    height: 720px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.tree_files {
+    position: absolute;
+    left: 0;
+    height: 720px;
+    width: 512px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 495px 0, 495px 100%, 0 100%);
+}
+
+.tree_files img {
+    position: absolute;
+    z-index: 1005;
+}
+
+.lib_materials{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 463px;
+    height: 690px;
+    padding-left: 15px;
+    z-index: 1015;
+    overflow-y: scroll;
+    direction: rtl;
+}
+
+.lib_subject{
+    position: relative;
+    width: 430px;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-top: 3px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.lib_subject a{
+    color: #52011a;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.lib_subject a:hover{
+    color: #AC0439;
+}
+
+/*founfiles*/
+
+.found_files {
+    position: absolute;
+    right: 0;
+    height: 630px;
+    width: 762px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(128px 0, 100% 0, 100% 100%, 128px 100%);
+}
+
+.found_files img {
+    position: absolute;
+    z-index: 1005;
+}
+
+.lib_backg_frame {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 604px;
+    height: 600px;
+    background-color: #52011a;
+    z-index: 1010;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.lib_win_frame {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 598px;
+    height: 594px;
+    background-color: #ffffff;
+    z-index: 1010;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.lib_frame{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 594px;
+    padding-left: 15px;
+    z-index: 1015;
+    font-size: 25px;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.lib_select_text{
+    text-align: center;
+    font-size: 36px;
+    color: #52011a;
+    margin-top: 260px;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.lib_win_frame:hover +~ .lib_backg_frame{
+    background-color: #AC0439;
+}
+
+/*download*/
+
+.library_download {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    width: 634px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border: none;
+}
+
+.library_download img {
+    position: absolute;
+    z-index: 1006;
+}
+
+.opacity_lbrr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1010;
+    background-color: #333233;
+    opacity: 0.7;
+}
+
+.lbrr_download_file, .lbrr_download_zip {
+    position: absolute;
+    top: 15px;
+    height: 50px;
+    width: 222px;
+    color: #ffffff;
+    background-color: #52011A;
+    z-index: 1020;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.lbrr_download_file:hover, .lbrr_download_zip:hover {
+    background-color: #AC0439;
+}
+
+.lbrr_download_file {
+    clip-path: polygon(0 0, 212px 0, 100% 100%, 0 100%);
+    left: 94px;
+}
+
+.lbrr_download_zip {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10px 100%);
+    right: 95px;
+}
+
+.lbrr_text_down_f, .lbrr_text_down_z {
+    position: absolute;
+    width: 100%;
+    margin-top: 7px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    opacity: 0;
+}
+
+.lbrr_download_file:hover .lbrr_text_down_f {
+    opacity: 1;
+}
+
+.lbrr_download_zip:hover .lbrr_text_down_z {
+    opacity: 1;
+}
+
+.lbrr_down_img_1, .lbrr_down_img_2 {
+    transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+
+.lbrr_icon_down_f .lbrr_down_img_1 {
+    position: absolute;
+    top: 9px;
+    left: 95px;
+    width: 16px;
+}
+
+.lbrr_icon_down_f .lbrr_down_img_2 {
+    position: absolute;
+    top: 9px;
+    right: 95px;
+    width: 16px;
+}
+
+.lbrr_download_file:hover .lbrr_icon_down_f .lbrr_down_img_1 {
+    left: 56.75px;
+}
+
+.lbrr_download_file:hover .lbrr_icon_down_f .lbrr_down_img_2 {
+    right: 56.75px;
+}
+
+.lbrr_icon_down_z .lbrr_down_img_1 {
+    position: absolute;
+    top: 9px;
+    left: 95px;
+    width: 16px;
+}
+
+.lbrr_icon_down_z .lbrr_down_img_2 {
+    position: absolute;
+    top: 9px;
+    right: 95px;
+    width: 16px;
+}
+
+.lbrr_download_zip:hover .lbrr_icon_down_z .lbrr_down_img_1 {
+    left: 37px;
+}
+
+.lbrr_download_zip:hover .lbrr_icon_down_z .lbrr_down_img_2 {
+    right: 36.75px;
+}
+
+/* ---> files block end <--- */

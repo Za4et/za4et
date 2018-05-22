@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}{{ article.title }}{% endblock %}
+    {% block meta_head %}
+        <meta property="og:title" content="{{ article.title }}"/>
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://za4et2018.ru{{ article.get_absolute_url }}" />
+        <meta property="og:image" content="https://za4et2018.ru{{ article.image.url }}" />
+    {% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <div class="article_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article_block">
+                        <div class="article_parag">
+                            {{ article.title|safe }}
+                        </div>
+                        <div class="article_img">
+                            <img src="{{ article.image.url }}" alt="">
+                        </div>
+                        <div class="article_text">
+                            <p>
+                                {{ article.text|safe }}
+                            </p>
+                        </div>
+
+                        <div class="article_block_op">
+                            <div class="article_date_cr">
+                                Дата публикации: {{ article.published }}
+                            </div>
+
+                            <div class="article_tag">
+
+                                Тэги: {% for cat in article.category.all %}
+                                <a href="{% url 'tag' cat.title %}">&num;{{ cat }}</a>{% endfor %}
+                            </div>
+
+                        </div>
+                        <!------ Rambler.Likes script start ------>
+                        <div class="article_block_op">
+                        <div class="rambler-share"></div>
+                        </div>
+                        <script>
+                            (function() {
+                                var init = function() {
+                                    RamblerShare.init('.rambler-share', {
+                                        "style": {
+                                            "buttonHeight": 40,
+                                            "iconSize": 25,
+                                            "borderRadius": 11,
+                                            "counterSize": 25,
+                                            "buttonBackgroundHover": "#52011a",
+                                            "iconColorHover": "#fffcfd",
+                                            "textColorHover": "#52011a",
+                                            "font": "Tahoma"
+                                        },
+                                        "utm": "utm_medium=social",
+                                        "counters": false,
+                                        "buttons": [
+                                            "vkontakte",
+                                            "facebook",
+                                            "livejournal",
+                                            "twitter",
+                                            "googleplus",
+                                            "copy"
+                                        ]
+                                    });
+                                };
+                                var script = document.createElement('script');
+                                script.onload = init;
+                                script.async = true;
+                                script.src = 'https://developers.rambler.ru/likes/v1/widget.js';
+                                document.head.appendChild(script);
+                            })();
+                        </script>
+                        <!------   Rambler.Likes script end  ------>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

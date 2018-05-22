@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+{% extends 'zach/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Поиск{% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <div class="search_res_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search_res_block">
+                        <div class="res_search_top">
+                            <img src="{% static 'images/res_search/res_srch_top.png' %}" alt="">
+                            <div class="res_search_opac"></div>
+                            <div class="res_search_top_tx">
+                                Результаты поиска:
+                            </div>
+                        </div>
+                        {% if news or materials or groups %}
+
+
+                            {% if new_on %}
+                                <div class='res_search_menu'>
+                                <div class='res_search_news'>
+                                    <div class="res_search_news_text">
+                                        Новости:
+                                    </div>
+                                    <img src="{% static 'images/res_search/res_srch_nws.png' %}" alt="">
+                                    <div class="res_search_opac"></div>
+                                    <div class="res_search_block_news">
+
+                                        {% if news %}
+                                            {% for new in news %}
+                                                <div class="res_search_new">
+                                                    <div class="res_search_new_img">
+                                                        <img src="{{ new.image.url }}" alt="">
+                                                    </div>
+
+                                                    <div class="res_search_new_parag">
+                                                        <a href="{{ new.get_absolute_url }}">
+                                                            {{ new.title }}
+                                                        </a>
+                                                    </div>
+                                                    <div class="res_search_new_sh_tx">
+
+                                                    </div>
+
+                                                    <div class="res_search_new_tags">
+
+                                                        <br> Тэги:{% for category in new.category.all %} <a href="">#
+                                                        {{ category }} {% endfor %}</a>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        {% else %}
+                                            {% include 'error includes/main_search_error.html' %}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                            {% if groups_on %}
+                                <div class='res_search_jour'>
+                                    <div class="res_search_jour_text">
+                                        Журналы:
+                                    </div>
+                                    <img src="{% static 'images/res_search/res_srch_jrnls.png' %}" alt="">
+                                    <div class="res_search_opac"></div>
+                                    <div class="res_search_block_jour">
+                                        <div class="res_search_mov_win">
+                                            {% if groups %}
+                                                {% for group in groups %}
+                                                    <div class="res_search_journal">
+                                                        <a href="{{ group.link }}">
+                                                            <div class="res_search_journal_circle"></div>
+                                                            <div class="res_search_journal_bg">
+                                                                <div class="res_search_journal_nm">
+                                                                    {{ group.group__name }}
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                {% endfor %}
+                                                {% else %}{% include 'error includes/main_search_error.html' %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                            {% if library_on %}
+
+                                <div class='res_search_lib'>
+                                    <div class="res_search_lib_text">
+                                        Библиотека:
+                                    </div>
+
+                                    <img src="{% static 'images/res_search/res_srch_lbrr.png' %}" alt="">
+                                    <div class="res_search_opac"></div>
+                                    <div class="res_search_block_lib">
+                                        {% if materials %}
+                                            {% for material in materials %}
+                                                <div class="res_search_line_file">
+                                                    <div class="res_search_name_file">
+                                                        <a href="#">{{ material.name }}</a>
+                                                    </div>
+                                                    <div class="res_search_down_file">
+                                                        <a href="{{ material.file.url }}"> <i style="color: white"
+                                                                                              class="fa fa-download"></i></a>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        {% else %}{% include 'error includes/main_search_error.html' %}{% endif %}
+                                    </div>
+                                </div>
+
+                            {% endif %}
+                        {% else %}
+                            {% include 'error includes/main_search_error.html' %}
+                        {% endif %}
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

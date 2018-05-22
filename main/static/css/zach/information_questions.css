@@ -1,0 +1,318 @@
+/* --------->> information <<---------*/
+
+.information_content{
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.information_block{
+    margin: 30px 0;
+    position: relative;
+    width: 100%;
+}
+
+.info_text{
+    font-size: 24px;
+    text-align: justify;
+}
+
+.info_text_p{
+    text-indent: 2em;
+}
+
+.info_text_no_p{
+    width: 100%;
+    text-indent: 0;
+}
+
+.info_text_ac_p{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 26px;
+    text-indent: 0;
+}
+
+.info_text_img img{
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    float: left;
+    z-index: 1050;
+    height: 400px;
+    transform: rotate(-30deg);
+}
+
+.info_bords{
+    width: 100px;
+}
+
+.info_bord_1{
+    position: relative;
+    left: -1px;
+    height: 75px;
+    width: 1px;
+    float: left;
+}
+
+.info_bord_2{
+    position: relative;
+    height: 30px;
+    width: 325px;
+    float: left;
+}
+
+.info_bord_3{
+    position: relative;
+    height: 40px;
+    width: 405px;
+    float: left;
+}
+
+.info_bord_4{
+    position: relative;
+    height: 30px;
+    width: 425px;
+    float: left;
+}
+
+.info_bord_5{
+    position: relative;
+    height: 40px;
+    width: 445px;
+    float: left;
+}
+
+.info_bord_6{
+    position: relative;
+    height: 30px;
+    width: 460px;
+    float: left;
+}
+
+.info_bord_7{
+    position: relative;
+    height: 30px;
+    width: 480px;
+    float: left;
+}
+
+.info_bord_8{
+    position: relative;
+    height: 36px;
+    width: 500px;
+    float: left;
+}
+
+.info_bord_9{
+    position: relative;
+    height: 34px;
+    width: 520px;
+    float: left;
+}
+
+.info_bord_10{
+    position: relative;
+    height: 28px;
+    width: 540px;
+    float: left;
+}
+
+.info_bord_11{
+    position: relative;
+    height: 34px;
+    width: 515px;
+    float: left;
+}
+
+.info_bord_12{
+    position: relative;
+    height: 34px;
+    width: 450px;
+    float: left;
+}
+
+.info_bord_13{
+    position: relative;
+    height: 34px;
+    width: 390px;
+    float: left;
+}
+
+.info_bord_14{
+    position: relative;
+    height: 32px;
+    width: 330px;
+    float: left;
+}
+
+.info_bord_15{
+    position: relative;
+    height: 37px;
+    width: 265px;
+    float: left;
+}
+
+.info_bord_16{
+    position: relative;
+    height: 32px;
+    width: 210px;
+    float: left;
+}
+
+/* --------->> information end <<---------*/
+
+/* --------->> questions <<---------*/
+
+.questions_content{
+    position: relative;
+    width: 100%;
+    flex: 1 0 auto;
+}
+
+.questions_block{
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.quest_jour_block{
+    width: 100%;
+    height: 400px;
+}
+
+.quest_jour_gif{
+    position: relative;
+    float: left;
+    width: 650px;
+    height: 400px;
+    background-color: #ffffff;
+}
+
+.quest_jour_gif img{
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.quest_jour_text{
+    width: 460px;
+    height: 100%;
+    float: right;
+}
+
+.quest_jour_text_parag, .quest_lib_text_parag{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 32px;
+    text-align: center;
+    color: #52011A;
+}
+
+.quest_jour_text_about, .quest_lib_text_about{
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    color: #333233;
+    text-indent: 2em;
+}
+
+.quest_lib_block{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.quest_lib_gif{
+    position: relative;
+    float: right;
+    width: 650px;
+    height: 400px;
+    background-color: #ffffff;
+}
+
+.quest_lib_gif img{
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.quest_lib_text{
+    width: 460px;
+    height: 100%;
+    float: left;
+}
+
+/* ---> form quest <--- */
+
+.quest_text_form_req{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 28px;
+    color: #52011A;
+    text-align: center;
+}
+
+.quest_form_quest{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.quest_form_quest input::placeholder{
+    opacity: 0.3;
+}
+
+.quest_text_que{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.quest_form_input{
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #333233;
+    border: none;
+    background-color: #D5D5D5;
+}
+
+.quest_form_quest textarea{
+    height: 240px;
+    width: 100%;
+    resize: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #333233;
+    border: none;
+    background-color: #D5D5D5;
+}
+
+.quest_form_sum{
+    position: relative;
+    left: 50%;
+    width: 250px;
+    height: 60px;
+    margin: 30px 0 30px -125px;
+    font-size: 20px;
+    clip-path: polygon( 0 0, 100% 0, 238px 100%, 12px 100%);
+    color: #ffffff;
+    background-color: #52011A;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.quest_form_sum:hover{
+    background-color: #AC0439;
+}
+
+/* ---> form quest end <--- */
+
+/* --------->> questions end <<---------*/

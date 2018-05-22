@@ -1,0 +1,86 @@
+{% extends 'zach/base.html' %}
+{% load staticfiles %}
+{% load profile %}
+{% block title %}Журналы{% endblock %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/zach/journals.css' %}"/>
+    <div class="journals_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="university">
+                        {% include 'zach/left_menu/includes/institutes.html' %}
+                    </div>
+                {% if user.is_authenticated %}
+                    {% include 'zach/left_menu/includes/formstudy.html' %}
+                {% endif %}
+                    <div class="selected_journals">
+                        <div class="all_journals_rate">
+                            <img src="{% static 'images/jrnls/jrnls.lft.png' %}">
+                            <div class="journ_opac"></div>
+                            <div class="journ_win_rate">
+                                {% for group in groups %}
+                                    <div class="journal">
+                                        <div class="journal_circle"></div>
+                                        <div class="journal_backg_n">
+                                            <div class="journal_name">
+                                                <a class="permission_link" {% if user.is_authenticated %}
+                                                    {% permissions_group group.name group.journal__link %}
+                                                   {% else %}{% endif %} onclick="permisiion_journal(this.getAttribute('href'))">{{ group.name }}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                {% for search_group in search_groups %}
+                                    <div class="journal">
+                                        <div class="journal_circle"></div>
+                                        <div class="journal_backg_n">
+                                            <a href="{{ search_group.journal__link }}" target="jframe"
+                                               style="color: #743733">
+                                            <div class="journal_name">
+                                                {{ search_group.name }}
+                                            </div
+                                            ></a>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="window_with_journals">
+                            <div class="journ_win_frame">
+                                <div class="journ_backg_frame">
+                                    <div class="journ_select_text">
+                                        {% if user.is_authenticated %}
+                                        <p>Для того, чтобы просмотреть</p>
+                                        <p>свою успеваемость,</p>
+                                        <p>выберите вуз, направление и группу,</p>
+                                        <p>в которой обучаетесь.</p>
+                                        {% else %}
+                                           <p>Упс!</p>
+                                            Журналы недоступны<br/> неавторизованным пользователям!
+                                        {% endif %}
+                                    </div>
+
+                                    <iframe src="" name="jframe" class="journ_frame"></iframe>
+
+                                </div>
+                            </div>
+                            <img src="{% static 'images/jrnls/jrnls.rght.png' %}">
+                            <div class="journ_opac"></div>
+                        </div>
+                    </div>
+                    <form class="jrls_search" method="get" name="search">
+                        <div class="search_journals">
+                            <img src="{% static 'images/jrnls/jrnls.srch.png' %}">
+                            <div class="univ_search_opac"></div>
+                            <input type="text" name="search" class="jrnl_in_search" placeholder="КТбо1-1..."
+                                   value="{{ search }}">
+                            <input type="submit" value="Найти " class="jrnl_but_sum">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
