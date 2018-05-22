@@ -2,6 +2,8 @@
 
 {% extends 'zach/base.html' %}
 
+{% load staticfiles %}
+
 <html lang="ru">
 
 <head>
@@ -16,7 +18,9 @@
                 <div class="col-md-12">
                     <div class="questions_block">
                         <div class="quest_jour_block">
-                            <div class="quest_jour_gif"></div>
+                            <div class="quest_jour_gif">
+                                <img src="{% static 'images/ques/jrnls.gif' %}">
+                            </div>
                             <div class="quest_jour_text">
                                 <div class="quest_jour_text_parag">Журналы</div>
                                 <div class="quest_jour_text_about">
@@ -30,7 +34,9 @@
                             </div>
                         </div>
                         <div class="quest_lib_block">
-                            <div class="quest_lib_gif"></div>
+                            <div class="quest_lib_gif">
+                                <img src="{% static 'images/ques/lbrr.gif' %}">
+                            </div>
                             <div class="quest_lib_text">
                                 <div class="quest_lib_text_parag">Библиотека</div>
                                 <div class="quest_lib_text_about">

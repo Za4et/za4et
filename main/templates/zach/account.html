@@ -25,7 +25,11 @@
                                     <img src="{% static 'images/lk/asd.jpg' %}">
                                     <div class="photo_opac">
                                         <form class="upload_photo_profile">
-                                            <input type="file" name="profile_photo" accept="image/*,image/jpeg">
+                                            <label class="up_pho_pro_lab">
+                                                <input type="file" name="profile_photo" accept="image/*,image/jpeg">
+                                                <span><i class="fa fa-upload"></i></span>
+                                                <p>Загрузить фото</p>
+                                            </label>
                                         </form>
                                     </div>
                                 </div>
@@ -35,26 +39,51 @@
                                     <div class="text_profile_name">{{ account.fio }}</div>
                                     <div class="text_profile">Место обучения:
                                         <div class="text_prof_un">
-                                           {{ account.place_of_styding }}
+                                            {{ account.place_of_styding }}
                                         </div>
                                     </div>
                                     <div class="text_profile">Учебная группа:</div>
                                     <div class="text_prof_group">{{ account.group }}</div>
+                                </div>
+                                <div class="upload_photo_back_prof">
+                                    <form>
+                                        <label class="up_pho_back_lab">
+                                            <input type="file" name="profile_backg" accept="image/*,image/jpeg">
+                                            <span class="up_prof_back_i"><i class="fa fa-image"></i></span>
+                                        </label>
+                                    </form>
                                 </div>
                                 <div class="prof_line"></div>
                                 <div class="prof_bg_image">
                                     <img src="{% static 'images/lk/skrep.jpeg' %}" alt="">
                                 </div>
                             </div>
+                            <div class="journal_view_block">
+                                <form action="." method="post" id="acc_form">
+                                    <div class="acc_frame" align="center">
+
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <div class="block_access">
                             <div class="your_journals_block">
                                 <img src="{% static 'images/lk/lk.journals.png' %}">
                                 <div class="acc_block_opac"></div>
+                                <div class="acc_parag">Вы состоите в журнале:</div>
+                                <div class="acc_journal">
+{#                                    <a href=""></a>#}
+                                    <div class="acc_jour_circle"></div>
+                                    <div class="acc_jour_back"></div>
+                                    <div class="acc_jour_text">КТбо2-8</div>
+                                </div>
                             </div>
                             <div class="available_files_block">
                                 <img src="{% static 'images/lk/lk.book.png' %}">
                                 <div class="acc_block_opac"></div>
+                                <div class="files_text">
+                                    В библиотеке нет персональных файлов для вас!
+                                </div>
                             </div>
                             <div class="block_bg_fijourn">
                             </div>
