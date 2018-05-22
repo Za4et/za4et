@@ -317,6 +317,41 @@ a:hover {
     font-size: 20px;
 }
 
+.exit_acc{
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.exit_prof_0{
+    position: relative;
+    width: 30px;
+    opacity: 0;
+    margin-left: 20px;
+}
+
+.exit_prof_1{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 30px;
+    opacity: 1;
+    transition: all .3s ease;
+    z-index: 1001;
+}
+
+.exit_prof_2{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 30px;
+    z-index: 1000;
+}
+
+.exit_prof_1:hover{
+    opacity: 0;
+}
+
 .contacts_head {
     float: right;
     margin: 0;
@@ -1047,6 +1082,7 @@ a:hover {
 
 .main_footer .footer_cont img {
     margin-top: 10px;
+    margin-right: 65px;
     height: 60px;
 }
 
@@ -1060,6 +1096,19 @@ a:hover {
     color: #ffffff;
     width: 100%;
     height: 40px;
+}
+
+.footer_cont i{
+    position: absolute;
+    top: 37px;
+    /*right: 10px;*/
+    left: 50%;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 80px;
+    color: #52011a;
+    line-height: 0;
+    z-index: 1100;
 }
 
 /*---> footer end <---*/
