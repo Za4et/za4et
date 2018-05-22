@@ -289,7 +289,8 @@
 
 .acc_jour_text{
     position: absolute;
-    left: -3px;
+    width: 70px;
+    left: -6px;
     bottom: 50px;
     font-size: 18px;
     transform: rotate(-90deg);
