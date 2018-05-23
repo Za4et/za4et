@@ -1,4 +1,4 @@
-# za4et
+# za4et2018.ru
 
 <p align="center">
   <img src="https://za4et2018.ru/static/images/ques/jrnls.gif" width="350"/>
