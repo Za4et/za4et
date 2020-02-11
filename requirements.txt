@@ -1,6 +1,6 @@
 certifi==2018.4.16
 chardet==3.0.4
-Django==2.0.4
+Django==2.2.10
 django-autoslug==1.9.3
 django-ckeditor==5.4.0
 django-g-recaptcha==0.2.4
