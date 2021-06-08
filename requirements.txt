@@ -9,7 +9,7 @@ funcsigs==1.0.2
 idna==2.6
 mock==2.0.0
 pbr==4.0.2
-Pillow==5.1.0
+Pillow==8.2.0
 psycopg2==2.7.4
 pytz==2018.4
 requests==2.18.4
